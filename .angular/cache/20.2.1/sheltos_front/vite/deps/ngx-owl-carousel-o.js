@@ -1,12 +1,12 @@
 import {
+  toObservable
+} from "./chunk-CU2TGBXV.js";
+import "./chunk-OO5HDX4I.js";
+import {
   ActivatedRoute,
   NavigationEnd,
   Router
 } from "./chunk-GU6LNJ2R.js";
-import {
-  toObservable
-} from "./chunk-CU2TGBXV.js";
-import "./chunk-OO5HDX4I.js";
 import "./chunk-FZUHC267.js";
 import "./chunk-2U2PGF3A.js";
 import {

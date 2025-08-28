@@ -1,0 +1,129 @@
+{
+  "brand": [
+    {
+      "id": 1,
+      "type": "slider_filter_search",
+      "img": "assets/images/brand/17.png"
+    },
+    {
+      "id": 2,
+      "type": "slider_filter_search",
+      "img": "assets/images/brand/18.png"
+    },
+    {
+      "id": 3,
+      "type": "slider_filter_search",
+      "img": "assets/images/brand/19.png"
+    },
+    {
+      "id": 4,
+      "type": "slider_filter_search",
+      "img": "assets/images/brand/20.png"
+    },
+    {
+      "id": 5,
+      "type": "slider_filter_search",
+      "img": "assets/images/brand/21.png"
+    },
+    {
+      "id": 6,
+      "type": "slider_filter_search",
+      "img": "assets/images/brand/18.png"
+    },
+    {
+      "id": 7,
+      "type": "enterprise",
+      "img": "assets/images/brand/6.png"
+    },
+    {
+      "id": 8,
+      "type": "enterprise",
+      "img": "assets/images/brand/7.png"
+    },
+    {
+      "id": 9,
+      "type": "enterprise",
+      "img": "assets/images/brand/8.png"
+    },
+    {
+      "id": 10,
+      "type": "enterprise",
+      "img": "assets/images/brand/9.png"
+    },
+    {
+      "id": 11,
+      "type": "enterprise",
+      "img": "assets/images/brand/10.png"
+    },
+    {
+      "id": 12,
+      "type": "enterprise",
+      "img": "assets/images/brand/11.png"
+    },
+    {
+      "id": 13,
+      "type": "enterprise",
+      "img": "assets/images/brand/7.png"
+    },
+    {
+      "id": 14,
+      "type": "classic",
+      "img": "assets/images/brand/12.png"
+    },
+    {
+      "id": 15,
+      "type": "classic",
+      "img": "assets/images/brand/13.png"
+    },
+    {
+      "id": 16,
+      "type": "classic",
+      "img": "assets/images/brand/14.png"
+    },
+    {
+      "id": 17,
+      "type": "classic",
+      "img": "assets/images/brand/15.png"
+    },
+    {
+      "id": 18,
+      "type": "classic",
+      "img": "assets/images/brand/16.png"
+    },
+    {
+      "id": 19,
+      "type": "classic",
+      "img": "assets/images/brand/13.png"
+    },
+    {
+      "id": 20,
+      "type": "image_content",
+      "img": "assets/images/brand/1.png"
+    },
+    {
+      "id": 21,
+      "type": "image_content",
+      "img": "assets/images/brand/2.png"
+    },
+    {
+      "id": 22,
+      "type": "image_content",
+      "img": "assets/images/brand/3.png"
+    },
+    {
+      "id": 23,
+      "type": "image_content",
+      "img": "assets/images/brand/4.png"
+    },
+    {
+      "id": 24,
+      "type": "image_content",
+      "img": "assets/images/brand/5.png"
+    },
+    {
+      "id": 25,
+      "type": "image_content",
+      "img": "assets/images/brand/2.png"
+    }
+  ]
+}

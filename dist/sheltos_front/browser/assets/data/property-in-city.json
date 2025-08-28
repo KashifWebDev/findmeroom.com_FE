@@ -1,0 +1,96 @@
+{
+  "property": [
+    {
+      "id": 1,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/property/8.jpg",
+      "property": 12,
+      "city": "Dubai",
+      "text": "Many Property in this city"
+    },
+    {
+      "id": 2,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/others/1.jpg",
+      "property": 5,
+      "city": "U.s.a",
+      "text": "Many Land in this city"
+    },
+    {
+      "id": 3,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/3.jpg",
+      "property": 6,
+      "city": "New York",
+      "text": "Many Spaces in this city",
+      "colClass": true
+    },
+    {
+      "id": 4,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/property/6.jpg",
+      "property": 8,
+      "city": "Brazil",
+      "text": "Many Flat in this city",
+      "colClass": true
+    },
+    {
+      "id": 5,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/1.jpg",
+      "property": 10,
+      "city": "Dubai",
+      "text": "Many Land in this city"
+    },
+    {
+      "id": 6,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/property/7.jpg",
+      "property": 12,
+      "city": "France",
+      "text": "Many Spaces in this city"
+    },
+    {
+      "id": 7,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": "assets/images/feature/3.jpg",
+      "property": 10,
+      "city": "U.S.A"
+    },
+    {
+      "id": 8,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": "assets/images/feature/4.jpg",
+      "property": 12,
+      "city": "New York"
+    },
+    {
+      "id": 9,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": "assets/images/feature/5.jpg",
+      "property": 16,
+      "city": "England"
+    },
+    {
+      "id": 10,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": "assets/images/feature/6.jpg",
+      "property": 17,
+      "city": "America"
+    },
+    {
+      "id": 11,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": "assets/images/feature/7.jpg",
+      "property": 5,
+      "city": "Dubai"
+    },
+    {
+      "id": 12,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": "assets/images/feature/5.jpg",
+      "property": 15,
+      "city": "England"
+    }
+  ]
+}

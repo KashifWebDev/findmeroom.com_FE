@@ -1,0 +1,28 @@
+{
+  "newOffer": [
+    {
+      "id": 1,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/others/icon-1.png",
+      "heading": "Sheltos",
+      "title": "Looking for the new home?",
+      "desc": "10 new offers every day. 350 offers on site, trusted by a community of thousands of users."
+    },
+    {
+      "id": 2,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/others/icon-2.png",
+      "heading": "Sheltos",
+      "title": "Are you looking for home?",
+      "desc": "350 offers on site, trusted by a community of thousands of users. 10 new offers every day."
+    },
+    {
+      "id": 3,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/others/icon-1.png",
+      "heading": "Sheltos",
+      "title": "Looking for the new Office?",
+      "desc": "10 new offers every day. 350 offers on site, trusted by a community of thousands of users."
+    }
+  ]
+}

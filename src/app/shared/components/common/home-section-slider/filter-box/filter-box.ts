@@ -27,6 +27,7 @@ import {
   location,
 } from "../../../../data/advance-filter";
 import { CurrencySymbolPipe } from "../../../../pipe/currency-symbol.pipe";
+import { useIsBrowser } from "../../../../utils/platform";
 
 @Component({
   selector: "app-filter-box",
@@ -44,6 +45,8 @@ export class FilterBox {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
   propertyService = inject(PropertyService);
+
+  isBrowser = useIsBrowser();
 
   readonly buttonClass = input<string>("");
   readonly slider = input<boolean>(true);

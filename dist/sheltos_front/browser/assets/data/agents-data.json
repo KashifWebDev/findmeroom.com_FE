@@ -1,0 +1,26 @@
+{
+  "agentsProfileDetails": [
+    {
+      "id": 1,
+      "title": "Jonathan Scott",
+      "subTitle": "Real estate Property Agent",
+      "img": "assets/images/avatar/5.jpg",
+      "location": "A-32, Albany, Newyork.",
+      "mobile": "(+066) 518 - 457 - 5181",
+      "email": "realestate@gmail.com",
+      "link": "https://www.sheltos.com",
+      "property": 4,
+      "aboutAgency": [
+        {
+          "details": "Residences can be classified by and how they are connected residences and land. Different types of housing tenure can be used for the same physical type."
+        },
+        {
+          "details": "Connected residences owned by a single entity leased out, or owned separately with an agreement covering the relationship between units and common areas."
+        },
+        {
+          "details": "Residential real estate may contain either a single family or multifamily structure that is available for occupation or for non-business purposes."
+        }
+      ]
+    }
+  ]
+}

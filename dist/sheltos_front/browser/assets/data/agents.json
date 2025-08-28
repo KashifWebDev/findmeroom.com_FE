@@ -1,0 +1,112 @@
+{
+  "agents": [
+    {
+      "id": 1,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/about/1.jpg",
+      "name": "Ty R. Leeva",
+      "title": "Communicating with..",
+      "email": "Leeva@inspirythemes.com",
+      "desc": "A real estate agent or broker is a person who represents sellers or buyers advised to consult a licensed."
+    },
+    {
+      "id": 2,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/about/2.jpg",
+      "name": "Mark Andry",
+      "title": "Sellers of property.",
+      "email": "John@inspirythemes.com",
+      "desc": "They are responsible for managing employees and overseeing daily productivity."
+    },
+    {
+      "id": 3,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "img": "assets/images/about/1.jpg",
+      "name": "John David",
+      "title": "Advised to consult",
+      "email": "John@inspirythemes.com",
+      "desc": "Buyer's agents are brokers or salespersons who assist buyers by helping them."
+    },
+    {
+      "id": 4,
+      "type": "corporate",
+      "img": "assets/images/avatar/4.jpg",
+      "name": "Mark Andry",
+      "title": "Wide Window Realty Group...",
+      "email": "John@inspirythemes.com",
+      "desc": "How they are connected to neighbouring residences and land. Residences can be classified."
+    },
+    {
+      "id": 5,
+      "type": "corporate",
+      "img": "assets/images/avatar/3.jpg",
+      "name": "Percy Kewshun",
+      "title": "Palladian Property Advisors ...",
+      "email": "Kewshun@inspirythemes.com",
+      "desc": "Residences can be classified by and how they are connected to neighbouring residences and land."
+    },
+    {
+      "id": 6,
+      "type": "corporate",
+      "img": "assets/images/avatar/2.jpg",
+      "name": "Karen Onnabit",
+      "title": "Sellers or buyers of real property.",
+      "email": "Robot@inspirythemes.com",
+      "desc": "A real estate agent or broker is a person who represents sellers or buyers advised for property."
+    },
+    {
+      "id": 7,
+      "type": "corporate",
+      "img": "assets/images/avatar/3.jpg",
+      "name": "John David",
+      "title": "Advised to consult a license real estate",
+      "email": "John@inspirythemes.com",
+      "desc": "They are responsible for managing employees. A construction foreman leads the work crew."
+    },
+    {
+      "id": 8,
+      "type": "classic",
+      "img": "assets/images/about/1.jpg",
+      "name": "Lee A. Sun",
+      "title": "an elegant wave of the hand...",
+      "email": "John@inspirythemes.com",
+      "desc": "Different types of housing can be used same physical type."
+    },
+    {
+      "id": 9,
+      "type": "classic",
+      "img": "assets/images/about/2.jpg",
+      "name": "Peg Legge",
+      "title": "An Elegant type of profile..",
+      "email": "Robot@inspirythemes.com",
+      "desc": "Apartment An individual unit in a multi-unit building."
+    },
+    {
+      "id": 10,
+      "type": "classic",
+      "img": "assets/images/about/3.jpg",
+      "name": "Anita Bath",
+      "title": "an elegant wave of the hand...",
+      "email": "Eva@inspirythemes.com",
+      "desc": "Different types of housing can be used same physical type."
+    },
+    {
+      "id": 11,
+      "type": "classic",
+      "img": "assets/images/about/4.jpg",
+      "name": "Dee End",
+      "title": "An Elegant type of profile..",
+      "email": "Leea@inspirythemes.com",
+      "desc": "Apartment An individual unit in a multi-unit building."
+    },
+    {
+      "id": 12,
+      "type": "classic",
+      "img": "assets/images/about/2.jpg",
+      "name": "Willie Makit",
+      "title": "an elegant wave of the hand...",
+      "email": "Peg@inspirythemes.com",
+      "desc": "Different types of housing can be used same physical type."
+    }
+  ]
+}

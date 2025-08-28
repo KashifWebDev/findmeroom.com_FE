@@ -119,12 +119,14 @@
             }}</label
           >
           <div id="slider-range" class="theme-range-3">
-            <ngx-slider
-              [(value)]="priceMinValue"
-              [(highValue)]="priceMaxValue"
-              [options]="options"
-              (userChangeEnd)="priceChange($event)"
-            />
+            @if (isBrowser) {
+              <ngx-slider
+                [(value)]="priceMinValue"
+                [(highValue)]="priceMaxValue"
+                [options]="options"
+                (userChangeEnd)="priceChange($event)"
+              />
+            }
           </div>
         </div>
       </div>
@@ -136,12 +138,14 @@
             >Area : {{ areaMinValue }} - {{ areaMaxValue }} sq ft</label
           >
           <div id="slider-range1" class="theme-range-3">
-            <ngx-slider
-              [(value)]="areaMinValue"
-              [(highValue)]="areaMaxValue"
-              [options]="areaOptions"
-              (userChangeEnd)="areaChange($event)"
-            />
+            @if (isBrowser) {
+              <ngx-slider
+                [(value)]="areaMinValue"
+                [(highValue)]="areaMaxValue"
+                [options]="areaOptions"
+                (userChangeEnd)="areaChange($event)"
+              />
+            }
           </div>
         </div>
       </div>

@@ -1,0 +1,36 @@
+{
+  "banner": [
+    {
+      "id": 1,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "title": "Sheltos real estate",
+      "desc": "Looking to Buy a new property or Sell an existing one? Real Homes provides an easy solution!",
+      "button1Text": "Submit property",
+      "button2Text": "Browse property"
+    },
+    {
+      "id": 2,
+      "type": "corporate",
+      "title": "Are you worried <br/> sick about moving out?",
+      "desc": "We know how it feels! Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening Elegant retreat in a quiet Coral Gables setting.",
+      "button1Text": "Submit property"
+    },
+    {
+      "id": 3,
+      "type": "enterprise",
+      "img": "assets/images/mobile-bg.png",
+      "title": "free Download",
+      "subTitle": "Take your home search everywhere You go....",
+      "desc": "Search anytime, anywhere with ZipRealty's award-winning real estate app for iPhone, iPad and Android. See what's for sale around you and instantly request to tour homes you like.",
+      "button1Text": "Play Store",
+      "button2Text": "App Store"
+    },
+    {
+      "id": 4,
+      "type": "classic",
+      "title": "Stay Up to Date",
+      "desc": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening Elegant retreat in a quiet Coral Gables setting.",
+      "button1Text": "Subscribe Now"
+    }
+  ]
+}

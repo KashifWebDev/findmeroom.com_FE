@@ -1,0 +1,104 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "images": [
+        {
+          "img": "assets/images/testimonial/2.png",
+          "icon": false
+        },
+        {
+          "img": "assets/images/testimonial/1.png",
+          "icon": true
+        },
+        {
+          "img": "assets/images/testimonial/3.png",
+          "icon": false
+        }
+      ],
+      "desc": "Surveyors make precise measurements of property boundaries. Many industries, including construction, rely on these measurements",
+      "title": "real estate",
+      "name": "Mark Andry"
+    },
+    {
+      "id": 2,
+      "type": ["slider_filter_search", "image_content", "typed_image"],
+      "images": [
+        {
+          "img": "assets/images/testimonial/1.png",
+          "icon": false
+        },
+        {
+          "img": "assets/images/testimonial/2.png",
+          "icon": true
+        },
+        {
+          "img": "assets/images/testimonial/3.png",
+          "icon": false
+        }
+      ],
+      "desc": "Residences can be classified by and connected to residences. Different types of housing can be use same physical type.",
+      "title": "real estate",
+      "name": "John David"
+    },
+    {
+      "id": 3,
+      "type": "corporate",
+      "images": "assets/images/testimonial/3.jpg",
+      "desc": "Luxury real estate is sometimes use as store value. Some luxury units in London and New York City.  Residences can be classified by  and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for  the same physical type. Residences can be classified by and how they are connected to neighbouring residences and land.",
+      "name": "Wes Yabinlatelee",
+      "title": "Our Customer"
+    },
+    {
+      "id": 4,
+      "type": "corporate",
+      "images": "assets/images/testimonial/2.jpg",
+      "desc": "Housing tenure can be used for the same physical type. Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type. Residences can be classified by and how they are connected to neighbouring residences and land.",
+      "name": "Mark Enderess",
+      "title": "Our Customer"
+    },
+    {
+      "id": 5,
+      "type": "corporate",
+      "images": "assets/images/avatar/8.jpg",
+      "desc": "Different types of housing tenure can be used for the same physical type. Residences can be classified by and how they are connected to neighbouring residences and land. Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type.",
+      "name": "Isabelle Ringing",
+      "title": "Our Customer"
+    },
+    {
+      "id": 6,
+      "type": "corporate",
+      "images": "assets/images/testimonial/2.jpg",
+      "desc": "Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type. Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type.",
+      "name": "Lynn O’Leeum",
+      "title": "Our Customer"
+    },
+    {
+      "id": 7,
+      "type": "corporate",
+      "images": "assets/images/avatar/8.jpg",
+      "desc": "The content Bianca developed for our new website was exactly what we needed. From key messages for the homepage, to product features and targeted case studies, the content really helps sell our product",
+      "name": "Mark Enderess",
+      "title": "Our Customer"
+    },
+    {
+      "id": 8,
+      "type": "classic",
+      "images": "assets/images/testimonial/3.jpg",
+      "desc": "Different types of housing can be use same physical type.connected residences might be owned by a single entity or owned separately with an agreement covering the relationship between units and common areas and concerns.",
+      "name": "Tex Ryta",
+      "title": "Elegant type of the Profile...",
+      "email": "Eva@inspirythemes.com"
+    },
+    {
+      "id": 9,
+      "type": "classic",
+      "images": "assets/images/testimonial/3.jpg",
+      "desc": "Connected residences might be owned by a single entity or owned separately with an agreement covering the relationship between units and common areas and concerns. Different types of housing can be use same physical type.",
+      "name": "John David",
+      "title": "an elegant wave of the hand...",
+      "email": "Eva@Adaah@inspirythemes.com"
+    }
+  ]
+}

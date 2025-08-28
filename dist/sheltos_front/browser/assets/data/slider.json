@@ -1,0 +1,22 @@
+{
+  "slider": [
+    {
+      "id": 1,
+      "url": "assets/images/property/1.jpg",
+      "propertyType": "For Sale",
+      "propertyStatus": "Home"
+    },
+    {
+      "id": 2,
+      "url": "assets/images/property/2.jpg",
+      "propertyType": "For Rent",
+      "propertyStatus": "Town"
+    },
+    {
+      "id": 3,
+      "url": "assets/images/property/3.jpg",
+      "propertyType": "For Sale",
+      "propertyStatus": "Villa"
+    }
+  ]
+}

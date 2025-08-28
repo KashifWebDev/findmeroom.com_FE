@@ -1,4 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, inject, PLATFORM_ID } from "@angular/core";
+import { isPlatformBrowser } from "@angular/common";
+import { useIsBrowser } from "../../../shared/utils/platform";
 
 import { SliderFilterAgents } from "./slider-filter-agents/slider-filter-agents";
 import { SliderFilterBanner } from "./slider-filter-banner/slider-filter-banner";
@@ -29,6 +31,8 @@ import { SliderFilterPropertyInCities } from "./slider-filter-property-in-cities
   styleUrls: ["./slider-filter-search.scss"],
 })
 export class SliderFilterSearch {
+  private platformId = inject(PLATFORM_ID);
+  isBrowser = useIsBrowser();
   public themeLogo = "assets/images/logo/6.png";
   public title = "slider_filter_search";
   public footerClass = "footer-brown";
@@ -38,21 +42,14 @@ export class SliderFilterSearch {
   public theme_default9 = "#4b55c4";
 
   ngOnInit(): void {
-    document.documentElement.style.setProperty(
-      "--theme-default",
-      this.theme_default8,
-    );
-    document.documentElement.style.setProperty(
-      "--theme-default8",
-      this.theme_default8,
-    );
-    document.documentElement.style.setProperty(
-      "--theme-default9",
-      this.theme_default9,
-    );
+    if (!isPlatformBrowser(this.platformId)) return;
+    document.documentElement.style.setProperty("--theme-default", this.theme_default8);
+    document.documentElement.style.setProperty("--theme-default8", this.theme_default8);
+    document.documentElement.style.setProperty("--theme-default9", this.theme_default9);
   }
 
   ngOnDestroy(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
     document.documentElement.style.removeProperty("--theme-default");
     document.documentElement.style.removeProperty("--theme-default8");
     document.documentElement.style.removeProperty("--theme-default9");

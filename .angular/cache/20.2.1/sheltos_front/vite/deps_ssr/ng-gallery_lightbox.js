@@ -17,7 +17,7 @@ import {
   getRtlScrollAxisType,
   normalizePassiveListenerOptions,
   supportsScrollBehavior
-} from "./chunk-NXKZKV2K.js";
+} from "./chunk-7SXLDDDG.js";
 import "./chunk-JTTLFHVQ.js";
 import {
   animate,
@@ -28,9 +28,9 @@ import {
 } from "./chunk-NXM6WSU7.js";
 import {
   DomSanitizer
-} from "./chunk-4RK7KMN6.js";
-import "./chunk-2YFPFDSI.js";
+} from "./chunk-GZID7HS3.js";
 import "./chunk-WCFTBJOJ.js";
+import "./chunk-2YFPFDSI.js";
 import {
   Location,
   isPlatformBrowser

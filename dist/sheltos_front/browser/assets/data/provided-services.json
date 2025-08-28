@@ -1,0 +1,109 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "type": "corporate",
+      "img": "assets/images/svg/corporate/home-heart-service.svg",
+      "title": "Property Insurance",
+      "desc": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening."
+    },
+    {
+      "id": 2,
+      "type": "corporate",
+      "img": "assets/images/svg/corporate/customer-services.svg",
+      "title": "Fastest Service",
+      "desc": "This home provides wonderful entertaining spaces with a chef kitchen opening. Elegant retreat in a quiet Coral Gables setting."
+    },
+    {
+      "id": 3,
+      "type": "corporate",
+      "img": "assets/images/svg/corporate/shield.svg",
+      "title": "Largest Real Estate",
+      "desc": "A great name for a ranch surrounded by valley.This home provides wonderful entertaining space with kitchen opening."
+    },
+    {
+      "id": 4,
+      "type": ["enterprise", "modern", "modern_video"],
+      "icon": "home",
+      "title": "Property Management",
+      "desc": "Property management is the control, maintenance of real estate and physical property."
+    },
+    {
+      "id": 5,
+      "type": ["enterprise", "modern", "modern_video"],
+      "icon": "dollar-sign",
+      "title": "Mortgage Services",
+      "desc": "Residences can be classified by and how they are connected to neighbouring residences and land."
+    },
+    {
+      "id": 6,
+      "type": ["enterprise", "modern", "modern_video"],
+      "icon": "settings",
+      "title": "Currency Services",
+      "desc": "A currency is standardization of money in any form when use or circulation as medium of exchange."
+    },
+    {
+      "id": 7,
+      "type": ["enterprise", "modern", "modern_video"],
+      "icon": "bell",
+      "title": "Get important notifications",
+      "desc": "Residences can be classified by and how they are connected to neighbouring residences and land."
+    },
+    {
+      "id": 8,
+      "type": ["enterprise", "modern", "modern_video"],
+      "icon": "book-open",
+      "title": "Transparency",
+      "desc": "Apartments or flats on each floor and with shared entrance stairway access found in Britain."
+    },
+    {
+      "id": 9,
+      "type": ["enterprise", "modern", "modern_video"],
+      "icon": "map-pin",
+      "title": "Near by me",
+      "desc": "Residences can be classified by and how they are connected to neighbouring residences and land."
+    },
+    {
+      "id": 10,
+      "type": "classic",
+      "img": "assets/images/service/2.png",
+      "title": "Mortgage Services",
+      "desc": "Residences can be classified and connected to residences. Different types of housing can be used same physical type."
+    },
+    {
+      "id": 11,
+      "type": "classic",
+      "img": "assets/images/service/1.png",
+      "title": "Property Management",
+      "desc": "Property management is the operation, maintenance, and oversight of real estate and physical property."
+    },
+    {
+      "id": 12,
+      "type": "classic",
+      "img": "assets/images/service/3.png",
+      "title": "Currency Services",
+      "desc": "A currency is standardization of money in any form when use or circulation as medium of exchange."
+    },
+    {
+      "id": 13,
+      "type": "classic",
+      "img": "assets/images/service/4.png",
+      "title": "Important Notification",
+      "desc": "Residences can be classified and connected to residences. Different types of housing can be used same physical type."
+    },
+    {
+      "id": 14,
+      "type": "classic",
+      "img": "assets/images/service/5.png",
+      "title": "Near by me",
+      "desc": "Residences can be classified and connected to residences. Different types of housing can be used same physical type."
+    },
+    {
+      "id": 15,
+      "type": "classic",
+      "img": "assets/images/service/1.png",
+      "title": "Property Management",
+      "desc": "Property management is the operation, maintenance, and oversight of real estate and physical property."
+    }
+  ]
+}

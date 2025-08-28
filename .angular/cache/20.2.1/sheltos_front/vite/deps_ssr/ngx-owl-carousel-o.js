@@ -1,9 +1,6 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import "./chunk-JTTLFHVQ.js";
 import {
-  toObservable
-} from "./chunk-TJJCDTTA.js";
-import {
   animate,
   state,
   style,
@@ -11,13 +8,16 @@ import {
   trigger
 } from "./chunk-NXM6WSU7.js";
 import {
+  toObservable
+} from "./chunk-TJJCDTTA.js";
+import {
   ActivatedRoute,
   NavigationEnd,
   Router
-} from "./chunk-UHIEQJKW.js";
-import "./chunk-4RK7KMN6.js";
-import "./chunk-2YFPFDSI.js";
+} from "./chunk-X22SK23T.js";
+import "./chunk-GZID7HS3.js";
 import "./chunk-WCFTBJOJ.js";
+import "./chunk-2YFPFDSI.js";
 import {
   CommonModule,
   LocationStrategy,

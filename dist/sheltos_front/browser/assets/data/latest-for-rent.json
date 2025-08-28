@@ -1,0 +1,2035 @@
+{
+  "latestForRent": [
+    {
+      "id": 1,
+      "type": [
+        "slider_filter_search",
+        "image_content",
+        "typed_image",
+        "modern_video"
+      ],
+      "img": [
+        {
+          "url": "assets/video/video.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/22.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/21.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/23.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/24.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/25.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/22.jpg",
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "country": "FRANCE",
+      "title": "Little Acorn Farm",
+      "price": 6558,
+      "details": "Real estate is divided into several categories, including residential property, commercial property and industrial property.",
+      "bed": 1,
+      "bath": 1,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "March 25, 2023",
+      "rent": true,
+      "propertyType": "apartment",
+      "agencies": "Lincoln",
+      "params": ["apartment", "for_sale", "Lincoln", "b1", "ba1", "r2"]
+    },
+    {
+      "id": 2,
+      "type": [
+        "slider_filter_search",
+        "image_content",
+        "typed_image",
+        "modern_video"
+      ],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/23.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/21.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/22.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/23.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["fees", "openHouse"],
+      "country": "usa",
+      "title": "Home in Merrick Way",
+      "price": 4513,
+      "details": "This home provides wonderful entertaining spaces with a chef kitchen opening. Elegant retreat in a quiet Coral Gables setting..",
+      "bed": 2,
+      "bath": 1,
+      "sqft": 6000,
+      "rooms": 2,
+      "date": "December 1, 2023",
+      "propertyType": "family_house",
+      "agencies": "Blue Sky",
+      "params": ["family_house", "for_rent", "Lincoln", "b2", "ba1", "r2"]
+    },
+    {
+      "id": 3,
+      "type": [
+        "slider_filter_search",
+        "image_content",
+        "typed_image",
+        "modern_video"
+      ],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/21.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/22.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/23.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/21.jpg",
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "country": "FRANCE",
+      "title": "Allen's Across Way",
+      "price": 6558,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 2,
+      "bath": 2,
+      "sqft": 7000,
+      "rooms": 3,
+      "date": "June 20, 2023",
+      "rent": true,
+      "propertyType": "duplex",
+      "agencies": "Zephry",
+      "params": ["duplex", "for_sale", "Zephry", "b2", "ba2", "r3"]
+    },
+    {
+      "id": 4,
+      "type": [
+        "slider_filter_search",
+        "image_content",
+        "typed_image",
+        "modern_video"
+      ],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/25.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/24.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/22.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/25.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["fees", "openHouse"],
+      "country": "USA",
+      "title": "Merrick in Spring Way",
+      "price": 4513,
+      "details": "Real estate market in most countries are not as organize or efficient as markets for other, more liquid investment instruments.",
+      "bed": 2,
+      "bath": 1,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "February 6, 2019",
+      "propertyType": "duplex",
+      "agencies": "Premiere",
+      "params": ["duplex", "for_rent", "Premiere", "b2", "ba1", "r3"]
+    },
+    {
+      "id": 5,
+      "type": [
+        "slider_filter_search",
+        "image_content",
+        "typed_image",
+        "modern_video"
+      ],
+      "img": [
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/21.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/22.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/23.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/24.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/16.jpg",
+      "propertyStatus": "For Sale",
+      "country": "USA",
+      "title": "Merrick in Spring Way",
+      "price": 4513,
+      "details": "Real estate market in most countries are not as organize or efficient as markets for other, more liquid investment instruments.",
+      "bed": 3,
+      "bath": 2,
+      "sqft": 3000,
+      "rooms": 4,
+      "date": "April 6, 2023",
+      "rent": true,
+      "labels": ["sale"],
+      "propertyType": "villa",
+      "agencies": "Lincoln",
+      "params": ["villa", "for_sale", "Lincoln", "b3", "ba2", "r4"]
+    },
+    {
+      "id": 6,
+      "type": [
+        "slider_filter_search",
+        "image_content",
+        "typed_image",
+        "modern_video"
+      ],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/24.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/22.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/24.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["fees", "openHouse"],
+      "country": "FRANCE",
+      "title": "Little Acorn Farm",
+      "price": 6558,
+      "details": "Real estate is divided into several categories, including residential property, commercial property and industrial property.",
+      "bed": 5,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 5,
+      "date": "August 4, 2023",
+      "propertyType": "family_house",
+      "agencies": "Blue Sky",
+      "params": ["family_house", "for_rent", "Blue Sky", "b5", "ba4", "r5"]
+    },
+    {
+      "id": 7,
+      "type": "corporate",
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/9.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/10.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/11.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/12.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/9.jpg",
+      "propertyStatus": "For Sale",
+      "country": "FRANCE",
+      "title": "High Valley Fields",
+      "price": 5580,
+      "details": "A great name for a ranch surrounded by valleys. This home provides wonderful entertaining spaces with a chef kitchen opening.",
+      "home": "Virtual Home",
+      "bed": 1,
+      "bath": 1,
+      "sqft": 2500,
+      "rooms": 1,
+      "date": "June 27, 2023",
+      "rent": true,
+      "labels": ["sale"],
+      "propertyType": "office",
+      "agencies": "Lincoln",
+      "params": ["office", "for_sale", "Lincoln", "b1", "ba1", "r1"]
+    },
+    {
+      "id": 8,
+      "type": "corporate",
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/12.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/11.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/10.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/9.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/12.jpg",
+      "propertyStatus": "For Rent",
+      "country": "FRANCE",
+      "title": "Home in Merrick Way",
+      "price": 6558,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening.",
+      "home": "Virtual Home",
+      "bed": 1,
+      "bath": 1,
+      "sqft": 1500,
+      "rooms": 2,
+      "date": "June 20, 2023",
+      "propertyType": "duplex",
+      "agencies": "Premiere",
+      "labels": ["fees", "openHouse"],
+      "params": ["duplex", "for_rent", "Premiere", "b1", "ba1", "r2"]
+    },
+    {
+      "id": 9,
+      "type": "corporate",
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/11.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/13.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/15.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/11.jpg",
+      "country": "FRANCE",
+      "title": "Hillock Corner",
+      "price": 6558,
+      "details": "The most common and most absolute type of estate, the tenant enjoys the greatest discretion over the disposal of the property.",
+      "home": "Awesome Home",
+      "bed": 2,
+      "bath": 1,
+      "sqft": 1558,
+      "rooms": 3,
+      "date": "July 7, 2018",
+      "propertyStatus": "For Rent",
+      "propertyType": "apartment",
+      "agencies": "Zephry",
+      "labels": ["fees", "openHouse"],
+      "params": ["apartment", "for_rent", "Zephry", "b2", "ba1", "r3"]
+    },
+    {
+      "id": 10,
+      "type": "corporate",
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/13.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/15.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/13.jpg",
+      "propertyStatus": "For Rent",
+      "label": ["fees", "open house"],
+      "country": "FRANCE",
+      "title": "Hollybrook Nursery",
+      "price": 6558,
+      "details": "Real estate market in most countries are not as organize or efficient as markets for other, more liquid investment instruments.",
+      "home": "Virtual Home",
+      "bed": 3,
+      "bath": 1,
+      "sqft": 7430,
+      "rooms": 4,
+      "date": "August 4, 2023",
+      "propertyType": "family_house",
+      "agencies": "Blue Sky",
+      "labels": ["fees", "openHouse"],
+      "params": ["family_house", "for_rent", "Blue Sky", "b3", "ba1", "r4"]
+    },
+    {
+      "id": 11,
+      "type": "corporate",
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/15.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/13.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/12.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/15.jpg",
+      "propertyStatus": "For Rent",
+      "country": "FRANCE",
+      "title": "Merrick in Spring Way",
+      "price": 3000,
+      "details": "Interior design is a multifaceted profession that includes development, space planning, research, and execution of the design",
+      "home": "Virtual Home",
+      "bed": 5,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "September 6, 2017",
+      "rent": true,
+      "labels": ["sold"],
+      "propertyType": "villa",
+      "agencies": "Lincoln",
+      "params": ["villa", "for_rent", "Lincoln", "b5", "ba4", "r6"]
+    },
+    {
+      "id": 12,
+      "type": "corporate",
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/11.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/10.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/9.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/16.jpg",
+      "propertyStatus": "For Rent",
+      "country": "FRANCE",
+      "title": "Smith Family Farms",
+      "price": 2000,
+      "details": "The profession of interior design has been a consequence of the development of society and the complex architecture",
+      "home": "Virtual Home",
+      "bed": 1,
+      "bath": 2,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "October 1, 2023",
+      "propertyType": "apartment",
+      "agencies": "Premiere",
+      "labels": ["fees", "openHouse"],
+      "params": ["apartment", "for_rent", "Premiere", "b1", "ba2", "r1"]
+    },
+    {
+      "id": 13,
+      "type": "corporate",
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/12.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/11.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/17.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/12.jpg",
+      "propertyStatus": "For Rent",
+      "country": "FRANCE",
+      "title": "Merrick in Spring Way",
+      "price": 2000,
+      "details": "Decoration is the furnishing of a space with decorative elements, sometimes complemented by advice and practical assistance.",
+      "home": "Virtual Home",
+      "bed": 2,
+      "bath": 1,
+      "sqft": 1500,
+      "rooms": 2,
+      "date": "November 1, 2023",
+      "rent": true,
+      "propertyType": "apartment",
+      "agencies": "Zephry",
+      "labels": ["fees", "openHouse"],
+      "params": ["apartment", "for_rent", "Zephry", "b2", "ba1", "r2"]
+    },
+    {
+      "id": 14,
+      "type": "corporate",
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/17.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/13.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/15.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/17.jpg",
+      "country": "FRANCE",
+      "title": "Hillock Corner",
+      "price": 1558,
+      "details": "Design composing and coordinating colors together to create a stylish scheme on the interior architecture of the space.",
+      "home": "Virtual Home",
+      "bed": 3,
+      "bath": 3,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "December 1, 2019",
+      "propertyStatus": "For Sale",
+      "propertyType": "town_house",
+      "agencies": "Blue Sky",
+      "labels": ["sold"],
+      "params": ["town_house", "for_sale", "Blue Sky", "b3", "ba3", "r3"]
+    },
+    {
+      "id": 15,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/4.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/1.jpg",
+      "propertyStatus": "For Sale",
+      "propertyType": "villa",
+      "labels": ["sale"],
+      "country": "France",
+      "title": "Little Acorn Farm",
+      "price": 6558,
+      "details": "The most common and most absolute type of estate, the tenant enjoys the greatest discretion over the disposal of the property.",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "August 4, 2023",
+      "agencies": "Lincoln",
+      "params": ["villa", "for_sale", "Lincoln", "b4", "ba4", "r1"]
+    },
+    {
+      "id": 16,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/2.jpg",
+      "propertyStatus": "For Sale",
+      "propertyType": "family_house",
+      "labels": ["fees", "openHouse"],
+      "country": "brazil",
+      "title": "Magnolia Ranch",
+      "price": 9554,
+      "details": "Real estate is divided into several categories, including residential property, commercial property and industrial property.",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "May 14, 2023",
+      "agencies": "Zephry",
+      "params": ["family_house", "for_sale", "Zephry", "b4", "ba4", "r1"]
+    },
+    {
+      "id": 17,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/4.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/3.jpg",
+      "propertyStatus": "For Sale",
+      "propertyType": "duplex",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Merrick in Spring Way",
+      "price": 4513,
+      "details": "An interior designer is someone who plans,researches,coordinates,management and manages such enhancement projects.",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "December 1, 2023",
+      "agencies": "Lincoln",
+      "params": ["duplex", "for_sale", "Lincoln", "b4", "ba4", "r1"]
+    },
+    {
+      "id": 18,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/6.jpg",
+      "propertyStatus": "For Sale",
+      "propertyType": "office",
+      "labels": ["sale"],
+      "country": "France",
+      "title": "Allen's Across Way",
+      "price": 6558,
+      "details": "This home provides wonderful entertaining spaces with a chef kitchen opening. Elegant retreat in a quiet Coral Gables setting..",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "June 20, 2023",
+      "agencies": "Lincoln",
+      "params": ["office", "for_sale", "Lincoln", "b4", "ba4", "r1"]
+    },
+    {
+      "id": 19,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/7.jpg",
+      "propertyStatus": "For Sale",
+      "propertyType": "apartment",
+      "labels": ["fees", "openHouse"],
+      "country": "brazil",
+      "title": "Hidden Spring Hideway",
+      "price": 9554,
+      "details": "Real estate market in most countries are not as organize or efficient as markets for other, more liquid investment instruments.",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "July 18, 2023",
+      "agencies": "Lincoln",
+      "params": ["apartment", "for_sale", "Lincoln", "b4", "ba4", "r1"]
+    },
+    {
+      "id": 20,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/6.jpg",
+      "propertyStatus": "For Sale",
+      "propertyType": "family_house",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Home in Merrick Way",
+      "price": 4513,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "January 6, 2023",
+      "agencies": "Lincoln",
+      "params": ["family_house", "for_sale", "Lincoln", "b4", "ba4", "r1"]
+    },
+    {
+      "id": 21,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/8.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/8.jpg",
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Home in Merrick Way",
+      "price": 4513,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 1,
+      "date": "January 20, 2023",
+      "propertyType": "villa",
+      "agencies": "Lincoln",
+      "params": ["villa", "for_sale", "Lincoln", "b4", "ba4", "r1"]
+    },
+    {
+      "id": 22,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/6.jpg",
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "country": "France",
+      "title": "Allen's Across Way",
+      "price": 9554,
+      "details": "This home provides wonderful entertaining spaces with a chef kitchen opening. Elegant retreat in a quiet Coral Gables setting..",
+      "bed": 3,
+      "bath": 1,
+      "sqft": 1000,
+      "rooms": 1,
+      "date": "January 6, 2023",
+      "propertyType": "villa",
+      "agencies": "Lincoln",
+      "params": ["villa", "for_sale", "Lincoln", "b3", "ba1", "r1"]
+    },
+    {
+      "id": 23,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/7.jpg",
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "country": "brazil",
+      "title": "Hidden Spring Hideway",
+      "price": 6558,
+      "details": "Real estate market in most countries are not as organize or efficient as markets for other, more liquid investment instruments.",
+      "bed": 5,
+      "bath": 3,
+      "sqft": 4500,
+      "rooms": 1,
+      "date": "June 20, 2023",
+      "propertyType": "villa",
+      "agencies": "Lincoln",
+      "params": ["villa", "for_sale", "Lincoln", "b5", "ba3", "r1"]
+    },
+    {
+      "id": 24,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/4.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/4.jpg",
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "country": "brazil",
+      "title": "Merrick in Spring Way",
+      "price": 4513,
+      "details": "Real estate market in most countries are not as organize or efficient as markets for other, more liquid investment instruments.",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "December 1, 2023",
+      "propertyType": "family_house",
+      "agencies": "Zephry",
+      "params": ["family_house", "for_sale", "Zephry", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 25,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/8.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/5.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["fees", "openHouse"],
+      "country": "brazil",
+      "title": "Allen’s Acres Way",
+      "price": 9554,
+      "details": "The most common and most absolute type of estate, the tenant enjoys the greatest discretion over the disposal of the property.",
+      "bed": 3,
+      "bath": 1,
+      "sqft": 1000,
+      "rooms": 3,
+      "date": "January 6, 2023",
+      "propertyType": "family_house",
+      "agencies": "Zephry",
+      "params": ["family_house", "for_rent", "Zephry", "b3", "ba1", "r3"]
+    },
+    {
+      "id": 26,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/8.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/7.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Hidden Spring Hideaway",
+      "price": 6558,
+      "details": "This home provides wonderful entertaining spaces with a chef kitchen opening. Elegant retreat in a quiet Coral Gables setting...",
+      "bed": 5,
+      "bath": 3,
+      "sqft": 4500,
+      "rooms": 3,
+      "date": "June 20, 2023",
+      "propertyType": "family_house",
+      "agencies": "Zephry",
+      "params": ["family_house", "for_rent", "Zephry", "b5", "ba3", "r3"]
+    },
+    {
+      "id": 27,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/8.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/4.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/8.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "brazil",
+      "title": "Passion For Property",
+      "price": 9554,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "July 20, 2023",
+      "propertyType": "town_house",
+      "agencies": "Lincoln",
+      "params": ["town_house", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 28,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/7.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Precious Properties",
+      "price": 5446,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "May 10, 2023",
+      "propertyType": "town_house",
+      "agencies": "Lincoln",
+      "params": ["town_house", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 29,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/4.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/6.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "France",
+      "title": "Property Professionals",
+      "price": 6558,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "December 8, 2023",
+      "propertyType": "town_house",
+      "agencies": "Lincoln",
+      "params": ["town_house", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 30,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/10.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/9.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/8.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/10.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "brazil",
+      "title": "Perfect Placements",
+      "price": 9775,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "December 25, 2023",
+      "propertyType": "apartment",
+      "agencies": "Lincoln",
+      "params": ["apartment", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 31,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/8.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/5.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Little Magnolia Ranch",
+      "price": 3225,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "January 25, 2023",
+      "propertyType": "apartment",
+      "agencies": "Lincoln",
+      "params": ["apartment", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 32,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/4.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/6.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Hidden Spring Hideaway",
+      "price": 6558,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 5,
+      "bath": 3,
+      "sqft": 4500,
+      "rooms": 3,
+      "date": "June 20, 2023",
+      "propertyType": "apartment",
+      "agencies": "Lincoln",
+      "params": ["apartment", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 33,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/9.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/8.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/6.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/9.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Merrick in Spring Way",
+      "price": 3225,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "January 25, 2023",
+      "propertyType": "office",
+      "agencies": "Lincoln",
+      "params": ["office", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 34,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/4.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/2.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "France",
+      "title": "Property Professionals",
+      "price": 6558,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 3,
+      "date": "December 8, 2023",
+      "propertyType": "office",
+      "agencies": "Lincoln",
+      "params": ["office", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 35,
+      "type": ["enterprise", "modern", "modern_video"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/3.jpg",
+      "propertyStatus": "For Rent",
+      "labels": ["sale"],
+      "country": "usa",
+      "title": "Hidden Spring Hideaway",
+      "price": 6558,
+      "details": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening…",
+      "bed": 5,
+      "bath": 3,
+      "sqft": 4500,
+      "rooms": 3,
+      "date": "June 20, 2023",
+      "propertyType": "office",
+      "agencies": "Lincoln",
+      "params": ["office", "for_rent", "Lincoln", "b4", "ba4", "r3"]
+    },
+    {
+      "id": 36,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/12.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/12.jpg",
+      "country": "USA",
+      "title": "How Much is My House Worth",
+      "details": "This home provides entertaining spaces with kitchen opening",
+      "price": 2558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual office",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 1000,
+      "rooms": 2,
+      "date": "2023"
+    },
+    {
+      "id": 37,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/13.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/13.jpg",
+      "country": "USA",
+      "title": "How Much is My Land Worth",
+      "details": "This home provides kitchen opening with entertaining spaces.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual office",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023"
+    },
+    {
+      "id": 38,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/14.jpg",
+      "country": "USA",
+      "title": "How Much is My Office Worth..",
+      "details": "This Office provides Comfortable spaces with open area.",
+      "price": 2558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual land",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 4500,
+      "rooms": 3,
+      "date": "2023"
+    },
+    {
+      "id": 39,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/13.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/13.jpg",
+      "country": "USA",
+      "title": "How Much is My House Worth",
+      "details": "This home provides kitchen opening with entertaining spaces.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023"
+    },
+    {
+      "id": 40,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/12.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/12.jpg",
+      "country": "USA",
+      "title": "Eminent Estate Services",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 4525,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 4000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "apartment",
+      "propertyTab": 1
+    },
+    {
+      "id": 41,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/13.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/13.jpg",
+      "country": "USA",
+      "title": "Monumental Real Estate Services",
+      "details": "Different types of housing can be used same physical type.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "family_house",
+      "propertyTab": 1
+    },
+    {
+      "id": 42,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/14.jpg",
+      "country": "USA",
+      "title": "Dickson & Holmes Property Co.",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 3000,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 1000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "duplex",
+      "propertyTab": 1
+    },
+    {
+      "id": 43,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/15.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/15.jpg",
+      "country": "USA",
+      "title": "Luxxe Choice Real Estate",
+      "details": "Different types of housing can be used same physical type.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "office",
+      "propertyTab": 1
+    },
+    {
+      "id": 44,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/16.jpg",
+      "country": "USA",
+      "title": "Homerus Realty Agents",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 2000,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 900,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "town_house",
+      "propertyTab": 1
+    },
+    {
+      "id": 45,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/14.jpg",
+      "country": "USA",
+      "title": "How Much is My House Worth",
+      "details": "Different types of housing can be used same physical type.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "villa",
+      "propertyTab": 1
+    },
+    {
+      "id": 46,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/14.jpg",
+      "country": "USA",
+      "title": "How Much is My House Worth",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "apartment",
+      "propertyTab": 2
+    },
+    {
+      "id": 46,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/12.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/12.jpg",
+      "country": "USA",
+      "title": "How Much is My House Worth",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 7854,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 6000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "villa",
+      "propertyTab": 2
+    },
+    {
+      "id": 47,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/13.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/13.jpg",
+      "country": "USA",
+      "title": "Homerus Realty Agents",
+      "details": "Different types of housing can be used same physical type.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "family_house",
+      "propertyTab": 2
+    },
+    {
+      "id": 48,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/14.jpg",
+      "country": "USA",
+      "title": "How Much is My House Worth",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 5000,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 4000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "town_house",
+      "propertyTab": 2
+    },
+    {
+      "id": 49,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/15.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/15.jpg",
+      "country": "USA",
+      "title": "Luxxe Choice Real Estate",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "duplex",
+      "propertyTab": 2
+    },
+    {
+      "id": 50,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/16.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/16.jpg",
+      "country": "USA",
+      "title": "How Much is My House Worth",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "apartment",
+      "propertyTab": 2
+    },
+    {
+      "id": 51,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/20.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/20.jpg",
+      "country": "USA",
+      "title": "Luxxe Choice Real Estate",
+      "details": "Different types of housing can be used same physical type.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "apartment",
+      "propertyTab": 3
+    },
+    {
+      "id": 52,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/21.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/21.jpg",
+      "country": "USA",
+      "title": "Homerus Realty Agents",
+      "details": "apartment An individual unit in a multi-unit building.",
+      "price": 2000,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 900,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "villa",
+      "propertyTab": 3
+    },
+    {
+      "id": 53,
+      "type": ["classic", "search_tab"],
+      "img": [
+        {
+          "url": "assets/video/video2.mp4",
+          "fileType": "video"
+        },
+        {
+          "url": "assets/images/property/22.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumbnail": "assets/images/property/22.jpg",
+      "country": "USA",
+      "title": "How Much is My House Worth",
+      "details": "Different types of housing can be used same physical type.",
+      "price": 6558,
+      "propertyStatus": "For Sale",
+      "labels": ["sale"],
+      "home": "Virtual Home",
+      "bed": 4,
+      "bath": 4,
+      "sqft": 5000,
+      "rooms": 6,
+      "date": "2023",
+      "propertyType": "family_house",
+      "propertyTab": 3
+    }
+  ]
+}

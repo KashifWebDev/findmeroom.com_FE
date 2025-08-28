@@ -1,6 +1,5 @@
 import { Component, inject, input, PLATFORM_ID } from "@angular/core";
 
-import * as feather from "feather-icons";
 import { useIsBrowser } from "../../../utils/platform";
 import { isPlatformBrowser } from "@angular/common";
 
@@ -28,8 +27,6 @@ export class FeatherIcons {
   }
 
   ngOnInit() {
-    setTimeout(() => {
-      feather.replace();
-    });
+    // Do nothing on init for SSR safety; replacement happens in ngAfterViewInit on browser
   }
 }

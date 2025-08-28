@@ -1,0 +1,61 @@
+{
+  "pricingPlan": [
+    {
+      "id": 1,
+      "type": "corporate",
+      "icon": "assets/images/svg/corporate/home-heart.svg",
+      "heading": "Personal",
+      "desc": "Residential design is the design of the interior of private residences.",
+      "details": [
+        {
+          "data": "Entertaining spaces with kitchen opening."
+        },
+        {
+          "data": "Elegant retreat in a quiet setting."
+        },
+        {
+          "data": "Apartment An individual multi-unit building."
+        }
+      ],
+      "price": 120
+    },
+    {
+      "id": 2,
+      "type": "corporate",
+      "icon": "assets/images/svg/corporate/home-lock.svg",
+      "heading": "Professional",
+      "desc": "Elegant retreat in a quiet Coral Gables setting. This home provides opening.",
+      "details": [
+        {
+          "data": "house is a single-unit residential building."
+        },
+        {
+          "data": "This House provides opening."
+        },
+        {
+          "data": "Location of resources will draw attention."
+        }
+      ],
+      "price": 310
+    },
+    {
+      "id": 3,
+      "type": "corporate",
+      "icon": "assets/images/svg/corporate/homes.svg",
+      "heading": "Business",
+      "desc": "Apartment An individual multi-unit building. Elegant Coral Gables setting.",
+      "details": [
+        {
+          "data": "Development team work together in ways."
+        },
+        {
+          "data": "Apartment individual multi-unit building."
+        },
+        {
+          "data": "great name for ranch surrounded by valleys."
+        }
+      ],
+      "price": 430
+    }
+  ]
+}
