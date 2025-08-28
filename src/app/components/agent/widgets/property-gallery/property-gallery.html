@@ -1,0 +1,81 @@
+<h2>Gallery</h2>
+<p class="font-roboto">Add your property Media</p>
+<label>Media</label>
+{{ file.length }}
+<form
+  class="customize-dropzone"
+  [ngClass]="{
+    'is-invalid': file.length < 1 && validation,
+    'is-valid': file.length >= 1,
+  }"
+>
+  <dropzone
+    [message]="text"
+    [config]="dropzoneConfig"
+    (addedFile)="onFileAdded($event)"
+    (removedFile)="onFileRemoved($event)"
+  />
+</form>
+<form class="row gx-3">
+  <div class="form-group col-sm-12">
+    <label>Video (mp4)</label>
+    <input type="text" class="form-control" placeholder="mp4 video link" />
+  </div>
+  <div class="form-group col-sm-12">
+    <label>Additional features</label>
+    <div class="feature-checkbox">
+      <label for="chk-ani">
+        <input class="checkbox_animated color-2" id="chk-ani" type="checkbox" />
+        Emergency Exit
+      </label>
+      <label for="chk-ani1">
+        <input
+          class="checkbox_animated color-2"
+          id="chk-ani1"
+          type="checkbox"
+        />
+        CCTV
+      </label>
+      <label for="chk-ani2">
+        <input
+          class="checkbox_animated color-2"
+          id="chk-ani2"
+          type="checkbox"
+        />
+        Free Wi-Fi
+      </label>
+      <label for="chk-ani3">
+        <input
+          class="checkbox_animated color-2"
+          id="chk-ani3"
+          type="checkbox"
+        />
+        Free Parking In The Area
+      </label>
+      <label for="chk-ani4">
+        <input
+          class="checkbox_animated color-2"
+          id="chk-ani4"
+          type="checkbox"
+        />
+        Air Conditioning
+      </label>
+    </div>
+  </div>
+</form>
+<div class="next-btn d-flex">
+  <button
+    type="button"
+    class="btn btn-dashed color-2 prev2 btn-pill"
+    (click)="previous()"
+  >
+    <i class="fas fa-arrow-left me-2"></i> Previous
+  </button>
+  <button
+    type="button"
+    class="btn btn-gradient color-2 next3 btn-pill"
+    (click)="next()"
+  >
+    Next <i class="fas fa-arrow-right ms-2"></i>
+  </button>
+</div>

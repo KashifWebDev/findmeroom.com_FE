@@ -1,0 +1,24 @@
+<section class="ratio2_1 simple-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Latest'"
+          [heading]="'Blog'"
+          [desc]="desc"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="svgClass()!"
+        />
+        <div class="blog-2">
+          <app-latest-blog
+            [latestBlogData]="latestBlogData"
+            [type]="'simple'"
+            [tagClass]="tagClass()"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

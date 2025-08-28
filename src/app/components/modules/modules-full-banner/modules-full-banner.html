@@ -1,0 +1,64 @@
+<section class="banner-inner banner-section layout2-bg parallax-image">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        @for (data of bannerData1; track data) {
+          <div class="banner-2 ratio2_3">
+            <app-banner [bannerData]="data" [type]="'classic'" />
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner-section layout1-bg parallax-image">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'Buy Or Sell'"
+          [type]="'simple'"
+          [tagClass]="'color-1'"
+        />
+        @for (data of bannerData2; track data) {
+          <app-banner
+            [bannerData]="data"
+            [type]="'simple'"
+            [tagClass]="'color-1'"
+            [buttonClass]="'btn-pill'"
+          />
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner-section layout3-bg parallax-image">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        @for (data of bannerData3; track data) {
+          <app-banner
+            [bannerData]="data"
+            [type]="'basic'"
+            [tagClass]="'color-3'"
+          />
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-section bg-light brand-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="slide-2 brand-slider">
+          <app-brand [brandData]="brandData1" [type]="'basic'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

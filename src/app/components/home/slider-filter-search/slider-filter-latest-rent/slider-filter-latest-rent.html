@@ -1,0 +1,49 @@
+<section
+  class="property-section"
+  [ngClass]="{
+    'property-color-6': propertyClass() === true,
+    'property-list-view': listView() === true,
+  }"
+>
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col">
+        <app-title
+          [titleClass]="titleClass()"
+          [tag]="'Rent'"
+          [heading]="heading()"
+          [textWhite]="false"
+          [type]="type()"
+          [tagClass]="tagClass()"
+          [desc]="desc()"
+        />
+      </div>
+    </div>
+    <div
+      class="property-2 row column-space"
+      [ngClass]="{
+        'color-6': propertyClass() === true,
+        'color-1': propertyClass() === false,
+        'zoom-gallery property-grid list-view': listView() === true,
+      }"
+    >
+      @for (data of latestForRentData | slice: 0 : total(); track data) {
+        <div
+          [ngClass]="{
+            'col-xl-6 wow fadeInUp': listView() === true,
+            'col-xl-4 col-md-6 wow fadeInUp': listView() === false,
+          }"
+        >
+          <app-property-box
+            [latestForRentData]="data"
+            [type]="'basic'"
+            [textColor]="true"
+            [tagClass]="tagClass()"
+            [data]="total()"
+            [listView]="listView()"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</section>

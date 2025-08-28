@@ -1,0 +1,99 @@
+<div class="row gx-2">
+  <div class="col-md-6">
+    <label>Property Status</label>
+    <select class="form-control">
+      <option value="">Property Status</option>
+      @for (status of propertyStatus; track status) {
+        <option value="{{ status.value }}">{{ status.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label>Property Type</label>
+    <select class="form-control">
+      <option value="">Property Type</option>
+      @for (type of propertyType; track type) {
+        <option value="{{ type.value }}">{{ type.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-sm-6">
+    <label>Max Rooms</label>
+    <select class="form-control">
+      <option value="">Max Rooms</option>
+      @for (room of rooms; track room) {
+        <option value="{{ room.value }}">{{ room.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-6">
+    <label>Bed</label>
+    <select class="form-control">
+      <option value="">Bed</option>
+      @for (bed of beds; track bed) {
+        <option value="{{ bed.value }}">{{ bed.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-6">
+    <label>Bath</label>
+    <select class="form-control">
+      <option value="">Bath</option>
+      @for (bath of baths; track bath) {
+        <option value="{{ bath.value }}">{{ bath.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-sm-6">
+    <label>Agencies</label>
+    <select class="form-control">
+      <option value="">Agencies</option>
+      @for (agency of agency; track agency) {
+        <option value="{{ agency.value }}">{{ agency.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-lg-12">
+    <div class="price-range">
+      <label for="amount"
+        >Price :
+        {{ priceMinValue | currencySymbol: propertyService.Currency }} -
+        {{ priceMaxValue | currencySymbol: propertyService.Currency }}</label
+      >
+      <div id="slider-range" class="theme-range-4">
+        @if(isBrowser){
+          <ngx-slider
+            [(value)]="priceMinValue"
+            [(highValue)]="priceMaxValue"
+            [options]="options"
+          />
+        }
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <div class="price-range">
+      <label for="amount"
+        >Area : {{ areaMinValue }} - {{ areaMaxValue }} sq ft</label
+      >
+      <div id="slider-range1" class="theme-range-4">
+        @if(isBrowser){
+          <ngx-slider
+            [(value)]="areaMinValue"
+            [(highValue)]="areaMaxValue"
+            [options]="options"
+          />
+        }
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <button
+      type="button"
+      class="btn btn-gradient color-4 mt-2"
+      [routerLink]="['/listing/grid-view/2-grid/left-sidebar']"
+    >
+      Search
+    </button>
+  </div>
+</div>

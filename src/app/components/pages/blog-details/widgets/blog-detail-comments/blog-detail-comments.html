@@ -1,0 +1,21 @@
+<div class="media" [ngClass]="{ 'inner-comment': commentsData()?.right }">
+  <img [src]="commentsData()?.img" class="img-fluid" alt="user" />
+  <div class="media-body">
+    <div class="comment-title">
+      <div class="comment-user">
+        <i class="fa fa-user"></i>
+        <h6>{{ commentsData()?.name }}</h6>
+      </div>
+      <div class="comment-date">
+        <i class="fas fa-clock"></i>
+        <h6>{{ commentsData()?.date }}</h6>
+      </div>
+    </div>
+    <div class="comment-detail">
+      <p class="font-roboto">{{ commentsData()?.description }}</p>
+    </div>
+    <div class="text-end">
+      <a href="javascript:void(0)"><i class="fa fa-reply pe-2"></i> Reply</a>
+    </div>
+  </div>
+</div>

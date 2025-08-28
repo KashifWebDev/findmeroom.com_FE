@@ -1,0 +1,119 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+  [type]="'effect'"
+/>
+
+<section class="about-main">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [type]="'basic'"
+          [heading]="'About Us'"
+          [desc]="aboutDesc"
+          [descClass]="'font-roboto'"
+        />
+        <div class="user-about">
+          <app-about-us2-details />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-section service-2 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [type]="'basic'"
+          [heading]="'Provided Services'"
+          [desc]="providedServiceDesc"
+          [descClass]="'font-roboto'"
+        />
+        <div class="row property-service column-space about-service">
+          @for (data of providedServices; track data) {
+            <div class="col-xl-4 col-md-6">
+              <app-provided-services
+                [providedServices]="data"
+                [type]="'simple'"
+                [tagClass]="tagClass"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section slick-between about-inner ratio_square">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [type]="'basic'"
+          [heading]="'Meet our Agent'"
+          [desc]="agentsDesc"
+          [descClass]="'font-roboto'"
+        />
+        <div class="about-1 about-wrap arrow-white">
+          <app-agents
+            [agentsData]="agentsData"
+            [type]="'simple'"
+            [tagClass]="tagClass"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light about-people testimonial-style-1">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [type]="'basic'"
+          [heading]="'What People Say'"
+          [desc]="peopleSayDesc"
+          [descClass]="'font-roboto'"
+        />
+        <div class="slick-between">
+          <div class="testimonial-1 dot-gradient">
+            <app-people-say [peopleSayData]="peopleSayData" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ratio2_1 blog-inner">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [type]="'basic'"
+          [heading]="'Latest Blog'"
+          [desc]="blogDesc"
+          [descClass]="'font-roboto'"
+        />
+        <div class="blog-2 blog-grid">
+          <app-latest-blog
+            [latestBlogData]="latestBlogData"
+            [type]="'simple'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

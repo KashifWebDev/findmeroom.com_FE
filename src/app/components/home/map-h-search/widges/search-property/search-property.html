@@ -1,0 +1,40 @@
+<section class="home-section layout-1 layout-map p-0 bg-light map-search">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 withmap-horizontal">
+        <div class="search-panel">
+          <div class="row width-fit">
+            @for (data of propertySearchData; track data) {
+              <div class="col filter">
+                <div class="media">
+                  <div class="icon-square">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4>{{ data.heading }}</h4>
+                    <select class="dropdown">
+                      @for (listData of data.listData; track listData) {
+                        <option class="dropdown-toggle">
+                          {{ listData.data }}
+                        </option>
+                      }
+                    </select>
+                  </div>
+                  <div class="dropdown-icon">
+                    <span class="d-block"><i class="fas fa-angle-up"></i></span>
+                    <span><i class="fas fa-angle-down"></i></span>
+                  </div>
+                </div>
+                @if (data.button === true) {
+                  <a href="javascript:void(0)" class="btn btn-gradient color-4">
+                    Search
+                  </a>
+                }
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

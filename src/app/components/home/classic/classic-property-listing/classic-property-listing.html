@@ -1,0 +1,64 @@
+<section class="property-section">
+  <div class="container">
+    <div class="row ratio_landscape">
+      <div class="col">
+        <div class="title-3 text-start d-flex">
+          <div>
+            <h2>Listing Property</h2>
+            <p class="font-roboto">
+              Elegant retreat in Coral Gables setting. This home provides
+              entertaining spaces with kitchen opening
+            </p>
+          </div>
+          <ul class="nav nav-tabs pagination-tab" id="top-tab" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                role="tab"
+                [ngClass]="{ 'active show': openTab === 1 }"
+                (click)="tabbed(1)"
+                style="cursor: pointer"
+                >1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                role="tab"
+                [ngClass]="{ 'active show': openTab === 2 }"
+                (click)="tabbed(2)"
+                style="cursor: pointer"
+                >2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                role="tab"
+                [ngClass]="{ 'active show': openTab === 3 }"
+                (click)="tabbed(3)"
+                style="cursor: pointer"
+                >3</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="top-tabContent">
+          <div class="tab-pane fade show active">
+            <div class="row list-property column-space no-slider-property">
+              @for (data of lookingForData; track data) {
+                <div class="col-xl-4 col-lg-6">
+                  <app-property-box
+                    [propertyListingDataClassic]="data"
+                    [type]="'standard'"
+                    [carousel]="false"
+                  />
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

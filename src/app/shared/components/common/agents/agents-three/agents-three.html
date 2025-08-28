@@ -1,0 +1,77 @@
+@if (agentsData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of agentsData(); track data) {
+      <ng-template carouselSlide>
+        <div style="margin-right: 35px">
+          <div class="about-box wow fadeInUp">
+            <div
+              class="bg-size agent-image"
+              [style.background-image]="'url( ' + data.img + ' )'"
+            >
+              <img
+                [src]="data.img"
+                class="bg-img"
+                alt="user-image"
+                style="display: none"
+              />
+              <div class="overlay-agent">
+                <div class="agent-details">
+                  <a
+                    href="javascript:void(0)"
+                    [routerLink]="['/agent/agent-profile']"
+                  >
+                    <h6 class="d-flex">
+                      {{ data.name
+                      }}<span class="label-heart color-4 ms-2"
+                        ><i class="fas fa-heart"></i
+                      ></span>
+                    </h6>
+                  </a>
+                  <h5>{{ data.title }}</h5>
+                  <p class="font-roboto">{{ data.desc }}</p>
+                  <span class="font-roboto">{{ data.email }}</span>
+                  <ul class="img-item">
+                    <li>
+                      <a
+                        href="https://accounts.google.com/"
+                        tabindex="0"
+                        target="_blank"
+                        ><img
+                          src="assets/images/about/icon-1.png"
+                          alt="Google"
+                          style="width: auto"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/"
+                        tabindex="0"
+                        target="_blank"
+                        ><img
+                          src="assets/images/about/icon-2.png"
+                          alt="Twitter"
+                          style="width: auto"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/"
+                        tabindex="0"
+                        target="_blank"
+                        ><img
+                          src="assets/images/about/icon-3.png"
+                          alt="Facebook"
+                          style="width: auto"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

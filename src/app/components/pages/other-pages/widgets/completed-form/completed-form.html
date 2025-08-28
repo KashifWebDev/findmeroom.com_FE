@@ -1,0 +1,62 @@
+<div class="title-3 text-start">
+  <h2>complete details</h2>
+</div>
+<div class="input-data">
+  <div class="account-content">
+    <h3>Account information</h3>
+    @if (accountData()) {
+      <ul>
+        <li>
+          Name : <span class="first_name">{{ accountData()?.user_name }}</span>
+        </li>
+        <li>
+          phone number :
+          <span class="phone_number">{{ accountData()?.mobile }}</span>
+        </li>
+        <li>
+          Email : <span class="email_add">{{ accountData()?.email }}</span>
+        </li>
+      </ul>
+    }
+  </div>
+  <div class="account-content">
+    <h3>Location Details</h3>
+    @if (addressData()) {
+      <ul>
+        <li>
+          Address :
+          <span class="address-type">{{ addressData()?.address }}</span>
+        </li>
+        <li>
+          city : <span class="city-name">{{ addressData()?.city }}</span>
+        </li>
+        <li>
+          state : <span class="state-name">{{ addressData()?.state }}</span>
+        </li>
+        <li>
+          country :
+          <span class="country-name">{{ addressData()?.country }}</span>
+        </li>
+        <li>
+          pincode : <span class="pin-code">{{ addressData()?.pin_code }}</span>
+        </li>
+      </ul>
+    }
+  </div>
+</div>
+<div class="next-btn d-flex">
+  <button
+    type="button"
+    class="btn btn-dashed color-2 prev2 btn-pill"
+    (click)="previous()"
+  >
+    <i class="fas fa-arrow-left me-2"></i> Previous
+  </button>
+  <button
+    type="button"
+    class="btn btn-gradient color-2 next3 btn-pill"
+    (click)="submit()"
+  >
+    submit
+  </button>
+</div>

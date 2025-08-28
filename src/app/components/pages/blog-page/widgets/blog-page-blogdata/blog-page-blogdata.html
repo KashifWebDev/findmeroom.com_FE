@@ -1,0 +1,70 @@
+<div class="blog-wrap wow fadeInUp">
+  <div
+    class="blog-image"
+    [ngClass]="{
+      'order-md-1': latestBlogData()?.right && type() === 'creative',
+    }"
+  >
+    @if (masonry()) {
+      <div class="blog-wrap">
+        <div class="blog-image">
+          <div>
+            <img [src]="latestBlogData()?.img" class="img-fluid" alt="image" />
+          </div>
+          <div class="blog-label">
+            <div>
+              <h3>{{ latestBlogData()?.date }}</h3>
+              <span>{{ latestBlogData()?.month }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    } @else {
+      <div
+        class="bg-size"
+        [style.background-image]="'url(' + latestBlogData()?.img + ')'"
+      >
+        <img
+          [src]="latestBlogData()?.img"
+          class="img-fluid bg-img"
+          alt="image"
+          style="display: none"
+        />
+      </div>
+      @if (date()) {
+        <div class="blog-label">
+          <div>
+            <h3>{{ latestBlogData()?.date }}</h3>
+            <span>{{ latestBlogData()?.month }}</span>
+          </div>
+        </div>
+      }
+    }
+  </div>
+  <div
+    class="blog-details"
+    [ngClass]="{
+      'text-md-end': latestBlogData()?.right && type() === 'creative',
+    }"
+  >
+    <div>
+      <span>
+        <app-feather-icons [icon]="'map-pin'" />
+        {{ latestBlogData()?.city }}</span
+      >
+      <h3>
+        <a
+          href="javascript:void(0)"
+          [routerLink]="['/page/blog-detail/left-sidebar']"
+          >{{ latestBlogData()?.title }}</a
+        >
+      </h3>
+      <p class="font-roboto">{{ latestBlogData()?.desc }}</p>
+      <a
+        href="javascript:void(0)"
+        [routerLink]="['/page/blog-detail/left-sidebar']"
+        >read more</a
+      >
+    </div>
+  </div>
+</div>

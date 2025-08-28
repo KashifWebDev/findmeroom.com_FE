@@ -1,0 +1,53 @@
+<div class="row review-form gx-3">
+  <div class="col-lg-4 col-md-6">
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        value=""
+        placeholder="Search your location "
+      />
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6">
+    <select class="form-control">
+      <option value="">Property Type</option>
+      @for (type of propertyType; track type) {
+        <option value="{{ type.value }}">{{ type.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-lg-4 col-sm-6">
+    <select class="form-control">
+      <option value="">Max Rooms</option>
+      @for (room of rooms; track room) {
+        <option value="{{ room.value }}">{{ room.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-lg-4 col-sm-6">
+    <select class="form-control">
+      <option value="">Bed</option>
+      @for (bed of beds; track bed) {
+        <option value="{{ bed.value }}">{{ bed.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-lg-4 col-sm-6">
+    <select class="form-control">
+      <option value="">Bath</option>
+      @for (bath of baths; track bath) {
+        <option value="{{ bath.value }}">{{ bath.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="col-lg-4 col-md-6">
+    <button
+      type="button"
+      class="btn btn-gradient color-4"
+      [routerLink]="['/listing/grid-view/2-grid/left-sidebar']"
+    >
+      Search
+    </button>
+  </div>
+</div>

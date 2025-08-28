@@ -1,0 +1,83 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="service-section service-1">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Property Services'"
+          [desc]="desc1"
+          [type]="'basic'"
+        />
+        <div class="row property-service column-space">
+          @for (data of providedServices1; track data) {
+            <div class="col-xl-4 col-md-6 wow fadeInUp">
+              <app-provided-services
+                [providedServices]="data"
+                [type]="'basic'"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-section service-2 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Provided'"
+          [heading]="'Services'"
+          [desc]="desc2"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="false"
+        />
+        <div class="row property-service column-space">
+          @for (data of providedServices2; track data) {
+            <div class="col-xl-4 col-md-6 wow fadeInUp">
+              <app-provided-services
+                [providedServices]="data"
+                [type]="'simple'"
+                [tagClass]="'color-3'"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-section service-bg modules-service-layout">
+  <div class="container">
+    <app-title
+      [titleClass]="'title-3 text-start'"
+      [heading]="'Property Services'"
+      [desc]="desc3"
+      [type]="'basic'"
+    />
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="service-slider arrow-gradient arrow-right">
+          <app-provided-services
+            [providedServicesData]="providedServices3"
+            [type]="'classic'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

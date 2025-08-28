@@ -1,0 +1,39 @@
+<div class="common-card overview">
+  <div class="common-header">
+    <h5>Sales overview</h5>
+  </div>
+  <ul class="overview-content">
+    @for (data of salesOverviewCommonData; track data) {
+      <li>
+        <div class="d-flex">
+          <div>
+            <p>{{ data.title }}</p>
+            <h4>${{ data.earned }}</h4>
+          </div>
+          <span
+            ><span class="label label-{{ data.labelColor }}">{{
+              data.pr
+            }}</span></span
+          >
+        </div>
+      </li>
+    }
+  </ul>
+  <div id="overviewchart">
+    <apx-chart
+      [series]="salesOverViewChartData.series"
+      [chart]="salesOverViewChartData.chart"
+      [markers]="salesOverViewChartData.markers"
+      [dataLabels]="salesOverViewChartData.dataLabels"
+      [stroke]="salesOverViewChartData.stroke"
+      [legend]="salesOverViewChartData.legend"
+      [colors]="salesOverViewChartData.colors"
+      [fill]="salesOverViewChartData.fill"
+      [grid]="salesOverViewChartData.grid"
+      [responsive]="salesOverViewChartData.responsive"
+      [yaxis]="salesOverViewChartData.yaxis"
+      [xaxis]="salesOverViewChartData.xaxis"
+      [tooltip]="salesOverViewChartData.tooltip"
+    />
+  </div>
+</div>

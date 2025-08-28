@@ -1,0 +1,33 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="portfolio-section portfolio-grid">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-grid-tab
+          [gridImagesData]="gridImagesData"
+          (imagesData)="receiveChildData($event)"
+        />
+        <div
+          class="column-sm row grid ratio2_3 zoom-gallery-multiple"
+          gallerize
+        >
+          @for (images of imagesData; track images; let i = $index) {
+            <div class="col-lg-4 col-sm-6 sale grid-item wow fadeInUp">
+              <app-common-grid-images
+                [imagesData]="images"
+                [index]="i"
+                [gridTitle]="true"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

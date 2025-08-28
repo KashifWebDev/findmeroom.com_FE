@@ -1,0 +1,27 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="ratio_landscape blog-list-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 col-lg-8">
+        <div class="blog-list row">
+          @for (data of latestBlogData; track data) {
+            <div class="col-md-12">
+              <app-blog-page-blogdata [latestBlogData]="data" [date]="false" />
+            </div>
+          }
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4">
+        <div class="sticky-cls blog-sidebar">
+          <app-blog-page-filter />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

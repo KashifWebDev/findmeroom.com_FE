@@ -1,0 +1,40 @@
+<section class="p-0 ratio3_2">
+  @if (propertyData) {
+    <div class="single-property-slider zoom-image-box zoom-gallery-multiple">
+      <app-property-image-slider-home-section
+        [propertyImageSliderHome]="propertyData.propertyImageSliderHome"
+        [propertyDetails]="propertyDetails"
+      />
+    </div>
+  }
+</section>
+
+<section class="without-top property-main small-section">
+  <app-home-details [propertyDetails]="propertyDetails" />
+</section>
+
+<section class="single-property mt-0 pt-0">
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col-xl-9 col-lg-8">
+        <div class="description-section tab-description">
+          <div class="description-details">
+            <app-property
+              [propertyData]="propertyData"
+              [propertyDetailsData]="propertyDetailsData"
+              [type]="'basic'"
+            />
+          </div>
+        </div>
+        <app-related-property [type]="'grid-2'" [totalData]="4" />
+      </div>
+      @if (propertyData) {
+        <div class="col-xl-3 col-lg-4">
+          <app-advance-filter
+            [propertyFilterSliderData]="propertyData.propertyFilterSlider"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</section>

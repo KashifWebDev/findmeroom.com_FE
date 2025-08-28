@@ -1,0 +1,36 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="property-section section-sm">
+  <div class="container-fluid">
+    <div class="row ratio_70 property-grid-2 property-map">
+      <div class="col-12">
+        <app-grid-panel
+          [filter]="true"
+          [paginationData]="paginationData"
+          (filterValue)="sortFilter($event)"
+        />
+        <app-common-filter-listing [style]="'horizontal'" />
+      </div>
+      <div class="col-xl-5 map-section map-leftside">
+        <div class="map" id="mapleaf">
+          <app-common-leaflet-map />
+        </div>
+      </div>
+      <div class="col-xl-7" [class.list-view]="listView">
+        <app-common-filter-property-box
+          [type]="'map'"
+          [filter]="true"
+          [map]="true"
+          [gridImages]="true"
+          [filterValue]="filterValue"
+          (paginationData)="getPaginationData($event)"
+        />
+      </div>
+    </div>
+  </div>
+</section>

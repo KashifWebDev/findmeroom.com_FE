@@ -1,0 +1,23 @@
+<div class="footer-links">
+  <h5
+    class="footer-title"
+    [ngClass]="{ active: isFeatureData }"
+    (click)="openFeature()"
+  >
+    feature
+    <span class="according-menu"><i class="fas fa-chevron-down"></i></span>
+  </h5>
+  <ul
+    class="footer-content"
+    [ngClass]="{
+      'd-block': isFeatureData,
+      'd-none d-md-block': !isFeatureData,
+    }"
+  >
+    @for (data of featuresFooterData; track data) {
+      <li>
+        <a [routerLink]="data.path">{{ data.title }}</a>
+      </li>
+    }
+  </ul>
+</div>

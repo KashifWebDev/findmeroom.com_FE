@@ -1,0 +1,91 @@
+{
+  "homeSection": [
+    {
+      "id": 1,
+      "type": "slider_filter_search",
+      "img": "assets/images/signature/2.png",
+      "title": "Want to buy or rent Home ?",
+      "subTitle": "Reality Properties solve your problems",
+      "buttonText": "submit property",
+      "path": ""
+    },
+    {
+      "id": 2,
+      "type": "slider_filter_search",
+      "img": "assets/images/signature/2.png",
+      "title": "Want to buy or sell Land ?",
+      "subTitle": "Elegant retreat in quiet Coral Gables",
+      "buttonText": "submit property",
+      "path": ""
+    },
+    {
+      "id": 3,
+      "type": "corporate",
+      "img": "assets/images/blog/blog-1.jpg",
+      "title": "How Much is My Land Worth ?",
+      "subTitle": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening Elegant retreat in a quiet Coral Gables setting.",
+      "buttonText": "View More",
+      "path": ""
+    },
+    {
+      "id": 4,
+      "type": "corporate",
+      "img": "assets/images/blog/2.jpg",
+      "title": "How Much is My House Worth ?",
+      "subTitle": "This home provides wonderful entertaining spaces with a chef kitchen opening Elegant retreat in a quiet Coral Gables setting. Elegant retreat in a quiet Coral Gables setting.",
+      "buttonText": "View More",
+      "path": ""
+    },
+    {
+      "id": 5,
+      "type": "classic",
+      "img": "assets/images/7.jpg",
+      "title": "How Much is My House Worth ?",
+      "subTitle": "How they are connected to neighbouring residences and land. Residences can be classified by Flat.",
+      "bed": 3,
+      "bath": 1,
+      "sqft": 500,
+      "price": 2654
+    },
+    {
+      "id": 6,
+      "type": "classic",
+      "img": "assets/images/8.jpg",
+      "title": "How Much is My Office Worth ?",
+      "subTitle": "Residences can be classified by and how they are connected to neighbouring residences and land.",
+      "bed": 3,
+      "bath": 1,
+      "sqft": 500,
+      "price": 2654
+    },
+    {
+      "id": 7,
+      "type": "classic",
+      "img": "assets/images/6.jpg",
+      "title": "How Much is My Land Worth ?",
+      "subTitle": "How they are connected to neighbouring residences and land. Residences can be classified by Flat.",
+      "bed": 3,
+      "bath": 1,
+      "sqft": 500,
+      "price": 2654
+    },
+    {
+      "id": 8,
+      "type": "sticky_tab",
+      "images": [
+        {
+          "img": "assets/images/property/4.jpg"
+        },
+        {
+          "img": "assets/images/property/2.jpg"
+        },
+        {
+          "img": "assets/images/property/4.jpg"
+        },
+        {
+          "img": "assets/images/property/5.jpg"
+        }
+      ]
+    }
+  ]
+}

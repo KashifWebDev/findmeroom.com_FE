@@ -1,0 +1,27 @@
+<div class="footer-links footer-left-space">
+  <h5
+    class="footer-title"
+    [ngClass]="{ active: isAboutData }"
+    (click)="openAbout()"
+  >
+    About
+    <span class="according-menu">
+      <i class="fas fa-chevron-down"></i>
+    </span>
+  </h5>
+  <ul
+    class="footer-content"
+    [ngClass]="{ 'd-block': isAboutData, 'd-none d-md-block': !isAboutData }"
+  >
+    @for (aboutData of footerAboutData; track aboutData) {
+      <li>
+        <a [routerLink]="aboutData.path">
+          @if (icon()) {
+            <app-feather-icons [icon]="'chevron-right'" />
+          }
+          {{ aboutData.title }}
+        </a>
+      </li>
+    }
+  </ul>
+</div>

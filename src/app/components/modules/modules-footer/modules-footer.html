@@ -1,0 +1,72 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card-header bg-transparent">
+        <h5 class="f-w-600 mt-3 text-center">
+          Dark footer with image as background
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer
+  [type]="'basic'"
+  [footerLogo]="footerLogo"
+  [darkFooterLogo]="footerLogo"
+/>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card-header bg-transparent">
+        <h5 class="f-w-600 mt-3 text-center">Brown footer</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer
+  [type]="'simple'"
+  [footerLogo]="themeLogo2"
+  [darkFooterLogo]="themeLogo2"
+  [footerClass]="footerClass"
+/>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card-header bg-transparent">
+        <h5 class="f-w-600 mt-3 text-center">Dark footer</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer
+  [type]="'simple'"
+  [footerLogo]="footerThemeLogo"
+  [darkFooterLogo]="footerThemeLogo"
+  [footerClass]="footerClass2"
+  [heartIcon]="heartIcon"
+/>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card-header bg-transparent">
+        <h5 class="f-w-600 mt-3 text-center">Light footer</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer
+  [type]="'classic'"
+  [footerLogo]="footerLogo4"
+  [darkFooterLogo]="footerDarkLogo4"
+  [footerDark]="false"
+/>

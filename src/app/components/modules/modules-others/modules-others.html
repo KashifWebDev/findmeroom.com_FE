@@ -1,0 +1,84 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="my-gallery gallery-6">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'city'"
+          [heading]="'Find Properties in These Cities'"
+          [textWhite]="false"
+          [type]="'simple'"
+          [tagClass]="'color-1'"
+        />
+        <div class="row">
+          @for (data of propertyInCity; track data) {
+            <div
+              [ngClass]="
+                data.colClass === true
+                  ? 'col-xl-6 col-lg-8 col-md-7'
+                  : 'col-xl-3 col-lg-4 col-md-5 col-sm-6'
+              "
+            >
+              <app-property-in-cities
+                [propertyInCity]="data"
+                [type]="'simple'"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="offer-section banner-section layout1-bg slick-between">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'New Offer'"
+          [heading]="'Our New Offer'"
+          [textWhite]="true"
+          [type]="'simple'"
+          [tagClass]="'color-1'"
+        />
+        <div class="offer-slider">
+          <app-new-offer [title]="'slider_filter_search'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-classic-video />
+
+<section class="banner-section layout2-bg new-property parallax-image">
+  <div class="container">
+    <div class="row ratio_landscape feature-section">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Property of the day'"
+          [desc]="desc"
+          [type]="'basic'"
+          [textWhite]="true"
+        />
+        <div class="feature-wrap">
+          <app-property-of-day [propertyOfDay]="propertyOfDay" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-corporate-pricing-plan [tagClass]="'color-3'" />
+
+<app-classic-banner />

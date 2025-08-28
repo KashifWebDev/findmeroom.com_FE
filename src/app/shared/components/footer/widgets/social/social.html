@@ -1,0 +1,20 @@
+<div
+  class="footer-links"
+  [ngClass]="{ active: isSocialData }"
+  (click)="openSocial()"
+>
+  <h5 class="footer-title">
+    Social
+    <span class="according-menu"><i class="fas fa-chevron-down"></i></span>
+  </h5>
+  <ul
+    class="footer-content"
+    [ngClass]="{ 'd-block': isSocialData, 'd-none d-md-block': !isSocialData }"
+  >
+    @for (data of socialFooterData; track data) {
+      <li>
+        <a [href]="data.path" target="_blank">{{ data.title }}</a>
+      </li>
+    }
+  </ul>
+</div>

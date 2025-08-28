@@ -1,0 +1,33 @@
+<section class="property-section pb-0">
+  <div
+    [ngClass]="{
+      'container-fluid': containerClass(),
+      container: !containerClass(),
+    }"
+  >
+    <div class="row ratio_63 zoom-gallery property-box-flat">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Property'"
+          [heading]="'Listing'"
+          [desc]="desc"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="svgClass()"
+        />
+        <div class="row column-space">
+          @for (data of propertyListingData | slice: 0 : data(); track data) {
+            <div [class]="class()">
+              <app-property-box
+                [propertyListingData]="data"
+                [type]="'classic'"
+                [tagClass]="tagClass()!"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

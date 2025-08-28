@@ -1,0 +1,142 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="property-section">
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'Sale'"
+          [heading]="'Latest For Sale'"
+          [textWhite]="false"
+          [type]="'simple'"
+          [tagClass]="'color-1'"
+        />
+      </div>
+    </div>
+    <div class="property-2 row column-space color-1">
+      @for (data of latestForRentData | slice: 0 : 6; track data) {
+        <div class="col-xl-4 col-md-6 wow fadeInUp">
+          <app-property-box
+            [latestForRentData]="data"
+            [type]="'basic'"
+            [textColor]="true"
+            [tagClass]="'color-1'"
+            [data]="6"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="property-section bg-light modules-property-layout">
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Latest Property Listing'"
+          [desc]="desc"
+          [type]="'basic'"
+        />
+        <div class="property-2 row column-space zoom-gallery">
+          @for (data of latestForRentData | slice: 0 : 3; track data) {
+            <div class="col-xl-4 col-md-6 wow fadeInUp">
+              <app-property-box
+                [latestForRentData]="data"
+                [type]="'basic'"
+                [tagClass]="'color-2'"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="property-section modules-property-layout">
+  <div class="container-fluid">
+    <div class="row ratio_63 zoom-gallery property-box-flat">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Property'"
+          [heading]="'Listing'"
+          [desc]="desc2"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="false"
+        />
+        <div class="row column-space">
+          @for (data of propertyListingData | slice: 0 : 8; track data) {
+            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp">
+              <app-property-box
+                [propertyListingData]="data"
+                [type]="'classic'"
+                [tagClass]="'color-3'"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="property-section slick-between slick-shadow bg-light">
+  <div class="container">
+    <div class="row ratio_landscape">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3 text-start'"
+          [heading]="'Latest Property'"
+          [desc]="desc3"
+          [type]="'basic'"
+        />
+        <div class="property-4 arrow-gradient arrow-right list-property">
+          <app-property-box
+            [latestPropertyData]="latestForRentData2"
+            [type]="'standard'"
+            [carousel]="true"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="property-section slick-between slick-shadow">
+  <div class="container">
+    <div class="row ratio_landscape">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Latest Property Listing'"
+          [desc]="desc4"
+          [type]="'basic'"
+          [descClass]="'font-roboto'"
+        />
+        <div class="listing-hover-property row">
+          <div class="row">
+            @for (data of propertyData; track data) {
+              <div class="col-xl-4 col-md-6 wow fadeInUp">
+                <app-property-box
+                  [propertyData]="data"
+                  [type]="'simple'"
+                  [tagClass]="'color-4'"
+                />
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

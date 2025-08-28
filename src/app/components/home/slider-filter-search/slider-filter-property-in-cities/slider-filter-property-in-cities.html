@@ -1,0 +1,33 @@
+<section class="my-gallery" [ngClass]="sectionClass()">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'city'"
+          [heading]="'Find Properties in These Cities'"
+          [textWhite]="false"
+          [type]="'simple'"
+          [tagClass]="tagClass()"
+        />
+        <div class="row">
+          @for (data of propertyInCity; track data) {
+            <div
+              class="wow fadeInUp"
+              [ngClass]="
+                data.colClass === true
+                  ? 'col-xl-6 col-lg-8 col-md-7'
+                  : 'col-xl-3 col-lg-4 col-md-5 col-sm-6'
+              "
+            >
+              <app-property-in-cities
+                [propertyInCity]="data"
+                [type]="'simple'"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

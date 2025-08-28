@@ -1,0 +1,31 @@
+@if (type() === "simple") {
+  <app-property-box-one
+    [propertyData]="propertyData()"
+    [tagClass]="tagClass()"
+  />
+}
+@if (type() === "basic") {
+  <app-property-box-two
+    [latestForRentData]="latestForRentData()"
+    [textColor]="textColor()"
+    [tagClass]="tagClass()"
+    [data]="data()"
+    [listView]="listView()"
+    [thumbnail]="thumbnail()"
+    [thumbnail_video]="thumbnail_video()"
+    [gridImages]="gridImages()"
+  />
+}
+@if (type() === "classic") {
+  <app-property-box-three
+    [propertyListingData]="propertyListingData()"
+    [tagClass]="tagClass()"
+  />
+}
+@if (type() === "standard") {
+  <app-property-box-four
+    [latestPropertyData]="latestPropertyData()"
+    [propertyListingDataClassic]="propertyListingDataClassic()"
+    [carousel]="carousel()"
+  />
+}

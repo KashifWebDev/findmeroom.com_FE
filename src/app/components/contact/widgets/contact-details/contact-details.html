@@ -1,0 +1,13 @@
+<div class="contact_wrap" [ngClass]="divClass()">
+  <app-feather-icons [icon]="contactDetailsData()?.icon" />
+  <h4>{{ contactDetailsData()?.title }}</h4>
+  @if (contactDetailsData()?.list) {
+    <ul>
+      @for (list of contactDetailsData()?.listDetails; track list) {
+        <li>{{ list.data }}</li>
+      }
+    </ul>
+  } @else {
+    <p class="font-roboto" [innerHTML]="contactDetailsData()?.details"></p>
+  }
+</div>

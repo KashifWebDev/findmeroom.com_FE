@@ -1,0 +1,23 @@
+<div class="page-section ratio_40" id="video">
+  <h4 class="content-title">video</h4>
+  <div class="play-bg-image">
+    @for (data of videoData(); track data) {
+      @if (data.fileType === "image") {
+        <div class="bg-size" [style.background-image]="'url(' + data.url + ')'">
+          <img
+            [src]="data.url"
+            class="bg-img"
+            alt="property-image"
+            style="display: none"
+          />
+        </div>
+      } @else if (data.fileType === "video") {
+        <div class="icon-video">
+          <a href="javascript:void(0)" (click)="openModal(data.url)">
+            <i class="fas fa-play"></i>
+          </a>
+        </div>
+      }
+    }
+  </div>
+</div>

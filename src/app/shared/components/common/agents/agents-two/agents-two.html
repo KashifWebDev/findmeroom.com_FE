@@ -1,0 +1,77 @@
+@if (agentsData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of agentsData(); track data) {
+      <ng-template carouselSlide>
+        <div style="margin-right: 50px">
+          <div class="about-content">
+            <div class="about-image">
+              <div
+                class="bg-size"
+                [style.background-image]="'url(' + data.img + ')'"
+              >
+                <img
+                  [src]="data.img"
+                  class="img-fluid bg-img"
+                  alt="user-image"
+                  style="display: none"
+                />
+              </div>
+              <div class="about-overlay"></div>
+              <div class="overlay-content">
+                <ul>
+                  <li>
+                    <a href="https://accounts.google.com/" target="_blank"
+                      ><img
+                        src="assets/images/about/icon-1.png"
+                        alt="google-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/" target="_blank"
+                      ><img
+                        src="assets/images/about/icon-2.png"
+                        alt="twitter-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><img
+                        src="assets/images/about/icon-3.png"
+                        alt="facebook-icon"
+                    /></a>
+                  </li>
+                </ul>
+                <span>Connect</span>
+              </div>
+            </div>
+            <div class="our-details">
+              <a href="javascript:void(0)">
+                <h6 class="d-flex">
+                  {{ data.name }}
+                  <span class="label-heart ms-2" [ngClass]="tagClass()">
+                    <i class="fas fa-heart"></i
+                  ></span>
+                </h6>
+              </a>
+              <h3>{{ data.title }}</h3>
+              <span class="font-roboto"
+                ><app-feather-icons [icon]="'mail'" class="me-1" />{{
+                  data.email
+                }}</span
+              >
+              <p class="font-roboto">{{ data.desc }}</p>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-solid btn-flat mt-2"
+                [ngClass]="tagClass()"
+                [routerLink]="['/agent/agent-profile']"
+              >
+                <app-feather-icons [icon]="'eye'" />View Portfolio
+              </a>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

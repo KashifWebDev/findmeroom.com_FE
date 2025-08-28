@@ -1,0 +1,10 @@
+@if (type() === "simple") {
+  <app-provided-service-one
+    [providedServices]="providedServices()"
+    [tagClass]="tagClass()"
+  />
+} @else if (type() === "basic") {
+  <app-provided-service-two [providedServices]="providedServices()" />
+} @else if (type() === "classic") {
+  <app-provided-service-three [providedServicesData]="providedServicesData()" />
+}

@@ -1,0 +1,11 @@
+@if (data()) {
+  <app-loader [type]="data()?.loaderType" />
+  <app-tap-to-top [divClass]="data()?.divClass" />
+  <app-customizer
+    [divClass]="data()?.divClass"
+    [themeColor1]="data()?.themeColor1"
+    [themeColor2]="data()?.themeColor2"
+    (color1)="receiveChildData1($event)"
+    (color2)="receiveChildData2($event)"
+  />
+}

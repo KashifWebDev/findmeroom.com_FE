@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-xl-7 col-lg-6">
+    <div
+      class="mobile-image bg-size d-lg-block d-none"
+      [style.background-image]="'url(' + bannerData()?.img + ')'"
+    >
+      <img
+        [src]="bannerData()?.img"
+        alt="property-image"
+        class="bg-img"
+        style="display: none"
+      />
+    </div>
+  </div>
+  <div class="col-xl-5 col-lg-6 offset-lg-0 col-md-7 offset-md-5">
+    <div class="banner-right">
+      <h6>{{ bannerData()?.title }}</h6>
+      <h2>{{ bannerData()?.subTitle }}</h2>
+      <p class="font-roboto">{{ bannerData()?.desc }}</p>
+      <div class="button-banner">
+        <a
+          href="https://play.google.com/"
+          class="btn btn-gradient btn-pill color-2"
+          target="_blank"
+          ><img
+            src="assets/images/playstore.png"
+            alt="playStore-icon"
+            class="me-1"
+          />
+          {{ bannerData()?.button1Text }}</a
+        >
+        <a
+          href="https://appstoreconnect.apple.com"
+          class="btn btn-light-bg btn-pill color-2"
+          target="_blank"
+        >
+          <img
+            src="assets/images/app-icon.png"
+            alt="appStore-icon"
+            class="me-1"
+          /><span> {{ bannerData()?.button2Text }}</span></a
+        >
+      </div>
+    </div>
+  </div>
+</div>

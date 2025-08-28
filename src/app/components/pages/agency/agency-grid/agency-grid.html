@@ -1,0 +1,29 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="agent-section property-section">
+  <div class="container">
+    <div class="row ratio2_3">
+      <div class="col-xl-9 col-lg-8 property-grid-3 agent-grids">
+        <app-grid-panel [gridOptions]="true" [agency]="true" />
+        <div class="property-wrapper-grid">
+          <app-common-agency [agencyData]="agencyData" [type]="'grid-3'" />
+        </div>
+      </div>
+      @if (propertyData) {
+        <div class="col-xl-3 col-lg-4">
+          <app-advance-filter
+            [contact]="false"
+            [filter]="false"
+            [mortgage]="false"
+            [propertyFilterSliderData]="propertyData.propertyFilterSlider"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</section>

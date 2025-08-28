@@ -1,0 +1,46 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="small-section contact-2">
+  <div class="container">
+    <div class="row gx-3">
+      <div class="col-xl-6 col-lg-5">
+        <div class="log-in px-xxl-5 px-lg-4">
+          <app-contact-us-form [captcha]="true" />
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-7 contact_section contact_wrap_2">
+        <div class="row contact-detail theme-card">
+          <div class="col-lg-12 p-0">
+            <div class="contact-content">
+              <h2>Welcome to sheltos !!</h2>
+              <p class="font-roboto">
+                Connected residences might be owned by a single entity and
+                leased out, or owned separately with an agreement covering the
+                relationship between units and common areas and concerns.
+              </p>
+            </div>
+          </div>
+          @for (data of contactDetailsData; track data) {
+            <div class="col-sm-6 p-0">
+              <app-contact-details
+                [contactDetailsData]="data"
+                [divClass]="'shadow-none text-start ps-0'"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-section download-section bg-light">
+  <div class="container">
+    <app-download-app />
+  </div>
+</section>

@@ -1,0 +1,51 @@
+@if (propertyDetails()) {
+  <owl-carousel-o [options]="Options" gallerize>
+    @for (images of propertyDetails()?.img; track images; let i = $index) {
+      @if (images.fileType === "image") {
+        <ng-template carouselSlide>
+          <div>
+            <a
+              [style.background-image]="'url(' + images.url + ')'"
+              class="bg-size zoom"
+              (click)="openLightBoxDynamic(propertyDetails()!.img)"
+            >
+              <div>
+                <img
+                  [src]="images.url"
+                  class="img-fluid bg-img"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </div>
+            </a>
+          </div>
+        </ng-template>
+      }
+    }
+  </owl-carousel-o>
+} @else {
+  <owl-carousel-o [options]="Options" gallerize>
+    @for (images of propertyImageSliderHome(); track images) {
+      @if (images.fileType === "image") {
+        <ng-template carouselSlide>
+          <div>
+            <a
+              [style.background-image]="'url(' + images.url + ')'"
+              class="bg-size zoom"
+              (click)="openLightBox()"
+            >
+              <div>
+                <img
+                  [src]="images.url"
+                  class="img-fluid bg-img"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </div>
+            </a>
+          </div>
+        </ng-template>
+      }
+    }
+  </owl-carousel-o>
+}

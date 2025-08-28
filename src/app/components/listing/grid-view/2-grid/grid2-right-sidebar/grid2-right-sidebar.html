@@ -1,0 +1,20 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+  [type]="type()"
+/>
+
+<section class="property-section">
+  <div class="container">
+    <app-common-property-filter-listing
+      [filterStyle]="'vertical'"
+      [gridClass]="'property-grid-2'"
+      [gridType]="'grid-2'"
+      [filter]="false"
+      [gridImages]="true"
+      [sidebarType]="'right'"
+    />
+  </div>
+</section>

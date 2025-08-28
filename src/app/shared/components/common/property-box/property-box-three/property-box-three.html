@@ -1,0 +1,131 @@
+<div class="property-box">
+  <div class="property-image">
+    @if (propertyListingData()?.img) {
+      <owl-carousel-o [options]="Options">
+        @for (images of propertyListingData()?.img; track images) {
+          @if (images.fileType === "image") {
+            <ng-template carouselSlide>
+              <div class="property-slider" [ngClass]="tagClass()">
+                <a
+                  href="javascript:void(0)"
+                  class="bg-size"
+                  [style.background-image]="'url(' + images.url + ')'"
+                >
+                  <img [src]="images.url" class="bg-img" alt="property-image" />
+                </a>
+              </div>
+            </ng-template>
+          }
+        }
+      </owl-carousel-o>
+    }
+    <div class="overlay-property-box">
+      <a
+        href="javascript:void(0)"
+        class="effect-round"
+        title="Compare"
+        (click)="addCompare(propertyListingData()!)"
+      >
+        <app-feather-icons [icon]="'shuffle'" />
+      </a>
+      <a
+        href="javascript:void(0)"
+        class="effect-round like"
+        title="wishlist"
+        (click)="addWishlist(propertyListingData()!)"
+      >
+        <app-feather-icons [icon]="'heart'" />
+      </a>
+    </div>
+    <span class="label label-white label-lg label-flat" [ngClass]="tagClass()"
+      >{{
+        propertyListingData()!.price | currencySymbol: propertyService.Currency
+      }}*</span
+    >
+    <div class="labels-left">
+      @for (labels of propertyListingData()?.labels; track labels) {
+        <div>
+          @if (labels.includes("sale")) {
+            <span class="label label-shadow label-flat">Sale</span>
+          }
+          @if (labels.includes("fees")) {
+            <div>
+              <span class="label label-dark label-flat">no fees</span>
+            </div>
+          }
+          @if (labels.includes("openHouse")) {
+            <span class="label label-success label-flat">open house</span>
+          }
+          @if (labels.includes("sold")) {
+            <span class="label label-shadow label-flat">Sold</span>
+          }
+        </div>
+      }
+    </div>
+  </div>
+  <div class="property-details">
+    <h3>
+      <a
+        href="javascript:void(0)"
+        (click)="getDetails(propertyListingData()!.id)"
+        >{{ propertyListingData()?.title }}</a
+      >
+    </h3>
+    <p class="font-roboto">{{ propertyListingData()?.details }}</p>
+    <ul class="icon-property">
+      <li>
+        <div class="d-flex">
+          <div class="property-icon" [ngClass]="tagClass()">
+            <svg class="property-svg">
+              <use xlink:href="assets/svg/icons.svg#home-heart"></use>
+            </svg>
+          </div>
+          <span>{{ propertyListingData()?.home }}</span>
+        </div>
+      </li>
+      <li>
+        <div class="d-flex">
+          <div class="property-icon" [ngClass]="tagClass()">
+            <svg class="property-svg">
+              <use xlink:href="assets/svg/icons.svg#ruler"></use>
+            </svg>
+          </div>
+          <span>{{ propertyListingData()?.sqft }} Sq Ft</span>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="icon-property mb-0">
+      <li>
+        <div class="d-flex">
+          <div class="property-icon" [ngClass]="tagClass()">
+            <svg class="property-svg">
+              <use xlink:href="assets/svg/icons.svg#key"></use>
+            </svg>
+          </div>
+          <span>{{ propertyListingData()?.rooms }} Rooms</span>
+        </div>
+      </li>
+      <li>
+        <div class="d-flex">
+          <div class="property-icon" [ngClass]="tagClass()">
+            <svg class="property-svg">
+              <use xlink:href="assets/svg/icons.svg#safety"></use>
+            </svg>
+          </div>
+          <span>{{ propertyListingData()?.date }}</span>
+        </div>
+      </li>
+    </ul>
+    <div class="mt-3 text-start">
+      <button
+        type="button"
+        class="btn btn-light-bg btn-flat"
+        [ngClass]="tagClass()"
+        (click)="getDetails(propertyListingData()!.id)"
+      >
+        View Details
+      </button>
+    </div>
+  </div>
+</div>

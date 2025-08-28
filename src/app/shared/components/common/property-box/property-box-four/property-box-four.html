@@ -1,0 +1,11 @@
+@if (carousel() === true && latestPropertyData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of latestPropertyData() | slice: 0 : 4; track data) {
+      <ng-template carouselSlide>
+        <app-common-property-box [propertyData]="data" />
+      </ng-template>
+    }
+  </owl-carousel-o>
+} @else {
+  <app-common-property-box [propertyData]="propertyListingDataClassic()" />
+}

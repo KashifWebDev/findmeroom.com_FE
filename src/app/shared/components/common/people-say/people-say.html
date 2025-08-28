@@ -1,0 +1,28 @@
+@if (peopleSayData()) {
+  <owl-carousel-o [options]="Options" class="people-say">
+    @for (data of peopleSayData(); track data) {
+      <ng-template carouselSlide>
+        <div>
+          <div class="pepole-comment">
+            <div class="client-msg">
+              <span class="quote">
+                <img
+                  src="assets/images/testimonial/quote.png"
+                  alt="quote-icon"
+                />
+              </span>
+              <p>{{ data.desc }}</p>
+            </div>
+            <div class="media">
+              <img [src]="data.img" alt="user-image" />
+              <div class="media-body">
+                <h3>{{ data.name }}</h3>
+                <span>{{ data.position }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

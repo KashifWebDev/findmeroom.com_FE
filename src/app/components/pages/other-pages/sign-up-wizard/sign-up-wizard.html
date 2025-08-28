@@ -1,0 +1,51 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="property-wizard horizontal-wizard">
+  <div class="container">
+    <div class="row wizard-box">
+      <div class="col-lg-8 col-sm-10">
+        <div class="wizard-step-container theme-card">
+          <app-wizard-step
+            [stepsData]="stepsData"
+            [activeSteps]="activeSteps"
+          />
+          <div class="wizard-form-details log-in">
+            <div
+              class="wizard-step-1"
+              [ngClass]="activeSteps === 1 ? 'd-block' : 'd-none'"
+            >
+              <app-account-information
+                (activeSteps)="receiveChildData($event)"
+                (accountInformation)="receiveFormData($event)"
+              />
+            </div>
+            <div
+              class="wizard-step-2"
+              [ngClass]="activeSteps === 2 ? 'd-block' : 'd-none'"
+            >
+              <app-address-information
+                (activeSteps)="receiveChildData($event)"
+                (addressInformation)="receiveAddressData($event)"
+              />
+            </div>
+            <div
+              class="wizard-step-3"
+              [ngClass]="activeSteps === 3 ? 'd-block' : 'd-none'"
+            >
+              <app-completed-form
+                (activeSteps)="receiveChildData($event)"
+                [accountData]="accountData"
+                [addressData]="addressData"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

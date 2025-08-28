@@ -1,0 +1,50 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="portfolio-creative ratio_55">
+  <div class="container">
+    <div class="row m-0 order-section">
+      @for (data of creativePageData; track data) {
+        <div class="col-lg-4 p-0">
+          @if (data.type === "image") {
+            <div
+              class="bg-size"
+              [style.background-image]="'url(' + data.url + ')'"
+            >
+              <img
+                [src]="data.url"
+                class="bg-img img-fluid"
+                alt="property-image"
+              />
+            </div>
+          } @else {
+            <div class="content-sec center-con">
+              <div>
+                <h3>
+                  <a
+                    href="javascript:void(0)"
+                    [routerLink]="['/page/portfolio/details']"
+                    >{{ data.title }}</a
+                  >
+                </h3>
+                <p class="font-roboto">
+                  {{ data.description }}
+                </p>
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-gradient btn-pill color-2"
+                  [routerLink]="['/page/portfolio/details']"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>

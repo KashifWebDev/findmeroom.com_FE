@@ -1,0 +1,71 @@
+<form ngNativeValidate>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <app-feather-icons [icon]="'user'" />
+        </div>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <app-feather-icons [icon]="'mail'" />
+        </div>
+      </div>
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Enter email address"
+        required
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <app-feather-icons [icon]="'lock'" />
+        </div>
+      </div>
+      <input
+        [type]="inputType"
+        id="pwd-input1"
+        class="form-control"
+        placeholder="Password"
+        required
+      />
+      <div class="input-group-apend">
+        <div class="input-group-text" (click)="showPassword()">
+          <i
+            id="pwd-icon"
+            class="far"
+            [ngClass]="isShow === true ? 'fa-eye' : 'fa-eye-slash'"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-flat" [ngClass]="buttonClass()">
+    Create account
+  </button>
+  <span class="d-block mt-3 font-rubik"
+    >Already have an acoount ?
+    <a
+      href="javascript:void(0)"
+      class="float-end text-{{ tagClass() }}"
+      [routerLink]="['/page/other-pages/log-in']"
+      (click)="modal.dismissAll()"
+    >
+      Login here</a
+    >
+  </span>
+</form>

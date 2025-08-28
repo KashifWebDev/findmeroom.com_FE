@@ -1,0 +1,96 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="testimonial-style-1 modules-testimonial-layout">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'What People Say'"
+          [desc]="desc"
+          [type]="'basic'"
+        />
+        <div class="slick-between">
+          <div class="testimonial-1 dot-gradient">
+            <app-people-say [peopleSayData]="testimonialData1" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'Our'"
+          [heading]="'Happy Clients'"
+          [textWhite]="true"
+          [type]="'simple'"
+          [tagClass]="'color-1'"
+        />
+        <div class="testimonial-2 arrow-light">
+          <app-happy-clients
+            [happyClientsData]="testimonialData2"
+            [type]="'simple'"
+            [tagClass]="'color-1'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light testimonial-style-2 modules-testimonial-layout">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Our'"
+          [heading]="'Client'"
+          [desc]="desc2"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="false"
+        />
+        <div class="testimonial-3 modern-dot">
+          <app-happy-clients
+            [happyClientsData]="testimonialData3"
+            [type]="'basic'"
+            [tagClass]="'color-3'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-client modules-testimonial-layout">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3 text-start'"
+          [heading]="'Our Happy Client'"
+          [desc]="desc3"
+          [type]="'basic'"
+        />
+        <div class="testimonial-4">
+          <app-happy-clients
+            [happyClientsData]="testimonialData4"
+            [type]="'classic'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

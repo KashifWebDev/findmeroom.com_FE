@@ -1,0 +1,27 @@
+@if (homeSectionSliderData()) {
+  <owl-carousel-o [options]="Options">
+    @for (sliderData of homeSectionSliderData(); track sliderData) {
+      <ng-template carouselSlide>
+        <div>
+          <div class="home-content">
+            <div>
+              <img
+                [src]="sliderData.img"
+                class="img-fluid m-0"
+                alt="logo"
+                style="width: auto"
+              />
+              <h6>{{ sliderData.title }}</h6>
+              <h1>{{ sliderData.subTitle }}</h1>
+              <a
+                href="/agent/submit-property"
+                class="btn btn-gradient color-6"
+                >{{ sliderData.buttonText }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

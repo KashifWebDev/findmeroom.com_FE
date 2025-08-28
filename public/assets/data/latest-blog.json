@@ -1,0 +1,72 @@
+{
+  "latestBlog": [
+    {
+      "id": 1,
+      "type": "corporate",
+      "img": "assets/images/blog/blog-1.jpg",
+      "date": "18",
+      "month": "July",
+      "city": "Phonics ,Newyork",
+      "title": "Signs That You Should Sell Your Home Soon",
+      "desc": "Luxury real estate is sometimes use as store value, especially wealthy foreigners, without any particular attempt to rent. Some luxury units in London and New York City.",
+      "right": false
+    },
+    {
+      "id": 2,
+      "type": "corporate",
+      "img": "assets/images/blog/2.jpg",
+      "date": "19",
+      "month": "June",
+      "city": "Cambridge,England",
+      "title": "Twice profit than before you ever got in business.",
+      "desc": "Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type.",
+      "right": true
+    },
+    {
+      "id": 3,
+      "type": "corporate",
+      "img": "assets/images/blog/3.jpg",
+      "date": "18",
+      "month": "May",
+      "city": "Barcelona,London",
+      "title": "What Are Credit Scores And Why Are They Important?",
+      "desc": "The most common and most absolute type of real estate property, the tenant enjoys the greatest discretion over the disposal of the estate property.",
+      "right": false
+    },
+    {
+      "id": 4,
+      "type": "corporate",
+      "img": "assets/images/blog/2.jpg",
+      "date": "26",
+      "month": "Feb",
+      "city": "Berlin,Germany",
+      "title": "Things To Look Out For When Viewing A Property.",
+      "desc": "An interior designer is someone who plans, researches, construction sites, coordinates,management and manages such enhancement projects.",
+      "right": true
+    },
+    {
+      "id": 5,
+      "type": "enterprise",
+      "img": "assets/images/blog/4.jpg",
+      "date": "January 10, 2023",
+      "title": "Someone who is obsessed with fashion niche very well.",
+      "desc": "how they are connected to residences and land. Residences can be classified in flat or apartment."
+    },
+    {
+      "id": 6,
+      "type": "enterprise",
+      "img": "assets/images/blog/5.jpg",
+      "date": "December 9, 2023",
+      "title": "Residences can be classified by and they are connected.",
+      "desc": "Residences can be classified by and how they are connected to neighbouring residences and land."
+    },
+    {
+      "id": 7,
+      "type": "enterprise",
+      "img": "assets/images/blog/4.jpg",
+      "date": "January 9, 2023",
+      "title": "See why ProCity is one of best friends for exploring city.",
+      "desc": "How they are connected to residences and land. Residences can be classified in flat or apartment."
+    }
+  ]
+}

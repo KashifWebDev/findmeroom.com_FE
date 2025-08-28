@@ -1,0 +1,61 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="agent-section property-section">
+  <div class="container">
+    <div class="row ratio_63">
+      <div class="col-xl-9 col-lg-8 property-grid-2">
+        @for (data of aboutAgency; track data) {
+          <app-about-agency [aboutAgency]="data" />
+        }
+        <div class="agency-title">
+          <h3>Our Agent</h3>
+        </div>
+        <app-common-agency
+          [agencyData]="agentsData"
+          [type]="'profile'"
+          [totalData]="3"
+        />
+        <div class="agent-property">
+          <app-grid-panel
+            [gridOption]="false"
+            [gridOptions]="true"
+            [paginationData]="paginationData"
+            (filterValue)="sortFilter($event)"
+          />
+          <div
+            class="property-2 row column-sm zoom-gallery property-label property-grid"
+          >
+            <app-common-filter-property-box
+              [type]="'grid-2'"
+              [pagination]="false"
+              [gridImages]="true"
+              [filterValue]="filterValue"
+              (paginationData)="getPaginationData($event)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4">
+        <app-advance-filter
+          [contact]="false"
+          [featured]="false"
+          [mortgage]="false"
+          (categoryValue)="getData($event)"
+          (propertyStatusData)="getData($event)"
+          (propertyTypeData)="getData($event)"
+          (roomsData)="getData($event)"
+          (bedsData)="getData($event)"
+          (bathData)="getData($event)"
+          (agencyData)="getData($event)"
+          (priceFilter)="getData($event)"
+          (areaFilter)="getData($event)"
+        />
+      </div>
+    </div>
+  </div>
+</section>

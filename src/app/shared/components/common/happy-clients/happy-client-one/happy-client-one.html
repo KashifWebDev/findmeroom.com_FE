@@ -1,0 +1,46 @@
+@if (happyClientsData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of happyClientsData(); track data) {
+      <ng-template carouselSlide>
+        <div>
+          <div class="client-slider light-bg">
+            <ul class="user-list">
+              @for (image of data.images; track image) {
+                <li>
+                  <img [src]="image.img" alt="user-image" />
+                  @if (image.icon) {
+                    <div class="heart-bg"></div>
+                    <img
+                      src="assets/images/testimonial/heart.png"
+                      alt="heart icon"
+                      class="heart-icon"
+                    />
+                  }
+                </li>
+              }
+            </ul>
+            <p>
+              {{ data.desc }}
+            </p>
+            <h6>{{ data.title }}</h6>
+            <ul class="client-rating">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+            <span class="label label-white label-lg">
+              <span
+                class="gradient-1"
+                [ngClass]="tagClass()"
+                [routerLink]="['/agent/agent-profile']"
+                >{{ data.name }}</span
+              >
+            </span>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

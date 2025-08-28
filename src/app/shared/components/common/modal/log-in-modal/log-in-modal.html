@@ -1,0 +1,69 @@
+<div class="signup-modal">
+  <div class="modal-content">
+    <div class="modal-body ratio_asos">
+      <div class="row m-0">
+        <div class="col-lg-6 p-0">
+          <div
+            class="login-img bg-size"
+            [style.background-image]="'url(' + imageURL() + ')'"
+          >
+            <img
+              [src]="imageURL()"
+              class="bg-img"
+              alt=""
+              style="display: none"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6 p-0">
+          <div class="signup-tab theme-tab-{{ theme() }} log-in">
+            <ul id="tabs" class="nav nav-tabs border-tab">
+              <li class="nav-item">
+                <a
+                  href="javascript:void(0)"
+                  class="nav-link"
+                  [class.active]="activeTab === 'login'"
+                  (click)="changeTab('login')"
+                  >Log In</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="javascript:void(0)"
+                  class="nav-link"
+                  [class.active]="activeTab === 'register'"
+                  (click)="changeTab('register')"
+                  >Register</a
+                >
+              </li>
+            </ul>
+            <div id="tabsContent" class="tab-content">
+              <div
+                id="login"
+                class="tab-pane fade"
+                [ngClass]="{ 'active show': activeTab === 'login' }"
+              >
+                <h4>Log in</h4>
+                <app-modal-login-form
+                  [tagClass]="tagClass()"
+                  [buttonClass]="buttonClass()"
+                />
+              </div>
+              <div
+                id="signup"
+                class="tab-pane fade"
+                [ngClass]="{ 'active show': activeTab === 'register' }"
+              >
+                <h4>Register</h4>
+                <app-modal-register-form
+                  [tagClass]="tagClass()"
+                  [buttonClass]="buttonClass()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

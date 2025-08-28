@@ -1,0 +1,98 @@
+<div class="our-agent theme-card">
+  <div class="row">
+    <div class="col-sm-6 ratio_landscape">
+      <div class="agent-image">
+        <img
+          [src]="aboutAgency()?.img"
+          class="img-fluid bg-img"
+          alt="agency-image"
+        />
+        <span class="label label-shadow"
+          >{{ aboutAgency()?.property }} Properties</span
+        >
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="agent-wrap">
+        <div class="our-agent-details">
+          <h3>{{ aboutAgency()?.title }}</h3>
+          <h6>{{ aboutAgency()?.subTitle }}</h6>
+          <ul>
+            <li>
+              <div class="media">
+                <div class="icons-square">
+                  <app-feather-icons [icon]="'map-pin'" />
+                </div>
+                <div class="media-body">
+                  <h6>{{ aboutAgency()?.location }}</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="media">
+                <div class="icons-square">
+                  <app-feather-icons [icon]="'phone-call'" />
+                </div>
+                <div class="media-body">
+                  <h6>{{ aboutAgency()?.mobile }}</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="media">
+                <div class="icons-square">
+                  <app-feather-icons [icon]="'mail'" />
+                </div>
+                <div class="media-body">
+                  <h6>{{ aboutAgency()?.email }}</h6>
+                </div>
+              </div>
+            </li>
+            <li class="with-link">
+              <div class="media">
+                <div class="icons-square">
+                  <app-feather-icons [icon]="'link'" />
+                </div>
+                <div class="media-body">
+                  <h6>
+                    <a href="javascript:void(0)">{{ aboutAgency()?.link }}</a>
+                  </h6>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="agent-social">
+          <li>
+            <a href="https://www.facebook.com/" class="facebook" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" class="twitter" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://account.google.com" class="google" target="_blank"
+              ><i class="fab fa-google"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/" class="linkedin" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about-agent theme-card">
+  <h3>About the agency</h3>
+  <div class="row">
+    @for (details of aboutAgency()?.aboutAgency; track details) {
+      <p class="font-roboto col-xl-4">{{ details.details }}</p>
+    }
+  </div>
+</div>

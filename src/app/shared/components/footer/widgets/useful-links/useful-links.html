@@ -1,0 +1,20 @@
+<div class="footer-links footer-left-space">
+  <h5
+    class="footer-title"
+    [ngClass]="{ active: isLinkData }"
+    (click)="openLink()"
+  >
+    Useful links
+    <span class="according-menu"><i class="fas fa-chevron-down"></i></span>
+  </h5>
+  <ul
+    class="footer-content"
+    [ngClass]="{ 'd-block': isLinkData, 'd-none d-md-block': !isLinkData }"
+  >
+    @for (data of usefulLinkFooterData; track data) {
+      <li>
+        <a [routerLink]="data.path">{{ data.title }}</a>
+      </li>
+    }
+  </ul>
+</div>

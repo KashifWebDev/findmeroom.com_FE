@@ -1,0 +1,32 @@
+<div
+  class="left-sidebar"
+  [ngStyle]="{ left: filterBoxService.isOpenLeftFilter ? '-1px' : '-365px' }"
+>
+  <div class="filter-cards">
+    <div class="advance-card">
+      <div class="back-btn d-lg-none d-block" (click)="closeFilter()">Back</div>
+      <h5 class="mb-0 advance-title">Advance search</h5>
+    </div>
+    <div class="advance-card">
+      <h6>filter</h6>
+      <app-filter-box
+        [buttonClass]="'color-2 btn-block btn-pill'"
+        [label]="false"
+        (propertyStatusData)="getStatus($event)"
+        (propertyTypeData)="getType($event)"
+        (roomsData)="getRooms($event)"
+        (bedsData)="getBeds($event)"
+        (bathData)="getBath($event)"
+        (agencyData)="getAgency($event)"
+        (priceFilter)="priceChange($event)"
+        (areaFilter)="areaChange($event)"
+      />
+    </div>
+    <div class="advance-card">
+      <h6>Category</h6>
+      <app-category (categoryValue)="receiveChildData($event)" />
+    </div>
+    <app-contact-info />
+    <app-recently-added />
+  </div>
+</div>

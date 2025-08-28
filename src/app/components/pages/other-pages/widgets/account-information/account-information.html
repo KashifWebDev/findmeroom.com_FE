@@ -1,0 +1,114 @@
+<div class="title-3 text-start">
+  <h2>Get started</h2>
+</div>
+<form
+  class="row needs-validation"
+  id="needs-validation"
+  novalidate
+  [formGroup]="myForm"
+>
+  <div class="form-group col-md-12">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'user'" />
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        id="first-name"
+        name="firstname"
+        placeholder="Enter your Name"
+        formControlName="user_name"
+        [ngClass]="{
+          'is-invalid': (user_name?.touched || validate) && user_name?.errors,
+          'is-valid': !user_name?.errors,
+        }"
+      />
+      <div class="valid-feedback">Looks good!</div>
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'phone'" />
+      </div>
+      <input
+        type="number"
+        class="form-control"
+        name="mobnumber"
+        placeholder="Enter your phone number"
+        formControlName="mobile"
+        [ngClass]="{
+          'is-invalid': (mobile?.touched || validate) && mobile?.errors,
+          'is-valid': !mobile?.errors,
+        }"
+      />
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'mail'" />
+      </div>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="e.g,demo@gmail.com"
+        formControlName="email"
+        [ngClass]="{
+          'is-invalid': (email?.touched || validate) && email?.errors,
+          'is-valid': !email?.errors,
+        }"
+      />
+    </div>
+  </div>
+  <div class="form-group col-sm-12">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'lock'" />
+      </div>
+      <input
+        [type]="inputType"
+        id="pwd-input"
+        class="form-control"
+        placeholder="Password"
+        formControlName="password"
+        [ngClass]="{
+          'is-invalid': (password?.touched || validate) && password?.errors,
+          'is-valid': !password?.errors,
+        }"
+      />
+      <div class="input-group-text" (click)="showPassword()">
+        <i
+          id="pwd-icon"
+          class="far"
+          [ngClass]="isShow === true ? 'fa-eye' : 'fa-eye-slash'"
+        ></i>
+      </div>
+    </div>
+    <div class="important-note mb-4">
+      password should be a minimum of 8 characters and should contains letters
+      and numbers
+    </div>
+    <div class="text-end">
+      <p>
+        Already have an account ?
+        <a
+          [routerLink]="['/page/other-pages/log-in']"
+          class="btn btn-dashed btn-pill color-2"
+          >Log in</a
+        >
+      </p>
+    </div>
+  </div>
+</form>
+<div class="next-btn text-end col-sm-12">
+  <button
+    type="button"
+    class="btn btn-gradient color-2 next1 btn-pill"
+    (click)="next(myForm)"
+  >
+    Next <i class="fas fa-arrow-right ms-2"></i>
+  </button>
+</div>

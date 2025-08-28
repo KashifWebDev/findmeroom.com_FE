@@ -1,0 +1,23 @@
+@if (homeSectionSliderData()) {
+  @for (data of homeSectionSliderData(); track data) {
+    <owl-carousel-o [options]="Options">
+      @for (images of data.images; track images) {
+        <ng-template carouselSlide>
+          <div>
+            <div
+              class="bg-size"
+              [style.background-image]="'url(' + images.img + ')'"
+            >
+              <img
+                [src]="images.img"
+                class="bg-img"
+                alt="property-image"
+                style="display: none"
+              />
+            </div>
+          </div>
+        </ng-template>
+      }
+    </owl-carousel-o>
+  }
+}

@@ -1,0 +1,43 @@
+<header class="header-4" [ngClass]="headerClass()">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="menu">
+          <div class="brand-logo">
+            <a href="javascript:void(0)" [routerLink]="['']">
+              @if (layout.config.settings.layout_version === "dark-layout") {
+                <img
+                  [src]="darkHeaderLogo()"
+                  alt="logo"
+                  class="img-fluid for-dark"
+                />
+              } @else {
+                <img
+                  [src]="headerLogo()"
+                  alt="logo"
+                  class="img-fluid for-light"
+                />
+              }
+            </a>
+          </div>
+          <app-menu [icon]="false" />
+          <ul class="header-right">
+            <li>
+              <app-search />
+            </li>
+            <li>
+              <a href="javascript:void(0)" [routerLink]="['']">
+                <app-feather-icons [icon]="'home'" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" (click)="openModal()">
+                <app-feather-icons [icon]="'user'" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

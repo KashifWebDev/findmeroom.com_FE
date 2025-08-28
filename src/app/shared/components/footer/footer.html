@@ -1,0 +1,38 @@
+@if (data()) {
+  @if (data()?.footerStyle === "simple") {
+    <app-footer-one
+      [footerLogo]="data()?.footerLogo"
+      [footerClass]="data()?.footerClass"
+      [heartIcon]="data()?.heartIcon"
+      [darkFooterLogo]="data()?.darkFooterLogo"
+      [subFooterClass]="data()?.subFooterClass"
+    />
+  } @else if (data()?.footerStyle === "basic") {
+    <app-footer-two [footerLogo]="data()?.footerLogo" />
+  } @else if (data()?.footerStyle === "classic") {
+    <app-footer-three
+      [footerDark]="data()?.footerDark"
+      [footerLogo]="data()?.footerLogo"
+      [darkFooterLogo]="data()?.darkFooterLogo"
+    />
+  }
+  <!-- For Module Page Footer -->
+} @else {
+  @if (type() === "simple") {
+    <app-footer-one
+      [footerLogo]="footerLogo()"
+      [footerClass]="footerClass()"
+      [heartIcon]="heartIcon()"
+      [darkFooterLogo]="darkFooterLogo()"
+      [subFooterClass]="subFooterClass()"
+    />
+  } @else if (type() === "basic") {
+    <app-footer-two [footerLogo]="footerLogo()" />
+  } @else if (type() === "classic") {
+    <app-footer-three
+      [footerDark]="footerDark()"
+      [footerLogo]="footerLogo()"
+      [darkFooterLogo]="darkFooterLogo()"
+    />
+  }
+}

@@ -1,0 +1,22 @@
+<div class="footer-links footer-left-space">
+  <h5
+    class="footer-title"
+    [ngClass]="{ active: isTagData }"
+    (click)="openTag()"
+  >
+    Tag
+    <span class="according-menu">
+      <i class="fas fa-chevron-down"></i>
+    </span>
+  </h5>
+  <ul
+    class="footer-content"
+    [ngClass]="{ 'd-block': isTagData, 'd-none d-md-block': !isTagData }"
+  >
+    @for (tagData of tagFooterData; track tagData) {
+      <li>
+        <a [routerLink]="tagData.path">{{ tagData.title }}</a>
+      </li>
+    }
+  </ul>
+</div>

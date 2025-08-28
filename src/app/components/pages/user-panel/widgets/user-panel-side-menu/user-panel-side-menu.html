@@ -1,0 +1,13 @@
+<ul class="nav nav-tabs right-line-tab">
+  @for (data of userPanelSideMenu; track data) {
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        href="javascript:void(0)"
+        [ngClass]="{ active: activeTab === data.value }"
+        (click)="getPage(data)"
+        >{{ data.title }}</a
+      >
+    </li>
+  }
+</ul>

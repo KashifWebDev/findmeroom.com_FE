@@ -1,0 +1,38 @@
+<footer [class]="footerClass()">
+  <div class="footer footer-custom-col">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-md-6 order-xl">
+          <app-contact-one
+            [footerLogo]="footerLogo() ?? 'assets/images/logo/6.png'"
+            [darkFooterLogo]="darkFooterLogo()"
+          />
+        </div>
+        <div class="col-xl-2 col-md-3">
+          <app-about [icon]="false" />
+        </div>
+        <div class="col-xl-3 col-md-6 order-xl">
+          <app-map />
+        </div>
+        <div class="col-xl-2 col-md-3 order-lg">
+          <app-tag />
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <app-latest-blog-vertical />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer" [ngClass]="subFooterClass()">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-md-6">
+          <app-social-media />
+        </div>
+        <div class="col-xl-6 col-md-6 text-end">
+          <app-copy-right-one [heartIcon]="heartIcon()" />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

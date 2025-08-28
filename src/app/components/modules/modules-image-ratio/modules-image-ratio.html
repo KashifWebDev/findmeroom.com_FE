@@ -1,0 +1,75 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card ratio-card">
+          <div class="card-header">
+            <h5>
+              Ratio Classes: Change your image proportion by just adding class
+            </h5>
+            <p class="font-rubik mb-0">
+              If you use image as background than add class
+              <code>.bg-img</code> in image and add below class in parent.
+            </p>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              @for (allData of ModuleImageRatioData; track allData) {
+                <div class="col-md-6">
+                  <h5>{{ allData.title }}</h5>
+                  <ul>
+                    @for (data of allData.ratioData; track data) {
+                      <li>
+                        <h6>{{ data.ratio }}</h6>
+                      </li>
+                    }
+                  </ul>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@for (allData of modulesImageRatioImagesData; track allData) {
+  <section class="{{ allData.sectionClass }}">
+    <div class="container">
+      <div class="title-2">
+        <h2>{{ allData.title }}</h2>
+        <p>{{ allData.subTitle }}</p>
+      </div>
+      <div
+        class="row portfolio-section zoom-gallery-multiple gy-md-4 gy-3"
+        gallerize
+      >
+        @for (images of allData.images; track images; let i = $index) {
+          <div class="grid-item col-lg-3 col-sm-6">
+            <div class="grid-box">
+              <div class="overlay">
+                <div class="portfolio-image">
+                  <a
+                    class="bg-size"
+                    [style.background-image]="'url(' + images.url + ')'"
+                    (click)="lightbox.open(i)"
+                  >
+                    <img [src]="images.url" class="bg-img" alt="image" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+}

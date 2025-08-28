@@ -1,0 +1,38 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="small-section contact-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="log-in theme-card">
+          <app-contact-us-form [rowClass]="'get-in-touch'" />
+        </div>
+        <div class="theme-card">
+          <div class="contact-bottom">
+            <div class="contact-map">
+              <iframe
+                title="contact location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946229!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1563449626439!5m2!1sen!2sin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 contact_section contact_right">
+        <div class="row">
+          @for (data of contactDetailsData; track data) {
+            <div class="col-lg-12 col-sm-6">
+              <app-contact-details [contactDetailsData]="data" />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

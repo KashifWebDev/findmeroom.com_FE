@@ -1,0 +1,22 @@
+@if (newOfferData) {
+  <owl-carousel-o [options]="Options">
+    @for (data of newOfferData; track data) {
+      <ng-template carouselSlide>
+        <div class="item">
+          <div class="offer-wrapper">
+            <div class="media">
+              <div class="offer-icon">
+                <img [src]="data.img" alt="icon" />
+              </div>
+              <div class="media-body">
+                <h6>{{ data.heading }}</h6>
+                <h3>{{ data.title }}</h3>
+                <p>{{ data.desc }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

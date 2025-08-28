@@ -1,0 +1,47 @@
+<div class="payment-card" [ngClass]="cardsData()?.cardType">
+  <div class="card-details">
+    <div class="text-end">
+      <h6>{{ cardsData()?.cardName }}</h6>
+    </div>
+    <div class="card-number">
+      <div>
+        <img
+          src="assets/images/icon/chip.png"
+          class="img-fluid"
+          alt="chip-icon"
+        />
+        <img
+          src="assets/images/icon/wifi.png"
+          class="img-fluid"
+          alt="wifi-icon"
+        />
+      </div>
+      <h3>{{ cardsData()?.cardNumber }}</h3>
+    </div>
+    <div class="valid-detail">
+      <div class="title">
+        <span>valid</span>
+        <span>thru</span>
+      </div>
+      <div class="date">
+        <h3>{{ cardsData()?.expDate }}</h3>
+      </div>
+    </div>
+    <div class="name-detail">
+      <div class="name">
+        <h5>{{ cardsData()?.holderName }}</h5>
+      </div>
+      <div class="card-img">
+        <img
+          [src]="cardsData()?.cardImage"
+          class="img-fluid"
+          alt="card-image"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="edit-card">
+    <a href="javascript:void(0)" (click)="editCard()">edit</a>
+    <a href="javascript:void(0)">delete</a>
+  </div>
+</div>

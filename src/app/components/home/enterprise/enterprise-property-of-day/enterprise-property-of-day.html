@@ -1,0 +1,18 @@
+<section class="banner-section banner-4 new-property parallax-image">
+  <div class="container">
+    <div class="row ratio_landscape feature-section">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Property of the day'"
+          [desc]="desc"
+          [type]="'basic'"
+          [textWhite]="true"
+        />
+        <div class="feature-wrap">
+          <app-property-of-day [propertyOfDay]="propertyOfDay" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

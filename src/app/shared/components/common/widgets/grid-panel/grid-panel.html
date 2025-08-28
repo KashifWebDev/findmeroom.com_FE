@@ -1,0 +1,181 @@
+<div class="filter-panel" [ngClass]="{ 'with-modal-btn': mapButton() === true }">
+  <div class="top-panel">
+    <!-- For Tab Layout  -->
+    @if (tab() === true) {
+      <div class="filters respon-filter-content filter-button-group">
+        <ul>
+          <li [ngClass]="{ active: openTab === '' }" (click)="tabbed('')">
+            <span>All Property</span>
+          </li>
+          <li
+            [ngClass]="{ active: openTab === 'sale' }"
+            (click)="tabbed('sale')"
+          >
+            <span>For Sale</span>
+          </li>
+          <li
+            [ngClass]="{ active: openTab === 'fees' }"
+            (click)="tabbed('fees')"
+          >
+            <span>For rent</span>
+          </li>
+        </ul>
+      </div>
+    }
+
+    <!-- For Agency Listing -->
+    @if (agency()) {
+      <div>
+        <h2>Agency Listing</h2>
+        <span class="show-result"
+          >Showing <span>0 - 9 of 9</span> Listings</span
+        >
+      </div>
+    } @else {
+      <!-- Fro Property Listing -->
+      @if (!tab()) {
+        <div>
+          <h2>Properties Listing</h2>
+          @if (paginationData()) {
+            <span class="show-result"
+              >Showing
+              <span
+                >{{
+                  paginationData().totalItems > 0
+                    ? paginationData().startIndex + 1
+                    : 0
+                }}-
+                {{
+                  paginationData().totalItems > 0
+                    ? paginationData().endIndex + 1
+                    : 0
+                }}
+                of
+                {{
+                  paginationData().totalItems > 0
+                    ? paginationData().totalItems
+                    : 0
+                }}</span
+              >
+              Listings</span
+            >
+          }
+        </div>
+      }
+    }
+    <ul class="grid-list-filter d-flex">
+      <!-- Map Click Button -->
+      @if (mapButton() === true) {
+        <li>
+          <a href="javascript:void(0)" (click)="openModal(viewMap())">
+            View on map
+            <span class="arrow-define"> Click to view </span>
+          </a>
+        </li>
+      }
+      <!-- Advance Filter Button -->
+      @if (filter() === true) {
+        <li>
+          <div class="filter-bottom-title" (click)="openFilter()">
+            <h6 class="mb-0 font-roboto">
+              Advance search
+              <app-feather-icons
+                [icon]="'align-center'"
+                class="float-end ms-2"
+              />
+            </h6>
+          </div>
+        </li>
+      }
+      <li>
+        <div class="dropdown">
+          <select class="form-control" (change)="sortFilter($event)">
+            <option value="newest" [selected]="getSortParams === 'newest'">
+              Sort by Newest
+            </option>
+            <option value="oldest" [selected]="getSortParams === 'oldest'">
+              Sort by Oldest
+            </option>
+            <option
+              value="high-price"
+              [selected]="getSortParams === 'high-price'"
+            >
+              Sort by price (High to Low)
+            </option>
+            <option
+              value="low-price"
+              [selected]="getSortParams === 'low-price'"
+            >
+              Sort by price (Low to High)
+            </option>
+          </select>
+        </div>
+      </li>
+      <!-- Grid  -->
+      @if (grid() === true) {
+        @if (gridOption()) {
+          <li
+            class="collection-grid-view"
+            [ngClass]="{
+              'd-block': activeGrid !== 'list',
+              'd-none': activeGrid === 'list',
+            }"
+          >
+            <ul>
+              <li (click)="grid2s()">
+                <img
+                  src="assets/images/icon/2.png"
+                  alt="grid2-icon"
+                  class="product-2-layout-view"
+                />
+              </li>
+              <li (click)="grid3s()">
+                <img
+                  src="assets/images/icon/3.png"
+                  alt="grid3-icon"
+                  class="product-3-layout-view"
+                />
+              </li>
+              <li (click)="grid4s()">
+                <img
+                  src="assets/images/icon/4.png"
+                  alt="grid4-icon"
+                  class="product-4-layout-view"
+                />
+              </li>
+            </ul>
+          </li>
+          <li
+            class="grid-btn"
+            [ngClass]="{ active: activeGrid === 'grid' }"
+            (click)="gridOpens()"
+          >
+            <a href="javascript:void(0)" class="grid-layout-view">
+              <app-feather-icons [icon]="'grid'" />
+            </a>
+          </li>
+          <li
+            class="list-btn"
+            [ngClass]="{ active: activeGrid === 'list' }"
+            (click)="listOpens()"
+          >
+            <a href="javascript:void(0)" class="list-layout-view">
+              <app-feather-icons [icon]="'list'" />
+            </a>
+          </li>
+        }
+      }
+      <!-- Advance Filter Button Responsive  -->
+      @if (filter() === false) {
+        <li class="d-lg-none d-block">
+          <div (click)="openLeftFilter()">
+            <h6 class="mb-0 mobile-filter font-roboto">
+              Advance search
+              <app-feather-icons [icon]="'align-center'" class="float-end" />
+            </h6>
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+</div>

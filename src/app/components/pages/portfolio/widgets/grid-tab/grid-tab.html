@@ -1,0 +1,33 @@
+<div class="filter-panel">
+  <div class="top-panel tab-icon">
+    <div class="filters respon-filter-content filter-button-group">
+      <ul>
+        <li (click)="getTab('all')" [ngClass]="{ active: activeTab === 'all' }">
+          <app-feather-icons [icon]="'home'" />
+          <span>All Property</span>
+        </li>
+        <li
+          (click)="getTab('sale')"
+          [ngClass]="{ active: activeTab === 'sale' }"
+        >
+          <app-feather-icons [icon]="'divide-circle'" />
+          <span>For Sale</span>
+        </li>
+        <li
+          (click)="getTab('rent')"
+          [ngClass]="{ active: activeTab === 'rent' }"
+        >
+          <app-feather-icons [icon]="'map'" />
+          <span>For rent</span>
+        </li>
+        <li
+          (click)="getTab('trend')"
+          [ngClass]="{ active: activeTab === 'trend' }"
+        >
+          <app-feather-icons [icon]="'file'" />
+          <span>trend</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

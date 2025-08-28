@@ -1,0 +1,31 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="theme-title">
+  <div class="container">
+    @for (titleData of modulesTitleData; track titleData) {
+      <div class="theme-card">
+        <div class="card-header bg-transparent">
+          <h4 class="f-w-600 text-center">{{ titleData.title }}</h4>
+        </div>
+        <div class="card-body pb-0">
+          <app-title
+            [type]="titleData.type"
+            [titleClass]="titleData.titleClass"
+            [tagClass]="titleData.tagClass"
+            [tag]="titleData.tag"
+            [heading]="titleData.heading"
+            [descClass]="titleData.descClass"
+            [desc]="titleData.desc"
+            [svgIcon]="titleData.svgIcon"
+            [svgClass]="titleData.svgClass"
+          />
+        </div>
+      </div>
+    }
+  </div>
+</section>

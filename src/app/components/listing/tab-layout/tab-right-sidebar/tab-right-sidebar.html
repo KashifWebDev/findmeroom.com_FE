@@ -1,0 +1,19 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="property-section">
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col-xl-9 col-lg-8 property-grid-2">
+        <app-common-tab-property-box [advanceFilter]="false" />
+      </div>
+      <div class="col-xl-3 col-lg-4">
+        <app-common-filter-listing [style]="'vertical'" />
+      </div>
+    </div>
+  </div>
+</section>

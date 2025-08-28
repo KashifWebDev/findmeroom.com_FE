@@ -1,0 +1,111 @@
+<div class="title-3 text-start">
+  <h2>Add your Location</h2>
+</div>
+<form class="row" id="needs-validation1" novalidate [formGroup]="myForm">
+  <div class="form-group col-md-12">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'map-pin'" />
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        id="address"
+        placeholder="Enter your Address"
+        formControlName="address"
+        [ngClass]="{
+          'is-invalid': (address?.touched || validate) && address?.errors,
+          'is-valid': !address?.errors,
+        }"
+      />
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'map-pin'" />
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        id="city_name"
+        placeholder="Enter your city"
+        formControlName="city"
+        [ngClass]="{
+          'is-invalid': (city?.touched || validate) && city?.errors,
+          'is-valid': !city?.errors,
+        }"
+      />
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'map-pin'" />
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        id="state_name"
+        placeholder="Enter your state"
+        formControlName="state"
+        [ngClass]="{
+          'is-invalid': (state?.touched || validate) && state?.errors,
+          'is-valid': !state?.errors,
+        }"
+      />
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'map'" />
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        id="country_name"
+        placeholder="Enter your country"
+        formControlName="country"
+        [ngClass]="{
+          'is-invalid': (country?.touched || validate) && country?.errors,
+          'is-valid': !country?.errors,
+        }"
+      />
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'map-pin'" />
+      </div>
+      <input
+        type="number"
+        class="form-control"
+        id="pin_code"
+        placeholder="Enter your pin code"
+        formControlName="pin_code"
+        [ngClass]="{
+          'is-invalid': (pin_code?.touched || validate) && pin_code?.errors,
+          'is-valid': !pin_code?.errors,
+        }"
+      />
+    </div>
+  </div>
+</form>
+<div class="next-btn d-flex col-sm-12">
+  <button
+    type="button"
+    class="btn btn-dashed color-2 prev1 btn-pill"
+    (click)="previous()"
+  >
+    <i class="fas fa-arrow-left me-2"></i> Previous
+  </button>
+  <button
+    type="button"
+    class="btn btn-gradient color-2 next2 btn-pill"
+    (click)="next(myForm)"
+  >
+    Next <i class="fas fa-arrow-right ms-2"></i>
+  </button>
+</div>

@@ -1,0 +1,8 @@
+@if (type() === "simple") {
+  <app-property-city-one
+    [propertyInCity]="propertyInCity()"
+    [tagClass]="tagClass()"
+  />
+} @else if (type() === "basic") {
+  <app-property-city-two [propertyInCity]="propertyInCityData()" />
+}

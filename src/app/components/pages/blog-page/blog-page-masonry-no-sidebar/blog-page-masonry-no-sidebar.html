@@ -1,0 +1,31 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="blog-grid row grid mt-0">
+          <ngx-masonry [options]="masonryOptions" [ordered]="true">
+            @for (data of latestBlogData; track data) {
+              <div
+                class="grid-item wow fadeInUp col-lg-4 col-sm-6"
+                ngxMasonryItem
+                style="max-width: 400px"
+              >
+                <app-blog-page-blogdata
+                  [latestBlogData]="data"
+                  [masonry]="true"
+                />
+              </div>
+            }
+          </ngx-masonry>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

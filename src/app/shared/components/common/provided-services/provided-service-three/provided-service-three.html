@@ -1,0 +1,32 @@
+@if (providedServicesData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of providedServicesData(); track data) {
+      <ng-template carouselSlide>
+        <div style="margin: 0 20px 30px 20px">
+          <div class="service-wrapper">
+            <div class="top-img-box">
+              <div>
+                <img [src]="data.img" class="img-fluid" alt="icon" />
+              </div>
+            </div>
+            <div class="service-details">
+              <h3>
+                <a
+                  href="javascript:void(0)"
+                  [routerLink]="['/page/other-pages/services']"
+                  >{{ data.title }}</a
+                >
+              </h3>
+              <p class="font-roboto">{{ data.desc }}</p>
+              <a
+                href="javascript:void(0)"
+                [routerLink]="['/page/other-pages/services']"
+                >View details</a
+              >
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

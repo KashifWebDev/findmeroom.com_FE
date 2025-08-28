@@ -1,0 +1,51 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="user-dashboard small-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar-user sticky-cls">
+          <div class="user-profile">
+            <app-user-info />
+          </div>
+          <div class="dashboard-list">
+            <app-user-panel-side-menu [activeTab]="'card-payment'" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-content">
+          <div class="payment-user" id="payment">
+            <div class="common-card">
+              <div class="common-header">
+                <h5>Cards & payment</h5>
+              </div>
+              <div class="row card-payment">
+                @for (data of cardsData; track data) {
+                  <div class="col-xl-4 col-sm-6">
+                    <app-cards-details [cardsData]="data" />
+                  </div>
+                }
+                <div class="col-xl-4 col-sm-6">
+                  <div class="payment-card add-card">
+                    <div class="card-details" (click)="addCard()">
+                      <div>
+                        <i class="fas fa-plus-circle"></i>
+                        <h5>add new card</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,160 @@
+<div class="row gx-3">
+  <div [ngClass]="style() === 'horizontal' ? 'col-lg-4' : 'col-lg-12'">
+    <div class="form-group">
+      @if (label()) {
+        <label>Property Status</label>
+      }
+      <select class="form-control" (change)="getStatus($event)">
+        <option value="">Property Status</option>
+        @for (status of propertyStatus; track status) {
+          <option
+            value="{{ status.value }}"
+            [selected]="status.value === getStatusParam"
+          >
+            {{ status.title }}
+          </option>
+        }
+      </select>
+    </div>
+  </div>
+  <div [ngClass]="style() === 'horizontal' ? 'col-lg-4' : 'col-lg-12'">
+    <div class="form-group">
+      @if (label()) {
+        <label>Property Type</label>
+      }
+      <select class="form-control" (change)="getType($event)">
+        <option value="">Property Type</option>
+        @for (type of propertyType; track type) {
+          <option
+            value="{{ type.value }}"
+            [selected]="type.value === getTypeParam"
+          >
+            {{ type.title }}
+          </option>
+        }
+      </select>
+    </div>
+  </div>
+  <div [ngClass]="style() === 'horizontal' ? 'col-lg-4' : 'col-sm-6'">
+    <div class="form-group">
+      @if (label()) {
+        <label>Rooms</label>
+      }
+      <select class="form-control" (change)="getRooms($event)">
+        <option value="">Max Rooms</option>
+        @for (room of rooms; track room) {
+          <option
+            value="{{ room.value }}"
+            [selected]="room.value === getRoomsParam"
+          >
+            {{ room.title }}
+          </option>
+        }
+      </select>
+    </div>
+  </div>
+  <div [ngClass]="style() === 'horizontal' ? 'col-lg-4' : 'col-6'">
+    <div class="form-group">
+      @if (label()) {
+        <label>Bed</label>
+      }
+      <select class="form-control" (change)="getBeds($event)">
+        <option value="">Bed</option>
+        @for (bed of beds; track bed) {
+          <option
+            value="{{ bed.value }}"
+            [selected]="bed.value === getBedParam"
+          >
+            {{ bed.title }}
+          </option>
+        }
+      </select>
+    </div>
+  </div>
+  <div [ngClass]="style() === 'horizontal' ? 'col-lg-4' : 'col-6'">
+    <div class="form-group">
+      @if (label()) {
+        <label>Bath</label>
+      }
+      <select class="form-control" (change)="getBath($event)">
+        <option value="">Bath</option>
+        @for (bath of baths; track bath) {
+          <option
+            value="{{ bath.value }}"
+            [selected]="bath.value === getBathParam"
+          >
+            {{ bath.title }}
+          </option>
+        }
+      </select>
+    </div>
+  </div>
+  <div [ngClass]="style() === 'horizontal' ? 'col-lg-4' : 'col-sm-6'">
+    <div class="form-group">
+      @if (label()) {
+        <label>Agencies</label>
+      }
+      <select class="form-control" (change)="getAgency($event)">
+        <option value="">Agencies</option>
+        @for (agency of agency; track agency) {
+          <option
+            value="{{ agency.value }}"
+            [selected]="agency.value === getAgencyParam"
+          >
+            {{ agency.title }}
+          </option>
+        }
+      </select>
+    </div>
+  </div>
+  @if (slider() === true) {
+    <div [ngClass]="style() === 'horizontal' ? 'col-lg-4' : 'col-12'">
+      <div class="form-group">
+        <div class="price-range">
+          <label for="amount"
+            >Price :
+            {{ priceMinValue | currencySymbol: propertyService.Currency }} -
+            {{
+              priceMaxValue | currencySymbol: propertyService.Currency
+            }}</label
+          >
+          <div id="slider-range" class="theme-range-3">
+            <ngx-slider
+              [(value)]="priceMinValue"
+              [(highValue)]="priceMaxValue"
+              [options]="options"
+              (userChangeEnd)="priceChange($event)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div [ngClass]="style() === 'horizontal' ? 'col-lg-4' : 'col-12'">
+      <div class="form-group">
+        <div class="price-range">
+          <label for="amount"
+            >Area : {{ areaMinValue }} - {{ areaMaxValue }} sq ft</label
+          >
+          <div id="slider-range1" class="theme-range-3">
+            <ngx-slider
+              [(value)]="areaMinValue"
+              [(highValue)]="areaMaxValue"
+              [options]="areaOptions"
+              (userChangeEnd)="areaChange($event)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+  <div [ngClass]="style() === 'horizontal' ? 'col-12 text-end' : 'col-lg-12'">
+    <button
+      type="button"
+      class="btn btn-gradient"
+      [ngClass]="buttonClass()"
+      [routerLink]="['/listing/grid-view/2-grid/left-sidebar']"
+    >
+      Search
+    </button>
+  </div>
+</div>

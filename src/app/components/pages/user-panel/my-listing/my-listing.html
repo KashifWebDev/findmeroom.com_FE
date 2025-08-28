@@ -1,0 +1,40 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="user-dashboard small-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar-user sticky-cls">
+          <div class="user-profile">
+            <app-user-info />
+          </div>
+          <div class="dashboard-list">
+            <app-user-panel-side-menu [activeTab]="'listing'" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-content">
+          <div class="tab-listing" id="listing">
+            <div class="property-section">
+              <div class="property-grid-2 ratio_63">
+                <app-grid-panel [gridOption]="false" [filter]="true" />
+                <app-common-filter-listing [style]="'horizontal'" />
+                <app-common-filter-property-box
+                  [type]="'list'"
+                  [filter]="true"
+                  [gridImages]="true"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

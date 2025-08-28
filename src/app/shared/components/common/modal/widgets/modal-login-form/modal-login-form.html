@@ -1,0 +1,60 @@
+<form ngNativeValidate>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-text">
+        <app-feather-icons [icon]="'user'" />
+      </div>
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Enter Email"
+        required
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <app-feather-icons [icon]="'lock'" />
+        </div>
+      </div>
+      <input
+        [type]="inputType"
+        id="pwd-input"
+        class="form-control"
+        placeholder="Password"
+        required
+      />
+      <div class="input-group-apend">
+        <div class="input-group-text" (click)="showPassword()">
+          <i
+            id="pwd-icon"
+            class="far"
+            [ngClass]="isShow === true ? 'fa-eye' : 'fa-eye-slash'"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex">
+    <label class="d-block mb-0" for="chk-ani">
+      <input
+        class="checkbox_animated"
+        [ngClass]="tagClass()"
+        id="chk-ani"
+        type="checkbox"
+      />
+      <span>Remember me</span>
+    </label>
+    <a
+      [routerLink]="['/page/other-pages/forgot-password']"
+      class="font-rubik text-{{ tagClass() }}"
+      (click)="modal.dismissAll()"
+      >Forgot password ?</a
+    >
+  </div>
+  <button type="submit" class="btn btn-flat" [ngClass]="buttonClass()">
+    Log in
+  </button>
+</form>

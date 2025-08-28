@@ -1,0 +1,13 @@
+@if (brandData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of brandData(); track data) {
+      <ng-template carouselSlide>
+        <div>
+          <a href="javascript:void(0)" class="logo-box">
+            <img [src]="data.img" alt="brand" class="img-fluid" />
+          </a>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

@@ -1,0 +1,47 @@
+<section class="home-section layout-1">
+  <div class="container-fluid">
+    <div class="row m-0">
+      <div class="col p-0">
+        @if (sliderImages) {
+          <owl-carousel-o [options]="Options">
+            @for (data of sliderImages; track data) {
+              <ng-template carouselSlide>
+                <div class="">
+                  <div
+                    class="bg-size vh-100"
+                    [style.background-image]="'url(' + data.url + ')'"
+                  >
+                    <div class="">
+                      <div class=""></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <span class="fnc-slide__heading-line">
+                          <span>{{ data.propertyType }}, </span>
+                        </span>
+                        <span class="fnc-slide__heading-line">
+                          <span>{{ data.propertyStatus }}</span>
+                        </span>
+                      </h2>
+                      <a
+                        href="javascript:void(0)"
+                        class="fnc-slide__action-btn"
+                        [routerLink]="['/agent/submit-property']"
+                      >
+                        <span>Submit property</span>
+                        <svg width="13px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            }
+          </owl-carousel-o>
+        }
+      </div>
+    </div>
+  </div>
+</section>

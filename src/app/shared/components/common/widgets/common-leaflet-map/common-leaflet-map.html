@@ -1,0 +1,8 @@
+<div
+  class="map-container"
+  style="height: 690px; z-index: 0"
+  leaflet
+  [leafletOptions]="options"
+  (leafletMapReady)="onMapReady($event)"
+  (leafletClick)="mapClicked($event)"
+></div>

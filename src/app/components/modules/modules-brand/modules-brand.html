@@ -1,0 +1,42 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="small-section bg-light brand-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="slide-2 brand-slider">
+          <app-brand [brandData]="brandData1" [type]="'basic'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="slide-1 brand-slider">
+          <app-brand [brandData]="brandData2" [type]="'simple'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-section bg-light bg-light-blue arrow-gradient">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="slide-3 brand-slider">
+          <app-brand [brandData]="brandData3" [type]="'classic'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+<div class="image_section row zoom-gallery-multiple gx-3">
+  <div class="col-sm-8">
+    <a
+      style="background-image: url(&quot;assets/images/parallax/4.jpg&quot;)"
+      class="bg-size"
+    >
+      <img
+        [src]="'assets/images/parallax/4.jpg'"
+        class="img-fluid bg-img"
+        alt="property-image"
+        style="display: none"
+      />
+    </a>
+  </div>
+  <div class="col-sm-4">
+    <div class="row">
+      @for (images of propertyImageData(); track images) {
+        <div class="col-lg-12">
+          <div class="img-property">
+            <a
+              [style.background-image]="'url(' + images.url + ')'"
+              class="bg-size"
+            >
+              <img
+                [src]="images.url"
+                class="img-fluid bg-img"
+                alt="property-image"
+                style="display: none"
+              />
+            </a>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

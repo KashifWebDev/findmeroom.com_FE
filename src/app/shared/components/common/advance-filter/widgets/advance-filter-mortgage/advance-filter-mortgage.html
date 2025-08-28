@@ -1,0 +1,52 @@
+<h6>Mortgage</h6>
+<div class="category-property">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Loan Amount"
+        required
+        formControlName="loan_amount"
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Down Payment"
+        required
+        formControlName="down_payment"
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">%</span>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Rate of Interest"
+        required
+        formControlName="interest"
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Number Of years"
+        required
+        formControlName="years"
+      />
+    </div>
+    <button
+      type="submit"
+      class="btn btn-gradient color-2 btn-block btn-pill"
+      [disabled]="myForm.invalid"
+    >
+      Calculate
+    </button>
+  </form>
+</div>

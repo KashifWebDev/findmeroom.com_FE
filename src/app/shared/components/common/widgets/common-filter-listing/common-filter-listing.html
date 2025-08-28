@@ -1,0 +1,27 @@
+@if (style() === "vertical") {
+  <app-advance-filter-box
+    (categoryValue)="getData($event)"
+    (propertyStatusData)="getData($event)"
+    (propertyTypeData)="getData($event)"
+    (roomsData)="getData($event)"
+    (bedsData)="getData($event)"
+    (bathData)="getData($event)"
+    (agencyData)="getData($event)"
+    (priceFilter)="getData($event)"
+    (areaFilter)="getData($event)"
+  />
+}
+
+@if (style() === "horizontal") {
+  <app-advance-filter-box-horizontial
+    (categoryValue)="getData($event)"
+    (propertyStatusData)="getData($event)"
+    (propertyTypeData)="getData($event)"
+    (roomsData)="getData($event)"
+    (bedsData)="getData($event)"
+    (bathData)="getData($event)"
+    (agencyData)="getData($event)"
+    (priceFilter)="getData($event)"
+    (areaFilter)="getData($event)"
+  />
+}

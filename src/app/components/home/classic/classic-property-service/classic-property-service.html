@@ -1,0 +1,22 @@
+<section class="service-section service-bg">
+  <div class="container">
+    <app-title
+      [titleClass]="'title-3 text-start'"
+      [heading]="'Property Services'"
+      [desc]="desc"
+      [type]="'basic'"
+    />
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="service-slider arrow-gradient arrow-right">
+          <app-provided-services
+            [providedServicesData]="providedServices"
+            [type]="'classic'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+@if (homeSectionSliderData().length) {
+  <owl-carousel-o [options]="Options">
+    @for (sliderData of homeSectionSliderData(); track sliderData) {
+      <ng-template carouselSlide>
+        <div>
+          <div
+            class="bg-layout-3"
+            [style.background-image]="'url(' + sliderData.img + ')'"
+          >
+            <div class="banner-3">
+              <span class="label label-light label-flat color-3"
+                >#Realestate</span
+              >
+              <h1>{{ sliderData.title }}</h1>
+              <p>{{ sliderData.subTitle }}</p>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-solid color-3 btn-flat"
+                [routerLink]="['/property/image-box']"
+                >{{ sliderData.buttonText }}</a
+              >
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

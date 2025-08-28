@@ -1,0 +1,36 @@
+<section
+  class="breadcrumb-section p-0 bg-size"
+  [ngClass]="{ 'effect-cls': type() === 'effect' }"
+  [style.background-image]="'url(' + bgImage() + ')'"
+>
+  <img
+    [src]="bgImage()"
+    class="bg-img img-fluid"
+    alt="property-image"
+    style="display: none"
+  />
+  <div class="container">
+    <div
+      class="breadcrumb-content"
+      [ngClass]="{ 'breadcrumb-right': type() === 'breadcrumb-right' }"
+    >
+      <div [ngClass]="{ 'text-dark': type() === 'effect' }">
+        <h2>{{ title() }}</h2>
+        <nav aria-label="breadcrumb" class="theme-breadcrumb">
+          <ol class="breadcrumb ms-0">
+            <li class="breadcrumb-item">
+              <a
+                href="javascipt:void(0)"
+                [routerLink]="['/theme/slider-filter-search']"
+                >{{ parent() }}</a
+              >
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              {{ child() }}
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>

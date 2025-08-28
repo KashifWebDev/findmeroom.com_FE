@@ -1,0 +1,19 @@
+<div
+  class="row column-sm property-label"
+  [class.list-view]="listView"
+  [ngClass]="{ 'property-2 property-grid': type() !== 'profile' }"
+>
+  @for (data of agencyData() | slice: 0 : totalData(); track data) {
+    <div
+      [class.col-md-6]="col_md_6"
+      [class.col-xl-4]="col_xl_4 || type() === 'profile'"
+      [class.col-lg-6]="col_lg_6"
+      [class.col-lg-4]="col_lg_4"
+      [class.col-xxl-3]="col_xxl_3"
+      [class.col-6]="col_6"
+      [class.col-xl-6]="col_xl_6"
+    >
+      <app-agency-agents [agentsData]="data" />
+    </div>
+  }
+</div>

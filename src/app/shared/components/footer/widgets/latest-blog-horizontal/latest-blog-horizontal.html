@@ -1,0 +1,29 @@
+<div class="slick-between">
+  <div class="footer-slider">
+    @if (blogDataHorizontal) {
+      <owl-carousel-o [options]="options">
+        @for (blogData of blogDataHorizontal; track blogData) {
+          <ng-template carouselSlide>
+            <div>
+              <div class="media">
+                <a [routerLink]="blogData.path">
+                  <div class="img-overlay">
+                    <img [src]="blogData.img" alt="logo" />
+                  </div>
+                </a>
+                <div class="media-body">
+                  <h6>
+                    <a [routerLink]="blogData.path">{{ blogData.title }}</a>
+                  </h6>
+                  <p class="font-roboto">
+                    <a [routerLink]="blogData.path">{{ blogData.desc }}</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        }
+      </owl-carousel-o>
+    }
+  </div>
+</div>

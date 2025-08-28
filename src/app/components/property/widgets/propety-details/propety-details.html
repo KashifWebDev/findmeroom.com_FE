@@ -1,0 +1,27 @@
+<div class="page-section" id="details">
+  <h4 class="content-title">
+    Property Details
+    <a
+      href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.697488,-73.979681,8z/data=!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728?hl=en"
+      target="_blank"
+    >
+      <i class="fa fa-map-marker-alt"></i> view on map</a
+    >
+  </h4>
+  <div class="row">
+    @for (propertyDetails of propertyDetailsData(); track propertyDetails) {
+      <div class="col-md-6 col-xl-4">
+        <ul class="property-list-details">
+          <li>
+            <span>{{ propertyDetails.title }} :</span>
+            {{ propertyDetails.data }}
+          </li>
+        </ul>
+      </div>
+    }
+  </div>
+  <h4 class="content-title mt-4">Attachments</h4>
+  <a href="javascript:void(0)" class="attach-file"
+    ><i class="far fa-file-pdf"></i>Demo Property Document
+  </a>
+</div>

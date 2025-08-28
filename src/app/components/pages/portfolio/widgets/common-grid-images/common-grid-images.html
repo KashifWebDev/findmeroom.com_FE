@@ -1,0 +1,30 @@
+<div class="grid-box">
+  <div class="overlay">
+    <div class="portfolio-image">
+      <a
+        [style.background-image]="'url(' + imagesData()?.url + ')'"
+        class="bg-size"
+        (click)="lightbox.open(index())"
+      >
+        <img
+          [src]="imagesData()?.url"
+          class="bg-img"
+          alt="property-image"
+          [ngClass]="{ 'bg-img-size': type() === 'masonry' }"
+        />
+      </a>
+    </div>
+  </div>
+  @if (gridTitle() === true) {
+    <div class="property-text">
+      <h3>
+        <a
+          href="javascript:void(0)"
+          [routerLink]="['/page/portfolio/details']"
+          >{{ imagesData()?.title }}</a
+        >
+      </h3>
+      <h6>{{ imagesData()?.description }}</h6>
+    </div>
+  }
+</div>

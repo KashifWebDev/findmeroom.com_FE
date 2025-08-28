@@ -1,0 +1,22 @@
+<ul class="wizard-steps">
+  @for (data of stepsData(); track data) {
+    <li
+      class="step-container step-{{ data.stepNumber }}"
+      [ngClass]="{
+        disabled: data.disabled === true,
+        active: activeSteps() === data.stepNumber,
+      }"
+    >
+      <div class="media">
+        <div class="step-icon">
+          <app-feather-icons [icon]="'check'" />
+          <span>{{ data.stepNumber }}</span>
+        </div>
+        <div class="media-body">
+          <h5>{{ data.title }}</h5>
+          <h6>{{ data.subTitle }}</h6>
+        </div>
+      </div>
+    </li>
+  }
+</ul>

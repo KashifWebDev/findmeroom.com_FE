@@ -1,0 +1,7 @@
+@if (type() === "simple") {
+  <app-brand-one [brandData]="brandData()" />
+} @else if (type() === "basic") {
+  <app-brand-two [brandData]="brandData()" />
+} @else if (type() === "classic") {
+  <app-brand-three [brandData]="brandData()" />
+}

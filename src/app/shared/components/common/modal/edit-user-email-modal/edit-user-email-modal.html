@@ -1,0 +1,42 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">Change email address</h5>
+    <button type="button" class="btn-close" (click)="modal.dismissAll()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="row gx-3">
+        <div class="form-group col-12">
+          <label for="old">current email</label>
+          <input type="email" class="form-control" id="old" />
+        </div>
+        <div class="form-group col-12">
+          <label for="new">enter new email</label>
+          <input type="email" class="form-control" id="new" />
+        </div>
+        <div class="form-group col-12">
+          <label for="comfirm">confirm your email</label>
+          <input type="email" class="form-control" id="comfirm" />
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-dashed color-2 btn-pill"
+      (click)="modal.dismissAll()"
+    >
+      Cancel
+    </button>
+    <button
+      type="button"
+      class="btn btn-gradient color-2 btn-pill"
+      (click)="modal.dismissAll()"
+    >
+      Save changes
+    </button>
+  </div>
+</div>

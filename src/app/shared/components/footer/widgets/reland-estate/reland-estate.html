@@ -1,0 +1,23 @@
+<div class="footer-links footer-left-space">
+  <h5
+    class="footer-title"
+    [ngClass]="{ active: isRelandData }"
+    (click)="openReland()"
+  >
+    Reland Estate
+    <span class="according-menu"><i class="fas fa-chevron-down"></i></span>
+  </h5>
+  <ul
+    class="footer-content"
+    [ngClass]="{ 'd-block': isRelandData, 'd-none d-md-block': !isRelandData }"
+  >
+    @for (data of relandEstateFooterData; track data) {
+      <li>
+        <a href="javascript:void(0)" [routerLink]="data.path">
+          <app-feather-icons [icon]="'chevron-right'" />
+          {{ data.title }}
+        </a>
+      </li>
+    }
+  </ul>
+</div>

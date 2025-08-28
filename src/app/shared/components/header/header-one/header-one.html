@@ -1,0 +1,50 @@
+<header
+  class="{{ headerClass() }}"
+  [ngClass]="{ fixed: headerFixed && headerFix() }"
+  style="z-index: 9"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="menu">
+          <div class="brand-logo">
+            <a href="javascript:void(0)" [routerLink]="['']">
+              @if (layout.config.settings.layout_version === "dark-layout") {
+                <img
+                  [src]="darkHeaderLogo()"
+                  alt="logo"
+                  class="img-fluid for-dark"
+                />
+              } @else {
+                <img
+                  [src]="headerLogo()"
+                  alt="logo"
+                  class="img-fluid for-light"
+                />
+              }
+            </a>
+          </div>
+          <app-menu [icon]="false" class="nav-collapse" />
+          <ul class="header-right">
+            <li class="right-menu color-6">
+              <ul class="nav-menu">
+                <li class="dropdown language">
+                  <app-language />
+                </li>
+                <li class="dropdown">
+                  <app-wishlist />
+                </li>
+                <li class="dropdown currency">
+                  <app-currency />
+                </li>
+                <li class="dropdown">
+                  <app-profile />
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

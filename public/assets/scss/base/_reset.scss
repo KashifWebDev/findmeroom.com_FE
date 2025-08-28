@@ -1,0 +1,334 @@
+/**=====================
+     Reset css start
+==========================**/
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+.media-body {
+  flex: 1;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+label {
+  margin-bottom: 0.5rem;
+}
+
+/*====== Padding css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Padding css ends ======*/
+
+/*====== Padding-left css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .p-l-#{$i} {
+    padding-left: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Padding-left css ends ======*/
+
+/*====== Padding-top css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .p-t-#{$i} {
+    padding-top: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Padding-top css ends ======*/
+
+/*====== Padding-bottom css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .p-b-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Padding-bottom css ends ======*/
+
+/*====== Padding-right css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .p-r-#{$i} {
+    padding-right: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Padding-right css ends ======*/
+
+/*====== Margin css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Margin css ends ======*/
+
+/*====== Margin-top css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .m-t-#{$i} {
+    margin-top: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Margin-top css ends ======*/
+
+/*====== Margin-Bottom css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .m-b-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Margin-Bottom css ends ======*/
+
+/*====== Margin-left css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .m-l-#{$i} {
+    margin-left: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Margin-left css ends ======*/
+
+/*====== Margin-right css starts ======*/
+$i: 0;
+@while $i<=50 {
+  .m-r-#{$i} {
+    margin-right: #{$i}px;
+  }
+  $i: $i + 5;
+}
+/*====== Margin-right css ends ======*/
+
+/*====== Image-sizes css starts ======*/
+$i: 10;
+@while $i<=100 {
+  .img-#{$i} {
+    width: #{$i}px;
+  }
+  $i: $i + 10;
+}
+/*====== Image-sizes css ends ======*/
+
+/*====== font family css starts ======*/
+.font-roboto {
+  font-family: $font_1, $font_3;
+}
+.font-rubik {
+  font-family: $font_2, $font_3;
+}
+/*====== font family css end ======*/
+
+/*====== image ratio css starts ======*/
+.ratio_36 {
+  .bg-size {
+    &:before {
+      padding-top: 36%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_40 {
+  .bg-size {
+    &:before {
+      padding-top: 40%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_45 {
+  .bg-size {
+    &:before {
+      padding-top: 45%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio2_1 {
+  .bg-size {
+    &:before {
+      padding-top: 50%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_55 {
+  .bg-size {
+    &:before {
+      padding-top: 55%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_63 {
+  .bg-size {
+    &:before {
+      padding-top: 80%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_65 {
+  .bg-size {
+    &:before {
+      padding-top: 65%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_70 {
+  .bg-size {
+    &:before {
+      padding-top: 70%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_59 {
+  .bg-size {
+    &:before {
+      padding-top: 59%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio2_3 {
+  .bg-size {
+    &:before {
+      padding-top: 60%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio3_2 {
+  .bg-size {
+    &:before {
+      padding-top: 66.66%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_90 {
+  .bg-size {
+    &:before {
+      padding-top: 93%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_landscape {
+  .bg-size {
+    &:before {
+      padding-top: 75%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_square {
+  .bg-size {
+    &:before {
+      padding-top: 100%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_asos {
+  .bg-size {
+    &:before {
+      padding-top: 127.7777778%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio_portrait {
+  .bg-size {
+    &:before {
+      padding-top: 150%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.ratio1_2 {
+  .bg-size {
+    &:before {
+      padding-top: 200%;
+      content: "";
+      display: block;
+    }
+  }
+}
+.property-box {
+  .property-image {
+    .property-slider {
+      .bg-size {
+        height: 235px;
+      }
+    }
+  }
+}
+
+.bg-size {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+
+  .bg-img {
+    display: none;
+
+    &.bg-img-size {
+      width: 100%;
+      display: block !important;
+    }
+  }
+}
+
+// .dz-message {
+//   position: relative !important;
+//   display: inline-block !important;
+//   min-width: calc(100% - 16px) !important;
+//   min-height: 130px !important;
+//   max-width: calc(100% - 16px) !important;
+//   max-height: 100% !important;
+//   margin: 0px !important;
+//   border: 2px dashed #aaa !important;
+//   background-color: #eee !important;
+// }
+
+/*====== image ratio css ends ======*/
+
+/**=====================
+     Reset css end
+==========================**/

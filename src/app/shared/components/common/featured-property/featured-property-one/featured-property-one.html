@@ -1,0 +1,109 @@
+@if (featuredProperty()) {
+  <owl-carousel-o [options]="Options">
+    @for (featuredProperty of featuredProperty(); track featuredProperty) {
+      <ng-template carouselSlide>
+        <div>
+          <div class="feature-wrapper">
+            <div class="row">
+              <div class="col-xl-4 col-lg-3">
+                <div class="feature-left">
+                  <div class="property-details">
+                    <span class="font-roboto">{{ featuredProperty.city }}</span>
+                    <a
+                      href="javascript:void(0)"
+                      [routerLink]="['/property/image-box']"
+                    >
+                      <h3 class="d-flex">
+                        {{ featuredProperty.title }}
+                        <span
+                          ><span class="label label-dark label-pill">{{
+                            featuredProperty.label
+                          }}</span></span
+                        >
+                      </h3>
+                    </a>
+                    <h6 [class]="tagClass()">
+                      {{
+                        featuredProperty.price
+                          | currencySymbol: propertyService.Currency
+                      }}*
+                    </h6>
+                    <p class="font-roboto">
+                      {{ featuredProperty.description }}
+                    </p>
+                    <ul>
+                      <li>
+                        <img
+                          src="assets/images/svg/icon/double-bed.svg"
+                          class="img-fluid"
+                          alt="bed-icon"
+                        />Bed : {{ featuredProperty.bed }}
+                      </li>
+                      <li>
+                        <img
+                          src="assets/images/svg/icon/bathroom.svg"
+                          class="img-fluid"
+                          alt="bathroom-icon"
+                        />Baths : {{ featuredProperty.bath }}
+                      </li>
+                      <li>
+                        <img
+                          src="assets/images/svg/icon/square-ruler-tool.svg"
+                          class="img-fluid ruler-tool"
+                          alt="ruler-icon"
+                        />Sq Ft : {{ featuredProperty.sqft }}
+                      </li>
+                    </ul>
+                    <a href="javascript:void(0)">
+                      <span class="round-half" [ngClass]="tagClass()">
+                        <app-feather-icons [icon]="'heart'" />
+                      </span>
+                    </a>
+                    <div class="property-btn">
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-dashed btn-pill"
+                        [ngClass]="tagClass()"
+                        [routerLink]="['/property/image-box']"
+                        >Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8 col-lg-9 order-md">
+                <div
+                  class="feature-image bg-size"
+                  [style.background-image]="'url(' + featuredProperty.img + ')'"
+                  style="
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    display: block;
+                  "
+                >
+                  <img
+                    [src]="featuredProperty.img"
+                    alt="property-image"
+                    class="bg-img"
+                    style="display: none"
+                  />
+                  <h4>{{ featuredProperty.homeType }}</h4>
+                  <span class="box-color"></span>
+                  <span class="signature">
+                    <img [src]="featuredProperty.sign" alt="signature" />
+                  </span>
+                  <span
+                    class="label label-white label-lg"
+                    [ngClass]="tagClass()"
+                    >{{ featuredProperty.imgLabel }}</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

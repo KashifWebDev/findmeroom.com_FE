@@ -1,0 +1,27 @@
+<div class="filter-cards">
+  <div class="advance-card">
+    <div class="search-bar">
+      <input type="text" placeholder="Search here.." />
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+  <div class="advance-card">
+    <h6>Category</h6>
+    <app-category />
+  </div>
+  <div class="advance-card">
+    <app-recently-added />
+  </div>
+  <div class="advance-card">
+    <h6>Popular Tags</h6>
+    <div class="tags">
+      <ul>
+        @for (tagData of popularTags; track tagData) {
+          <li>
+            <a href="javascript:void(0)">{{ tagData.title }}</a>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>

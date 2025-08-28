@@ -1,0 +1,52 @@
+@if (happyClientsData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of happyClientsData(); track data) {
+      <ng-template carouselSlide>
+        <div class="modern-client row">
+          <div class="col-lg-6">
+            <div class="img-testimonial">
+              <div>
+                <div class="img-left">
+                  <img [src]="data.images" alt="user-image" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-9 col-sm-10">
+            <div class="right-height">
+              <div class="comment-right">
+                <div>
+                  <div class="media">
+                    <div class="media-body">
+                      <a
+                        href="javascript:void(0)"
+                        [routerLink]="['/page/user/my-profile']"
+                      >
+                        <h3 class="d-flex">
+                          {{ data.name }}
+                          <span class="label-heart color-4 ms-2"
+                            ><i class="fas fa-heart"></i
+                          ></span>
+                        </h3>
+                      </a>
+                    </div>
+                    <ul class="client-rating">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <h6>{{ data.title }}</h6>
+                  <p class="font-roboto">{{ data.desc }}</p>
+                  <span class="font-roboto">{{ data.email }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

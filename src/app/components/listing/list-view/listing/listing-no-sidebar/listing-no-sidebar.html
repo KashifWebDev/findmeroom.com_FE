@@ -1,0 +1,21 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="property-section">
+  <div class="container">
+    <app-common-property-filter-listing
+      [filterStyle]="'horizontal'"
+      [gridClass]="'property-grid-3'"
+      [gridType]="'list'"
+      [filter]="true"
+      [gridImages]="true"
+      [sidebarType]="'no_sidebar'"
+      [listView]="true"
+      [isList]="true"
+    />
+  </div>
+</section>

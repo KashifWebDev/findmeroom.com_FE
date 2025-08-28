@@ -1,0 +1,42 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="property-section">
+  <div class="container">
+    <div class="row ratio_63">
+      <div class="col-xl-3 col-lg-4">
+        <app-common-filter-listing [style]="'vertical'" />
+      </div>
+      <div class="col-xl-9 col-lg-8 property-grid-2">
+        <app-grid-panel
+          [filter]="false"
+          [mapButton]="true"
+          [viewMap]="true"
+          [paginationData]="paginationData"
+          (filterValue)="sortFilter($event)"
+        />
+        <div
+          class="onclick-map"
+          [ngStyle]="{ display: filterBoxService.viewMap ? 'block' : 'none' }"
+        >
+          <div class="map" id="mapleaf">
+            <app-common-leaflet-map />
+          </div>
+        </div>
+        <div class="property-wrapper-grid" [class.list-view]="listView">
+          <app-common-filter-property-box
+            [type]="'grid-2'"
+            [filter]="false"
+            [gridImages]="true"
+            [filterValue]="filterValue"
+            (paginationData)="getPaginationData($event)"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

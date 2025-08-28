@@ -1,0 +1,9 @@
+@if (type() === "simple") {
+  <app-slider-one [homeSectionSliderData]="homeSectionSliderData()" />
+} @else if (type() === "basic") {
+  <app-slider-two [homeSectionSliderData]="homeSectionSliderData()" />
+} @else if (type() === "classic") {
+  <app-slider-three [homeSectionSliderData]="homeSectionSliderData()" />
+} @else if (type() === "standard") {
+  <app-slider-four [homeSectionSliderData]="homeSectionSliderData()" />
+}

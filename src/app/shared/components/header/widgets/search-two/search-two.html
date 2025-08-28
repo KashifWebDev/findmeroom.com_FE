@@ -1,0 +1,55 @@
+<div class="input-group">
+  <div class="input-group-prepend">
+    <div class="input-group-text dropdown" (click)="openMenu()">
+      <span class="dropdown-toggle font-roboto" [ngClass]="{ show: open }">
+        <span>{{ selectedItem }}</span>
+        <i class="fas fa-angle-down"></i>
+      </span>
+      <div
+        class="dropdown-menu text-start"
+        [ngClass]="{ show: open }"
+        [ngStyle]="{
+          position: 'absolute',
+          inset: '0px auto auto 0px',
+          margin: '0px',
+          transform: 'translate(30px, 26px)',
+        }"
+      >
+        <a
+          class="dropdown-item"
+          href="javascript:void(0)"
+          (click)="changedItem('Apartment')"
+          >Apartment</a
+        >
+        <a
+          class="dropdown-item"
+          href="javascript:void(0)"
+          (click)="changedItem('Office')"
+          >Office</a
+        >
+        <a
+          class="dropdown-item"
+          href="javascript:void(0)"
+          (click)="changedItem('House')"
+          >House</a
+        >
+        <a
+          class="dropdown-item"
+          href="javascript:void(0)"
+          (click)="changedItem('Villa')"
+          >Villa</a
+        >
+      </div>
+    </div>
+  </div>
+  <input
+    type="text"
+    class="form-control d-lg-inline-block d-none"
+    placeholder="Search Your Property......"
+  />
+  <div class="input-group-append d-lg-inline-block d-none">
+    <span class="input-group-text d-inline-block">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+@if (type() === "simple") {
+  <app-agents-one [agentsData]="agentsData()" [tagClass]="tagClass()" />
+} @else if (type() === "basic") {
+  <app-agents-two [agentsData]="agentsData()" [tagClass]="tagClass()" />
+} @else if (type() === "classic") {
+  <app-agents-three [agentsData]="agentsData()" />
+}

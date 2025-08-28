@@ -1,0 +1,17 @@
+@if(chartData()){
+  <div class="common-card">
+    <div [ngClass]="chartData()?.widgetClass">
+      <div class="media">
+        <div class="media-body">
+          <p>{{ chartData()?.title }}</p>
+          <h5>{{ chartData()?.number }}</h5>
+        </div>
+        <div class="small-bar">
+          <div [ngClass]="chartData()?.chartClass">
+            <x-chartist [configuration]="chartData()!" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}

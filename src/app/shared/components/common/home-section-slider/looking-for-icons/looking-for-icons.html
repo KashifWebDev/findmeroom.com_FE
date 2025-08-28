@@ -1,0 +1,18 @@
+@if (text()) {
+  <h5>What are you looking for?</h5>
+}
+
+<ul>
+  @for (data of lookingForData; track data) {
+    <li>
+      <a
+        href="javascript:void(0)"
+        class="looking-icon"
+        [routerLink]="data.path"
+      >
+        <svg-icon [src]="data.icon" />
+        <h6>{{ data.title }}</h6>
+      </a>
+    </li>
+  }
+</ul>

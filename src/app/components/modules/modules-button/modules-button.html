@@ -1,0 +1,61 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section>
+  <div class="container btn-showcase">
+    <div class="row">
+      <div class="col-12">
+        @for (buttonData of modulesButtonData; track buttonData) {
+          <div class="theme-card">
+            <div class="card-header bg-transparent border-bottom">
+              <h5 class="f-w-600">{{ buttonData.title }}</h5>
+            </div>
+            <div class="card-body pb-0 modules-buttons">
+              @for (data of buttonData.buttons; track data) {
+                @if (data.span === true) {
+                  <a href="javascript:void(0)" class="{{ data.buttonClass }}"
+                    ><span>{{ data.buttonText }}</span></a
+                  >
+                } @else {
+                  <a href="javascript:void(0)" class="{{ data.buttonClass }}">{{
+                    data.buttonText
+                  }}</a>
+                }
+              }
+            </div>
+            @if (buttonData.buttonTag) {
+              <div class="card-body pb-0 modules-buttons">
+                <a
+                  class="btn btn-primary"
+                  href="javascript:void(0)"
+                  role="button"
+                  >Link</a
+                >
+                <button class="btn btn-primary" type="submit">Button</button>
+                <input class="btn btn-primary" type="button" value="Input" />
+                <input class="btn btn-primary" type="submit" value="Submit" />
+                <input class="btn btn-primary" type="reset" value="Reset" />
+              </div>
+            }
+            @if (buttonData.state) {
+              <div class="card-body pb-0 modules-buttons">
+                <button class="btn btn-primary btn-lg active">Active</button>
+                <button class="btn btn-secondary btn-lg active">Active</button>
+                <button type="button" class="btn btn-lg btn-primary" disabled>
+                  Disabled
+                </button>
+                <button type="button" class="btn btn-secondary btn-lg" disabled>
+                  Disabled
+                </button>
+              </div>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+{
+  "latestForSale": [
+    {
+      "id": "b1",
+      "title": "Neverland",
+      "propertyStatus": "For Sale",
+      "type": "slider_filter_search",
+      "sale": true,
+      "price": 13000,
+      "bed": 2,
+      "bath": 1,
+      "balcony": 1,
+      "area": 120,
+      "url": "assets/images/1.jpg",
+      "date": "Feb 6 2023"
+    },
+    {
+      "id": "b2",
+      "title": "Orchard House",
+      "propertyStatus": "For Rent",
+      "type": "slider_filter_search",
+      "fees": true,
+      "openHouse": true,
+      "price": 14520,
+      "bed": 2,
+      "bath": 1,
+      "balcony": 0,
+      "area": 220,
+      "url": "assets/images/2.jpg",
+      "date": "January 6, 2023"
+    },
+    {
+      "id": "b3",
+      "title": "Sea Breezes",
+      "type": "slider_filter_search",
+      "sold": true,
+      "price": 12200,
+      "bed": 2,
+      "bath": 1,
+      "balcony": 1,
+      "area": 120,
+      "url": "assets/images/3.jpg",
+      "date": "January 17, 2023"
+    }
+  ]
+}

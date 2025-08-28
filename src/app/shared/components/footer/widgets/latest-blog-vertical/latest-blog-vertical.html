@@ -1,0 +1,36 @@
+<div class="footer-links">
+  <h5
+    class="footer-title"
+    [ngClass]="{ active: isBlogData }"
+    (click)="openBlog()"
+  >
+    Our Latest Blog
+    <span class="according-menu">
+      <i class="fas fa-chevron-down"></i>
+    </span>
+  </h5>
+  <div
+    class="footer-content"
+    [ngClass]="{ 'd-block': isBlogData, 'd-none d-md-block': !isBlogData }"
+  >
+    <div class="footer-blog">
+      @for (blogData of blogData; track blogData) {
+        <div class="media">
+          <a [routerLink]="blogData.path">
+            <div class="img-overlay">
+              <img [src]="blogData.img" alt="logo" />
+            </div>
+          </a>
+          <div class="media-body">
+            <h6>
+              <a [routerLink]="blogData.path">{{ blogData.title }}</a>
+            </h6>
+            <p class="font-roboto mb-0">
+              <a [routerLink]="blogData.path">{{ blogData.desc }}</a>
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="light-bg banner-1">
+  <span class="big-gradient">*</span>
+  <span class="small-white">*</span>
+  <h6>{{ bannerData()?.title }}</h6>
+  <h2>
+    {{ bannerData()?.desc }}
+  </h2>
+  <div class="button-banner">
+    <a
+      href="javascript:void(0)"
+      class="btn btn-gradient"
+      [ngClass]="tagClass()"
+      [routerLink]="['/agent/submit-property']"
+      >{{ bannerData()?.button1Text }}</a
+    >
+    <a
+      href="javascript:void(0)"
+      class="btn btn-white"
+      [ngClass]="tagClass()"
+      [routerLink]="['/property/template-breadcrumb']"
+    >
+      <span>{{ bannerData()?.button2Text }}</span>
+    </a>
+  </div>
+</div>

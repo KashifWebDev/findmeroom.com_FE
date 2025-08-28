@@ -1,0 +1,82 @@
+<section class="property-section bg-comman-2">
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'What Are You Looking For'"
+          [desc]="desc"
+          [textWhite]="true"
+          [type]="'basic'"
+        />
+        <ul id="tabs" class="nav nav-tabs">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              role="tab"
+              [ngClass]="{ 'active show': openTab === 'villa' }"
+              (click)="tabbed('villa')"
+              style="cursor: pointer"
+              >Morden Villa</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              role="tab"
+              [ngClass]="{ 'active show': openTab === 'family_house' }"
+              (click)="tabbed('family_house')"
+              style="cursor: pointer"
+              >Family House</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              role="tab"
+              [ngClass]="{ 'active show': openTab === 'town_house' }"
+              (click)="tabbed('town_house')"
+              style="cursor: pointer"
+              >Town House</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              role="tab"
+              [ngClass]="{ 'active show': openTab === 'apartment' }"
+              (click)="tabbed('apartment')"
+              style="cursor: pointer"
+              >Apartment</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              role="tab"
+              [ngClass]="{ 'active show': openTab === 'office' }"
+              (click)="tabbed('office')"
+              style="cursor: pointer"
+              >Office</a
+            >
+          </li>
+        </ul>
+        <div id="tabsContent" class="tab-content">
+          <div class="tab-pane fade show active">
+            <div class="property-2 row column-space zoom-gallery">
+              @for (data of lookingForData | slice: 0 : 3; track data) {
+                <div class="col-xl-4 col-md-6">
+                  <app-property-box
+                    [latestForRentData]="data"
+                    [type]="'basic'"
+                    [tagClass]="tagClass()"
+                  />
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

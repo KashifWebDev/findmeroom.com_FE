@@ -1,0 +1,74 @@
+<div class="row">
+  @if (propertyData() && propertyData()?.length) {
+    @for (data of propertyData(); track data) {
+      <div class="col-md-6 p-0" gallerize>
+        @if (data.img) {
+          @for (image of data.img; track image) {
+            @if (image.fileType === "image") {
+              <a
+                class="bg-size"
+                [style.background-image]="'url(' + image.url + ')'"
+                (click)="openLightBox(image.url)"
+              >
+                <img
+                  [src]="image.url"
+                  class="bg-img"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </a>
+            }
+          }
+        } @else {
+          <a
+            class="bg-size"
+            [style.background-image]="'url(' + data.url + ')'"
+            (click)="openLightBox(data.url!)"
+          >
+            <img
+              [src]="data.url"
+              class="bg-img"
+              alt="property-image"
+              style="display: none"
+            />
+          </a>
+        }
+      </div>
+    }
+  } @else {
+    <div class="col-md-6 p-0" gallerize>
+      <a
+        class="bg-size"
+        [style.background-image]="'url(assets/images/property/4.jpg)'"
+        (click)="open('assets/images/property/4.jpg')"
+      >
+        <img
+          [src]="'assets/images/property/4.jpg'"
+          class="bg-img"
+          alt="property-image"
+          style="display: none"
+        />
+      </a>
+    </div>
+  }
+  @for (imageData of propertyImageSliderImage(); track imageData) {
+    <div class="col-md-3 col-6 p-0">
+      @for (image of imageData.images; track image; let i = $index) {
+        <a
+          href="javascript:void(0)"
+          class="bg-size"
+          [style.background-image]="'url(' + image.url + ')'"
+          style="display: block"
+          (click)="openLightBox(image.url)"
+        >
+          <img
+            [src]="image.url"
+            class="bg-img"
+            alt="property-image"
+            style="display: none"
+          />
+        </a>
+      }
+    </div>
+  }
+</div>

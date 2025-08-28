@@ -1,0 +1,13 @@
+<div class="grid-box">
+  <div class="overlay">
+    <div class="portfolio-image">
+      <a
+        class="bg-size"
+        [style.background-image]="'url(' + imagesData()?.url + ')'"
+        (click)="lightbox.open(index())"
+      >
+        <img [src]="imagesData()?.url" class="bg-img" alt="property-image" />
+      </a>
+    </div>
+  </div>
+</div>

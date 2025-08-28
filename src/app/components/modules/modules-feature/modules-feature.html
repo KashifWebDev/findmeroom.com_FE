@@ -1,0 +1,98 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section
+  class="feature-section ratio_landscape bg-half zoom-gallery modules-feature-layout"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="feature-4 modern-feature arrow-gradient">
+          <app-featured-property
+            [type]="'classic'"
+            [featuredProperty]="featuredProperty1"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature-section feature-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'Our'"
+          [heading]="'Featured Property'"
+          [textWhite]="true"
+          [type]="'simple'"
+          [tagClass]="'color-1'"
+        />
+      </div>
+    </div>
+    <div class="feature-1 arrow-light">
+      <app-featured-property
+        [type]="'simple'"
+        [featuredProperty]="featuredProperty2"
+        [tagClass]="'color-1'"
+      />
+    </div>
+  </div>
+</section>
+
+<section
+  class="feature-section ratio_landscape zoom-gallery modules-feature-layout"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Featured'"
+          [heading]="'Property'"
+          [desc]="desc"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="false"
+        />
+      </div>
+      <div class="feature-3 classic-feature arrow-image zoom-gallery">
+        <app-featured-property
+          [featuredProperty]="featuredProperty3"
+          [type]="'basic'"
+          [tagClass]="'color-3'"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  class="feature-section bg-comman-2 slick-between modules-feature-layout"
+>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Featured Cities'"
+          [desc]="desc2"
+          [textWhite]="true"
+          [type]="'basic'"
+        />
+        <div class="feature-2 dot-gradient">
+          <app-property-in-cities
+            [propertyInCityData]="propertyInCity"
+            [type]="'basic'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

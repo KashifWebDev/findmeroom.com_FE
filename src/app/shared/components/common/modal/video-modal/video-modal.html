@@ -1,0 +1,8 @@
+<div class="modal-body video-modal">
+  <div class="modal-toggle-wrapper">
+    <iframe [src]="safe(data())" allowfullscreen=""></iframe>
+    <button class="btn-close btn btn-secondary" type="button" (click)="close()">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+</div>

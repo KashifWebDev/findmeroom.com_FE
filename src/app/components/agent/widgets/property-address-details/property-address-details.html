@@ -1,0 +1,98 @@
+<h2>Address</h2>
+<p class="font-roboto">Add your property Location</p>
+<form class="row gx-3" novalidate [formGroup]="myForm">
+  <div class="form-group col-sm-6">
+    <label>Address</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Address of your property"
+      formControlName="address"
+      [ngClass]="{
+        'is-invalid': (address?.touched || validate) && address?.errors,
+        'is-valid': !address?.errors,
+      }"
+    />
+  </div>
+  <div class="form-group col-sm-6">
+    <label>Zip code</label>
+    <input
+      type="number"
+      class="form-control"
+      placeholder="39702"
+      formControlName="pin_code"
+      [ngClass]="{
+        'is-invalid': (pin_code?.touched || validate) && pin_code?.errors,
+        'is-valid': !pin_code?.errors,
+      }"
+    />
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Any Country</label>
+    <select
+      class="form-control"
+      formControlName="country"
+      [ngClass]="{
+        'is-invalid': (country?.touched || validate) && country?.errors,
+        'is-valid': !country?.errors,
+      }"
+    >
+      <option value="">Country</option>
+      @for (location of location; track location) {
+        <option value="{{ location.value }}">{{ location.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Any City</label>
+    <select
+      class="form-control"
+      formControlName="city"
+      [ngClass]="{
+        'is-invalid': (city?.touched || validate) && city?.errors,
+        'is-valid': !city?.errors,
+      }"
+    >
+      <option value="">City</option>
+      @for (city of cities; track city) {
+        <option value="{{ city.value }}">{{ city.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Landmark</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="landmark place name"
+      formControlName="landmark"
+      [ngClass]="{
+        'is-invalid': (landmark?.touched || validate) && landmark?.errors,
+        'is-valid': !landmark?.errors,
+      }"
+    />
+  </div>
+  <div class="col-sm-12">
+    <iframe
+      title="realestate location"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946229!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1563449626439!5m2!1sen!2sin"
+      allowfullscreen
+    ></iframe>
+  </div>
+</form>
+<div class="next-btn d-flex">
+  <button
+    type="button"
+    class="btn btn-dashed color-2 prev1 btn-pill"
+    (click)="previous()"
+  >
+    <i class="fas fa-arrow-left me-2"></i> Previous
+  </button>
+  <button
+    type="button"
+    class="btn btn-gradient color-2 next2 btn-pill"
+    (click)="next(myForm)"
+  >
+    Next <i class="fas fa-arrow-right ms-2"></i>
+  </button>
+</div>

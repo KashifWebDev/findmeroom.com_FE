@@ -1,0 +1,23 @@
+<section class="testimonial-bg testimonial-layout6">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'Our'"
+          [heading]="'Happy Clients'"
+          [textWhite]="true"
+          [type]="'simple'"
+          [tagClass]="tagClass()"
+        />
+        <div class="testimonial-2 arrow-light">
+          <app-happy-clients
+            [happyClientsData]="happyClientsData"
+            [type]="'simple'"
+            [tagClass]="tagClass()"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

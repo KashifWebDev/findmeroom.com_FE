@@ -1,0 +1,24 @@
+<section class="feature-section ratio_landscape">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Featured'"
+          [heading]="'Property'"
+          [desc]="desc"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="svgClass()!"
+        />
+      </div>
+      <div class="feature-3 classic-feature arrow-image zoom-gallery">
+        <app-featured-property
+          [featuredProperty]="featuredProperty"
+          [type]="'basic'"
+          [tagClass]="tagClass()!"
+        />
+      </div>
+    </div>
+  </div>
+</section>

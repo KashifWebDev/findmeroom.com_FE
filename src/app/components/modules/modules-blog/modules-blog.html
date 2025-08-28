@@ -1,0 +1,48 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="pb-0 horizontal-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Horizontal Blog'"
+          [desc]="desc"
+          [type]="'basic'"
+        />
+        <div class="blog-1">
+          <app-latest-blog [latestBlogData]="latestBlogData" [type]="'basic'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ratio2_1 simple-blog">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Latest'"
+          [heading]="'Blog'"
+          [desc]="desc2"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="false"
+        />
+        <div class="blog-2">
+          <app-latest-blog
+            [latestBlogData]="latestBlogData2"
+            [type]="'simple'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

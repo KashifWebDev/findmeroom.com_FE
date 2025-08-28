@@ -1,0 +1,21 @@
+<section class="property-section slick-between slick-shadow">
+  <div class="container">
+    <div class="row ratio_landscape">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3 text-start'"
+          [heading]="'Latest Property'"
+          [desc]="desc"
+          [type]="'basic'"
+        />
+        <div class="property-4 arrow-gradient arrow-right list-property">
+          <app-property-box
+            [latestPropertyData]="latestPropertyData()"
+            [type]="'standard'"
+            [carousel]="true"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

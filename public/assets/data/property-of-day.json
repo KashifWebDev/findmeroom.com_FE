@@ -1,0 +1,28 @@
+{
+  "propertyOfDay": [
+    {
+      "id": 1,
+      "type": ["enterprise", "modern", "modern_video"],
+      "images": [
+        {
+          "img": "assets/images/property/1.jpg"
+        },
+        {
+          "img": "assets/images/property/2.jpg"
+        },
+        {
+          "img": "assets/images/property/3.jpg"
+        },
+        {
+          "img": "assets/images/property/4.jpg"
+        }
+      ],
+      "location": "California Avenue",
+      "city": "Merrick Way, Miami, FL United Kingdom",
+      "desc": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening Elegant retreat in a quiet Coral Gables setting.",
+      "sqft": "9532",
+      "price": 48596,
+      "title": "Home For Sale"
+    }
+  ]
+}

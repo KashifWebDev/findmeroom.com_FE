@@ -1,0 +1,113 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="user-dashboard terms-section">
+  <div class="container">
+    <div class="row log-in">
+      <div class="col-xl-3 col-lg-4">
+        <div class="sidebar-user sticky-cls">
+          <div class="dashboard-list">
+            <h5>Related Topics</h5>
+            <ul class="nav nav-tabs right-line-tab">
+              @for (data of termsConditionData; track data) {
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    [ngClass]="{ active: activeClass === data.value }"
+                    (click)="setPage(data.value)"
+                    >{{ data.title }}
+                  </a>
+                </li>
+              }
+            </ul>
+            <div class="terms-bottom-content">
+              <img
+                src="assets/images/others/1.svg"
+                alt="icon"
+                class="img-fluid"
+              />
+              <a
+                href="assets/terms-condition.txt"
+                class="btn btn-gradient color-2 btn-pill"
+                download
+                >Download Doc</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-8 col-12">
+        <div class="theme-card">
+          <h2>Terms & Conditions</h2>
+          @for (data of termsConditionData; track data) {
+            <div class="terms-wrap">
+              @if (data.value === "introduction") {
+                <div class="terms-wrapper" id="introduction">
+                  <h4>Introduction</h4>
+                  @for (detail of data.details; track detail) {
+                    <p>{{ detail.description }}</p>
+                  }
+                </div>
+              } @else if (data.value === "restrictions") {
+                <div
+                  class="terms-wrapper"
+                  id="restrictions"
+                  style="margin-top: 30px"
+                >
+                  <h4>Restrictions</h4>
+                  <p>
+                    You are specifically restricted from all of the following:
+                  </p>
+                  <ul>
+                    @for (detail of data.details; track detail) {
+                      <li>
+                        {{ detail.description }}
+                      </li>
+                    }
+                  </ul>
+                </div>
+              } @else if (data.value === "limitation") {
+                <div
+                  class="terms-wrapper"
+                  id="limitation"
+                  style="margin-top: 30px"
+                >
+                  <h4>Limitation of liability</h4>
+                  @for (detail of data.details; track detail) {
+                    <p>{{ detail.description }}</p>
+                  }
+                </div>
+              } @else if (data.value === "reservation-right") {
+                <div
+                  class="terms-wrapper"
+                  id="reservation-right"
+                  style="margin-top: 30px"
+                >
+                  <h4>Reservation of Rights</h4>
+                  @for (detail of data.details; track detail) {
+                    <p>{{ detail.description }}</p>
+                  }
+                </div>
+              } @else if (data.value === "disclaimer") {
+                <div
+                  class="terms-wrapper"
+                  id="disclaimer"
+                  style="margin-top: 30px"
+                >
+                  <h4>Disclaimer</h4>
+                  @for (detail of data.details; track detail) {
+                    <p>{{ detail.description }}</p>
+                  }
+                </div>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

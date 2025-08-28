@@ -1,0 +1,42 @@
+<section class="without-top property-main small-section">
+  <app-home-details />
+</section>
+
+<section class="single-property mt-0 pt-0">
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col-xl-9 col-lg-8">
+        <div class="description-section tab-description">
+          <div class="description-details">
+            <div class="row">
+              @if (propertyData) {
+                <div class="col-sm-12">
+                  @for (data of propertyData.data; track data) {
+                    @if (data.value === "gallery") {
+                      <div class="page-section ratio3_2" id="gallery">
+                        <app-gallery [galleryImagesData]="data.details" />
+                      </div>
+                    }
+                  }
+                </div>
+              }
+            </div>
+            <app-property
+              [propertyData]="propertyData"
+              [propertyDetailsData]="propertyDetailsData"
+              [type]="'basic'"
+            />
+          </div>
+        </div>
+        <app-related-property [type]="'grid-2'" [totalData]="4" />
+      </div>
+      @if (propertyData) {
+        <div class="col-xl-3 col-lg-4">
+          <app-advance-filter
+            [propertyFilterSliderData]="propertyData.propertyFilterSlider"
+          />
+        </div>
+      }
+    </div>
+  </div>
+</section>

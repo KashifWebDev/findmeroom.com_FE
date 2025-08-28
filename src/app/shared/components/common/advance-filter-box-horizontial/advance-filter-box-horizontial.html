@@ -1,0 +1,31 @@
+<div
+  class="left-sidebar filter-bottom-content"
+  style="z-index: 9"
+  [ngClass]="{ open: filterBoxService.isOpenFilter === true }"
+  [ngStyle]="{
+    display: filterBoxService.isOpenFilter ? 'block' : '',
+    left: filterBoxService.isOpenLeftFilter ? '-1px' : '',
+  }"
+>
+  <h6 class="d-lg-none d-block text-end">
+    <a
+      href="javascript:void(0)"
+      class="close-filter-bottom"
+      (click)="closeFilter()"
+      >Close filter</a
+    >
+  </h6>
+  <app-filter-box
+    [style]="'horizontal'"
+    [label]="false"
+    [buttonClass]="'color-2 btn-pill'"
+    (propertyStatusData)="getStatus($event)"
+    (propertyTypeData)="getType($event)"
+    (roomsData)="getRooms($event)"
+    (bedsData)="getBeds($event)"
+    (bathData)="getBath($event)"
+    (agencyData)="getAgency($event)"
+    (priceFilter)="priceChange($event)"
+    (areaFilter)="areaChange($event)"
+  />
+</div>

@@ -1,0 +1,18 @@
+<section class="layout-map header-map">
+  <div class="map" id="mapleaf">
+    <app-common-leaflet-map />
+  </div>
+</section>
+
+<section class="property-section">
+  <div class="container">
+    <app-common-property-filter-listing
+      [filterStyle]="'vertical'"
+      [gridClass]="'property-grid-2'"
+      [gridType]="'grid-2'"
+      [filter]="false"
+      [gridImages]="true"
+      [sidebarType]="'left'"
+    />
+  </div>
+</section>

@@ -1,0 +1,67 @@
+<form class="row gx-2 gx-sm-3">
+  <div class="form-group col-sm-4">
+    <label>Property Type</label>
+    <input type="text" class="form-control" placeholder="villa" />
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Property Status</label>
+    <select class="form-control">
+      <option value="opt">Property Status</option>
+      @for (status of propertyStatus; track status) {
+        <option value="{{ status.value }}">{{ status.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Property Price</label>
+    <input type="text" class="form-control" placeholder="$2800" />
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Max Rooms</label>
+    <select class="form-control">
+      <option value="opt">Max Rooms</option>
+      @for (room of rooms; track room) {
+        <option value="{{ room.value }}">{{ room.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Beds</label>
+    <select class="form-control">
+      <option value="opt1">Bed</option>
+      @for (bed of beds; track bed) {
+        <option value="{{ bed.value }}">{{ bed.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Baths</label>
+    <select class="form-control">
+      <option value="opt">Bath</option>
+      @for (bath of baths; track bath) {
+        <option value="{{ bath.value }}">{{ bath.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Area</label>
+    <input type="text" class="form-control" placeholder="85 sq ft" />
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Price</label>
+    <input type="text" class="form-control" placeholder="$3000" />
+  </div>
+  <div class="form-group col-sm-4">
+    <label>Agencies</label>
+    <select class="form-control">
+      <option value="opt">Agencies</option>
+      @for (agency of agency; track agency) {
+        <option value="{{ agency.value }}">{{ agency.title }}</option>
+      }
+    </select>
+  </div>
+  <div class="form-group col-sm-12">
+    <label>Description</label>
+    <textarea class="form-control" rows="4"></textarea>
+  </div>
+</form>

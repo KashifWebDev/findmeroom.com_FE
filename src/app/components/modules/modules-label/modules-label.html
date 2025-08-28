@@ -1,0 +1,37 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section>
+  <div class="container theme-label">
+    <div class="row">
+      <div class="col-12">
+        @for (labelsData of ModulesLabelData; track labelsData) {
+          <div class="theme-card">
+            <div class="card-header bg-transparent border-bottom">
+              <h5 class="f-w-600">{{ labelsData.title }}</h5>
+            </div>
+            <div class="card-body pb-0 modules-buttons">
+              @for (data of labelsData.labels; track data) {
+                @if (data.span) {
+                  <span class="{{ data.labelClass }}"
+                    ><span class="{{ data.spanClass }}">{{
+                      data.labelText
+                    }}</span></span
+                  >
+                } @else {
+                  <span class="{{ data.labelClass }}">{{
+                    data.labelText
+                  }}</span>
+                }
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

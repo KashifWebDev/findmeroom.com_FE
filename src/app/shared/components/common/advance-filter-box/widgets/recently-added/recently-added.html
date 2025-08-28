@@ -1,0 +1,18 @@
+<div class="advance-card">
+  <h6>Recently Added</h6>
+  <div class="recent-property">
+    <ul>
+      @for (data of recentAdded; track data) {
+        <li>
+          <div class="media">
+            <img [src]="data.img" class="img-fluid" alt="property-image" />
+            <div class="media-body">
+              <h5>{{ data.title }}</h5>
+              <span>${{ data.price }} / <span>Month</span></span>
+            </div>
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+</div>

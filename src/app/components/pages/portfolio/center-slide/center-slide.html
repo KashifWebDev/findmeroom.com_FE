@@ -1,0 +1,33 @@
+<section class="p-0 center-slides">
+  <div class="container-fluid p-0">
+    <div class="center-slider">
+      @if (parallaxImagesData) {
+        <owl-carousel-o [options]="Options">
+          @for (imagesData of parallaxImagesData; track imagesData) {
+            <ng-template carouselSlide>
+              <div>
+                <div
+                  class="img-center bg-size"
+                  [style.background-image]="'url(' + imagesData.url + ')'"
+                >
+                  <img
+                    [src]="imagesData.url"
+                    class="img-fluid bg-img"
+                    alt="property-image"
+                    style="display: none"
+                  />
+                  <div class="center-content">
+                    <div>
+                      <h3>{{ imagesData.title }}</h3>
+                      <h6>{{ imagesData.description }}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          }
+        </owl-carousel-o>
+      }
+    </div>
+  </div>
+</section>

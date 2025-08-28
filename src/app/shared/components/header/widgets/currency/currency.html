@@ -1,0 +1,16 @@
+<a
+  href="javascript:void(0)"
+  (click)="openCurrency()"
+  (clickOutside)="currencyOpen = false"
+>
+  <app-feather-icons [icon]="'dollar-sign'" />
+</a>
+<ul class="nav-submenu" [ngClass]="{ open: currencyOpen }">
+  @for (currency of currencies; track currency) {
+    <li>
+      <a href="javascript:void(0)" (click)="changeCurrency(currency)">{{
+        currency.name
+      }}</a>
+    </li>
+  }
+</ul>

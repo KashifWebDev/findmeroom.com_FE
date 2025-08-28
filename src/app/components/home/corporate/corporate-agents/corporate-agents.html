@@ -1,0 +1,27 @@
+<section
+  class="about-section slick-between pb-0 ratio_square"
+  [ngClass]="tagClass()"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Our'"
+          [heading]="'Agent'"
+          [desc]="desc"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="svgClass()!"
+        />
+        <div class="about-2 about-wrap">
+          <app-agents
+            [agentsData]="agentsData"
+            [type]="'basic'"
+            [tagClass]="tagClass()!"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

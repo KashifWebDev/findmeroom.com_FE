@@ -1,0 +1,175 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="user-dashboard small-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar-user sticky-cls">
+          <div class="user-profile">
+            <app-user-info />
+          </div>
+          <div class="dashboard-list">
+            <app-user-panel-side-menu [activeTab]="'favourite'" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-content">
+          <div class="tab-listing" id="listing">
+            <div class="property-section">
+              <div class="property-grid-2 ratio_63">
+                <app-grid-panel
+                  [gridOption]="false"
+                  [paginationData]="paginate"
+                  (filterValue)="sortFilter($event)"
+                />
+                <app-common-filter-listing [style]="'horizontal'" />
+                <div
+                  class="property-2 row column-sm zoom-gallery property-label property-grid list-view"
+                >
+                  @for (
+                    latestForRentData of latestForRentData;
+                    track latestForRentData
+                  ) {
+                    <div class="col-md-12">
+                      <div class="property-box liked-img">
+                        <div class="property-image">
+                          <div class="property-slider" [class]="'color-6'">
+                            <a
+                              href="javascript:void(0)"
+                              class="bg-size"
+                              [style.background-image]="
+                                'url(' + latestForRentData.thumbnail + ')'
+                              "
+                            >
+                              <img
+                                [src]="latestForRentData.thumbnail"
+                                class="bg-img"
+                                alt="property-image"
+                                style="display: none"
+                              />
+                            </a>
+                          </div>
+                          <div class="labels-left">
+                            @for (
+                              labels of latestForRentData.labels;
+                              track labels
+                            ) {
+                              <div>
+                                @if (labels.includes("sale")) {
+                                  <span class="label label-shadow">Sale</span>
+                                } @else if (labels.includes("fees")) {
+                                  <div>
+                                    <span class="label label-dark"
+                                      >no fees</span
+                                    >
+                                  </div>
+                                } @else if (labels.includes("openHouse")) {
+                                  <span class="label label-success"
+                                    >open house</span
+                                  >
+                                } @else if (labels.includes("sold")) {
+                                  <span class="label label-shadow">Sold</span>
+                                }
+                              </div>
+                            }
+                          </div>
+                          <div class="seen-data">
+                            <app-feather-icons [icon]="'camera'" />
+                            <span>{{ latestForRentData.img.length - 1 }}</span>
+                          </div>
+                          <div class="overlay-property-box">
+                            <a
+                              href="javascript:void(0)"
+                              class="effect-round"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="left"
+                              title="Compare"
+                              (click)="addCompare(latestForRentData)"
+                            >
+                              <app-feather-icons [icon]="'shuffle'" />
+                            </a>
+                            <a
+                              href="javascript:void(0)"
+                              class="effect-round like added"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="left"
+                              title="wishlist"
+                              (click)="removeItem(latestForRentData.id)"
+                            >
+                              <app-feather-icons [icon]="'heart'" />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="property-details">
+                          <span class="font-roboto">{{
+                            latestForRentData.country
+                          }}</span>
+                          <a href="javascript:void(0)">
+                            <h3>{{ latestForRentData.title }}</h3>
+                          </a>
+                          <h6 [class]="'color-6'">
+                            ${{ latestForRentData.price }}*
+                          </h6>
+                          <p class="font-roboto">
+                            {{ latestForRentData.details }}
+                          </p>
+                          <ul>
+                            <li>
+                              <img
+                                src="assets/images/svg/icon/double-bed.svg"
+                                class="img-fluid"
+                                alt="bed-icon"
+                              />Bed : {{ latestForRentData.bed }}
+                            </li>
+                            <li>
+                              <img
+                                src="assets/images/svg/icon/bathroom.svg"
+                                class="img-fluid"
+                                alt="bathroom-icon"
+                              />Baths : {{ latestForRentData.bath }}
+                            </li>
+                            <li>
+                              <img
+                                src="assets/images/svg/icon/square-ruler-tool.svg"
+                                class="img-fluid ruler-tool"
+                                alt="ruler-icon"
+                              />Sq Ft :
+                              {{ latestForRentData.sqft }}
+                            </li>
+                          </ul>
+                          <div class="property-btn d-flex">
+                            <span>{{ latestForRentData.date }}</span>
+                            <button
+                              type="button"
+                              class="btn btn-dashed btn-pill"
+                              [class]="'color-6'"
+                            >
+                              Details
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  } @empty {
+                    <P> No Data </P>
+                  }
+                </div>
+                <app-pagination
+                  [products]="latestForRentData"
+                  [paginate]="paginate"
+                  (setPage)="setPage($event)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<div class="common-card sales-agent">
+  <div class="common-header">
+    <h5>Sales by agent</h5>
+  </div>
+  <div id="agent-sales">
+    <apx-chart
+      [chart]="salesByAgents.chart"
+      [plotOptions]="salesByAgents.plotOptions"
+      [grid]="salesByAgents.grid"
+      [dataLabels]="salesByAgents.dataLabels"
+      [responsive]="salesByAgents.responsive"
+      [series]="salesByAgents.series"
+      [colors]="salesByAgents.colors"
+      [fill]="salesByAgents.fill"
+      [xaxis]="salesByAgents.xaxis"
+    />
+  </div>
+</div>

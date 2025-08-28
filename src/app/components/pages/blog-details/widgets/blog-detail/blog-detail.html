@@ -1,0 +1,70 @@
+@if (type() === "slider") {
+  <div class="property-slider">
+    @if (blogDetails()?.images) {
+      <owl-carousel-o [options]="Options">
+        @for (image of blogDetails()?.images; track image) {
+          <ng-template carouselSlide>
+            <div>
+              <a
+                href="javascript:void(0)"
+                class="bg-size"
+                [style.background-image]="'url(' + image.url + ')'"
+              >
+                <img
+                  [src]="image.url"
+                  class="bg-img"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </a>
+            </div>
+          </ng-template>
+        }
+      </owl-carousel-o>
+    }
+  </div>
+} @else {
+  <div class="blog-detail-image">
+    @if (type() === "video") {
+      <div class="play-bg-image">
+        <div
+          class="bg-size"
+          [style.background-image]="'url(assets/images/parallax/4.jpg)'"
+        >
+          <img
+            src="assets/images/parallax/4.jpg"
+            class="bg-img"
+            alt="property-image"
+          />
+        </div>
+        <div class="icon-video">
+          <a href="javascript:void(0)" (click)="openModal()">
+            <i class="fas fa-play"></i>
+          </a>
+        </div>
+      </div>
+    } @else {
+      @for (image of blogDetails()?.images | slice: 0 : 1; track image) {
+        <img [src]="image.url" class="bg-img img-fluid" alt="property-image" />
+      }
+    }
+  </div>
+}
+<div class="blog-title">
+  <ul class="post-detail">
+    <li>{{ blogDetails()?.date }}</li>
+    <li>Posted By : {{ blogDetails()?.posted_by }}</li>
+    <li><i class="fa fa-heart me-2"></i>{{ blogDetails()?.hits }} Hits</li>
+    <li>
+      <i class="fa fa-comments me-2"></i>{{ blogDetails()?.comments }} Comment
+    </li>
+  </ul>
+  <h3>{{ blogDetails()?.title }}</h3>
+</div>
+<div class="details-property">
+  <div class="row">
+    @for (description of blogDetails()?.description; track description) {
+      <p class="col-xl-4">{{ description.details }}</p>
+    }
+  </div>
+</div>

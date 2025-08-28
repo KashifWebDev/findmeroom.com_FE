@@ -1,0 +1,28 @@
+<section class="ratio_40 breadcrumb-section p-0 single-property-images">
+  <div class="main-property-slider arrow-image">
+    <app-home-section-slider
+      [homeSectionSliderData]="homeSectionSliderData"
+      [type]="'standard'"
+    />
+  </div>
+  <app-home-details />
+</section>
+
+<section class="single-property">
+  <div class="container">
+    <div class="row ratio_55">
+      @if (propertyData) {
+        <div class="col-xl-3 col-lg-4 order-class">
+          <app-advance-filter
+            [propertyFilterSliderData]="propertyData.propertyFilterSlider"
+          />
+        </div>
+      }
+      <div class="col-xl-9 col-lg-8">
+        <app-property [propertyData]="propertyData" [type]="'simple'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-related-property [type]="'grid-3'" [totalData]="3" />

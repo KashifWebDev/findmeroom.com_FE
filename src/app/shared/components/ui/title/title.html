@@ -1,0 +1,34 @@
+@if (type() === "simple") {
+  @if (svgIcon() === true) {
+    <div [class]="titleClass()">
+      <svg class="title-svg" [ngClass]="{ 'color-7': svgClass() }">
+        <use xlink:href="assets/svg/icons.svg#title-line"></use>
+      </svg>
+      <h2>
+        {{ tag() }} <span>{{ heading() }}</span>
+      </h2>
+      <p class="font-roboto">{{ desc() }}</p>
+    </div>
+  } @else {
+    <div
+      [class]="titleClass()"
+      [ngClass]="{
+        'text-white': textWhite() === true,
+        'color-6': textWhite() === false,
+      }"
+    >
+      <span class="label label-gradient" [ngClass]="tagClass()">{{
+        tag()
+      }}</span>
+      <h2>{{ heading() }}</h2>
+      <hr />
+    </div>
+  }
+}
+
+@if (type() === "basic") {
+  <div [class]="titleClass()" [ngClass]="{ 'text-white': textWhite() === true }">
+    <h2>{{ heading() }}</h2>
+    <p [ngClass]="descClass()">{{ desc() }}</p>
+  </div>
+}

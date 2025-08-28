@@ -1,0 +1,24 @@
+<section class="service-section service-1">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Property Services'"
+          [desc]="desc"
+          [type]="'basic'"
+        />
+        <div class="row property-service column-space">
+          @for (data of providedServices; track data) {
+            <div class="col-xl-4 col-md-6 wow fadeInUp">
+              <app-provided-services
+                [providedServices]="data"
+                [type]="'basic'"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

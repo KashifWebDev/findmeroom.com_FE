@@ -1,0 +1,19 @@
+@if (propertyInCity()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of propertyInCity(); track data) {
+      <ng-template carouselSlide>
+        <div style="margin: 0 25px">
+          <div class="feature-box">
+            <img [src]="data.img" class="img-fluid" alt="property-image" />
+            <div class="feature-bottom">
+              <div>
+                <h3>{{ data.city }}</h3>
+                <span>{{ data.property }}+ Property</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

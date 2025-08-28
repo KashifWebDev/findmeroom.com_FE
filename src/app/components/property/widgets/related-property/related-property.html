@@ -1,0 +1,59 @@
+@if (type() === "grid-3") {
+  <section class="property-section pt-0">
+    <div class="container">
+      <div class="title-3 text-start inner-title">
+        <h2>Related Properties</h2>
+      </div>
+      <div class="row ratio_65">
+        <div class="col-12 property-grid-3">
+          <div
+            class="property-2 row column-sm zoom-gallery property-label property-grid"
+          >
+            @for (
+              data of latestForRentData | slice: 0 : totalData();
+              track data
+            ) {
+              <div class="col-xl-4 col-md-6">
+                <app-property-box
+                  [latestForRentData]="data"
+                  [type]="'basic'"
+                  [textColor]="true"
+                  [tagClass]="'color-2'"
+                  [data]="totalData()"
+                />
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+} @else {
+  <div class="property-section p-t-40">
+    <div class="title-3 text-start inner-title">
+      <h2>Related Properties</h2>
+    </div>
+    <div class="row ratio_65">
+      <div class="col-12 property-grid-2">
+        <div
+          class="property-2 row column-sm zoom-gallery property-label property-grid"
+        >
+          @for (
+            data of latestForRentData | slice: 0 : totalData();
+            track data
+          ) {
+            <div class="col-md-6">
+              <app-property-box
+                [latestForRentData]="data"
+                [type]="'basic'"
+                [textColor]="true"
+                [tagClass]="'color-2'"
+                [data]="totalData()"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+}

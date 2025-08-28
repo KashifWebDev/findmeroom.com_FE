@@ -1,0 +1,23 @@
+<section class="about-section slick-between" [ngClass]="sectionClass()">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'Agent'"
+          [heading]="'Meet our Agent'"
+          [textWhite]="false"
+          [type]="'simple'"
+          [tagClass]="tagClass()"
+        />
+        <div class="about-1 about-wrap arrow-white color-6">
+          <app-agents
+            [agentsData]="agentsData"
+            [type]="'simple'"
+            [tagClass]="tagClass()"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

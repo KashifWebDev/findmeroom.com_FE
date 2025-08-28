@@ -1,0 +1,110 @@
+@if (featuredProperty()) {
+  <owl-carousel-o [options]="Options">
+    @for (featuredProperty of featuredProperty(); track featuredProperty) {
+      <ng-template carouselSlide>
+        <div data-title="classic-image1" class="feature-style">
+          <div class="feature-wrap">
+            <div class="row featured-row">
+              <div class="col-xl-6 col-lg-5" gallerize>
+                @for (
+                  images of featuredProperty.images;
+                  track images;
+                  let i = $index
+                ) {
+                  <div class="feature-image">
+                    <a
+                      class="bg-size"
+                      [style.background-image]="'url(' + images.url + ')'"
+                      (click)="openLightBox(images.url)"
+                    >
+                      <div class="feature-overlay">
+                        <span>+</span>
+                      </div>
+                      <img
+                        [src]="images.url"
+                        class="bg-img"
+                        alt="property-image"
+                        style="display: none"
+                      />
+                    </a>
+                    <span
+                      class="label label-solid label-lg label-flat"
+                      [ngClass]="tagClass()"
+                    >
+                      Featured
+                    </span>
+                  </div>
+                }
+              </div>
+              <div class="col-xl-6 col-lg-7">
+                <div class="feature-content">
+                  <div class="details">
+                    <h3>
+                      <a href="javascript:void(0)"
+                        >{{ featuredProperty.title }}
+                      </a>
+                    </h3>
+                    <span>{{ featuredProperty.city }}</span>
+                    <p class="font-roboto">
+                      {{ featuredProperty.description }}
+                    </p>
+                  </div>
+                  <ul class="detail-list">
+                    <li>
+                      <div class="d-flex">
+                        <span
+                          class="label label-light label-flat label-lg"
+                          [ngClass]="tagClass()"
+                          >{{ featuredProperty.bed }}</span
+                        >
+                        <h6>Bedroom</h6>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex">
+                        <span
+                          class="label label-light label-flat label-lg"
+                          [ngClass]="tagClass()"
+                          >{{ featuredProperty.bath }}</span
+                        >
+                        <h6>Bathroom</h6>
+                      </div>
+                    </li>
+                    <li>
+                      <span
+                        class="label label-light label-flat label-lg"
+                        [ngClass]="tagClass()"
+                        >{{ featuredProperty.sqft }} Sq Ft</span
+                      >
+                    </li>
+                  </ul>
+                  <ul class="feature-price">
+                    <li>
+                      <h3>
+                        {{
+                          featuredProperty.price
+                            | currencySymbol: propertyService.Currency
+                        }}
+                      </h3>
+                      <h6>Home For Sale</h6>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="btn btn-solid btn-flat"
+                        [ngClass]="tagClass()"
+                        [routerLink]="['/property/image-box']"
+                      >
+                        submit property
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

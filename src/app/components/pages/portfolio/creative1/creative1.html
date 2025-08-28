@@ -1,0 +1,49 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="portfolio-creative odd-even ratio_55">
+  <div class="container">
+    @for (data of creativePageData; track data) {
+      <div class="row m-0">
+        <div class="col-lg-6 p-0" [ngClass]="{ 'order-lg-1': data.right }">
+          <div
+            class="wow zoomIn bg-size background"
+            [style.background-image]="'url(' + data.url + ')'"
+          >
+            <img
+              [src]="data.url"
+              class="bg-img img-fluid"
+              alt="property-image"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6 p-0">
+          <div class="content-sec wow zoomIn">
+            <div>
+              <h3>
+                <a
+                  href="javascript:void(0)"
+                  [routerLink]="['/page/portfolio/details']"
+                  >{{ data.title }}</a
+                >
+              </h3>
+              <p class="font-roboto">
+                {{ data.description }}
+              </p>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-gradient btn-pill color-2"
+                [routerLink]="['/page/portfolio/details']"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>

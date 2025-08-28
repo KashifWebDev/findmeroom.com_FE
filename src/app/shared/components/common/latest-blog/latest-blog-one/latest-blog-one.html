@@ -1,0 +1,49 @@
+@if (latestBlogData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of latestBlogData(); track data) {
+      <ng-template carouselSlide>
+        <div style="margin: 0 10px">
+          <div class="blog-wrap wow fadeInUp" [ngClass]="tagClass()">
+            <div class="blog-image">
+              <div
+                class="bg-size"
+                [style.background-image]="'url(' + data.img + ')'"
+              >
+                <img
+                  [src]="data.img"
+                  class="img-fluid bg-img"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </div>
+              <div class="blog-label">
+                <div>
+                  <h3>{{ data.date }}</h3>
+                  <span>{{ data.month }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="blog-details">
+              <span>
+                <app-feather-icons [icon]="'map-pin'" /> {{ data.city }}
+              </span>
+              <h3>
+                <a
+                  href="javascript:void(0)"
+                  [routerLink]="['/page/blog-page/left-sidebar']"
+                  >{{ data.title }}</a
+                >
+              </h3>
+              <p class="font-roboto">{{ data.desc }}</p>
+              <a
+                href="javascript:void(0)"
+                [routerLink]="['/page/blog-page/left-sidebar']"
+                >read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

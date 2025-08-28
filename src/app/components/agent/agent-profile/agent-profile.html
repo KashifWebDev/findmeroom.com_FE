@@ -1,0 +1,51 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="agent-section property-section agent-profile-wrap">
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col-xl-9 col-lg-8 property-grid-2">
+        @for (data of agentsDetails; track data) {
+          <app-agent-profile-details [agentsDetails]="data" />
+        }
+        <div class="agent-property">
+          <app-grid-panel
+            [paginationData]="paginationData"
+            (filterValue)="sortFilter($event)"
+          />
+          <div
+            class="property-2 row column-sm zoom-gallery property-label property-grid"
+          >
+            <app-common-filter-property-box
+              [type]="'grid-2'"
+              [pagination]="false"
+              [gridImages]="true"
+              [filterValue]="filterValue"
+              (paginationData)="getPaginationData($event)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4">
+        <app-advance-filter
+          [contact]="false"
+          [featured]="false"
+          [mortgage]="false"
+          (categoryValue)="getData($event)"
+          (propertyStatusData)="getData($event)"
+          (propertyTypeData)="getData($event)"
+          (roomsData)="getData($event)"
+          (bedsData)="getData($event)"
+          (bathData)="getData($event)"
+          (agencyData)="getData($event)"
+          (priceFilter)="getData($event)"
+          (areaFilter)="getData($event)"
+        />
+      </div>
+    </div>
+  </div>
+</section>

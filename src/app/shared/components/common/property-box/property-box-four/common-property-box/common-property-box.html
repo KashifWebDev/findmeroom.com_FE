@@ -1,0 +1,84 @@
+<div style="margin: 0 25px">
+  <div class="property-box">
+    <div class="property-image">
+      @for (images of propertyData()?.img; track images) {
+        @if (images.fileType === "image") {
+          <a
+            href="javascript:void(0)"
+            class="bg-size"
+            [style.background-image]="'url(' + images.url + ')'"
+          >
+            <img
+              [src]="images.url"
+              class="bg-img"
+              alt="property-image"
+              style="display: none"
+            />
+          </a>
+        }
+      }
+      <div class="overlay-property">
+        <div class="overlay-box">
+          <h4>{{ propertyData()?.title }}</h4>
+          <p class="font-roboto">{{ propertyData()?.details }}</p>
+          <a href="javascript:void(0)" (click)="getDetails(propertyData()!.id)"
+            >View Details</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <span class="label label-gradient label-lg color-4"
+        >{{
+          propertyData()!.price | currencySymbol: propertyService.Currency
+        }}*</span
+      >
+    </div>
+    <div class="property-details">
+      <ul class="icon-property">
+        <li>
+          <div class="d-flex">
+            <div class="property-icon color-4">
+              <svg class="property-svg">
+                <use xlink:href="assets/svg/icons.svg#home-heart"></use>
+              </svg>
+            </div>
+            <span>{{ propertyData()?.home }}</span>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex">
+            <div class="property-icon color-4">
+              <svg class="property-svg">
+                <use xlink:href="assets/svg/icons.svg#ruler"></use>
+              </svg>
+            </div>
+            <span>{{ propertyData()?.sqft }} Sq Ft</span>
+          </div>
+        </li>
+      </ul>
+      <ul class="icon-property mb-0">
+        <li>
+          <div class="d-flex">
+            <div class="property-icon color-4">
+              <svg class="property-svg">
+                <use xlink:href="assets/svg/icons.svg#key"></use>
+              </svg>
+            </div>
+            <span>{{ propertyData()?.rooms }} Rooms</span>
+          </div>
+        </li>
+        <li>
+          <div class="d-flex">
+            <div class="property-icon color-4">
+              <svg class="property-svg">
+                <use xlink:href="assets/svg/icons.svg#safety"></use>
+              </svg>
+            </div>
+            <span>{{ propertyData()?.date }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

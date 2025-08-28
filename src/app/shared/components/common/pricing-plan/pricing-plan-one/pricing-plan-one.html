@@ -1,0 +1,33 @@
+@if (pricingPlan().length) {
+  <owl-carousel-o [options]="Options">
+    @for (allData of pricingPlan(); track allData) {
+      <ng-template carouselSlide>
+        <div style="margin: 0 25px">
+          <div class="pricing-box">
+            <div class="pricing-details">
+              <div class="pricing-icon" [ngClass]="tagClass()">
+                <svg-icon [src]="allData.icon" />
+              </div>
+              <h3>{{ allData.heading }}</h3>
+              <p class="font-roboto">{{ allData.desc }}</p>
+            </div>
+            <ul>
+              @for (details of allData.details; track details) {
+                <li>{{ details.data }}</li>
+              }
+            </ul>
+            <div class="price">
+              <span class="label label-light label-flat" [ngClass]="tagClass()"
+                >Month</span
+              >
+              <h4>
+                {{ allData.price | currencySymbol: propertyService.Currency }}
+              </h4>
+              <span class="light-text">Per</span>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

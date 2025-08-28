@@ -1,0 +1,92 @@
+<section class="parallax-home video-layout">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-9">
+        <div class="parallax-content">
+          <div class="box text-affect">
+            <div class="title">
+              <span class="block"></span>
+              <h1>
+                Luxury <br />
+                Apartment
+              </h1>
+            </div>
+            <div class="role">
+              <div class="block"></div>
+              <p class="font-roboto">Limited time offer.Hurry up !!</p>
+            </div>
+          </div>
+          <form class="video-search">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">
+                <app-feather-icons [icon]="'map-pin'" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search location"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="dropdown" (click)="openMenu()">
+              <h6
+                class="dropdown-toggle font-roboto"
+                data-bs-toggle="dropdown"
+                [ngClass]="{ show: open }"
+              >
+                <span>{{ selectedItem }}</span
+                ><i class="fas fa-angle-down"></i>
+              </h6>
+              <div class="dropdown-menu text-start" [ngClass]="{ show: open }">
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0)"
+                  (click)="changedItem('Any Property type')"
+                  >Any Property type</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0)"
+                  (click)="changedItem('Apartment')"
+                  >Apartment</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0)"
+                  (click)="changedItem('Office')"
+                  >Office</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0)"
+                  (click)="changedItem('House')"
+                  >House</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="javascript:void(0)"
+                  (click)="changedItem('Villa')"
+                  >Villa</a
+                >
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-solid btn-flat color-7">
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="parallax-right">
+          <img
+            src="assets/images/layout/playing.svg"
+            alt="background-image"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

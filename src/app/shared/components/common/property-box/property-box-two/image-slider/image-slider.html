@@ -1,0 +1,167 @@
+<!-- Thumbnail Video -->
+@if (thumbnail_video() === true) {
+  @if (latestForRentData()) {
+    <div class="slider-for slick-video">
+      <owl-carousel-o [options]="Options" #owlCar>
+        @for (image of latestForRentData()?.img; track image; let i = $index) {
+          <ng-template carouselSlide [id]="image.url" [width]="430">
+            @if (image.fileType === "video") {
+              <video
+                class="bgvideo"
+                playsinline=""
+                autoplay=""
+                muted=""
+                loop=""
+              >
+                <source [src]="image.url" type="video/mp4" />
+              </video>
+            } @else {
+              <a
+                href="javascript:void(0)"
+                class="bg-size"
+                [style.background-image]="'url(' + image.url + ')'"
+              >
+                <img
+                  [src]="image.url"
+                  class="bg-img"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </a>
+            }
+          </ng-template>
+        }
+      </owl-carousel-o>
+    </div>
+    <div class="slider-nav">
+      <owl-carousel-o [options]="thumbnailCarouselOptions">
+        @for (image of latestForRentData()?.img; track image; let i = $index) {
+          <ng-template carouselSlide [id]="image.url + i" [width]="80">
+            <a (click)="owlCar.to(image.url); changeImage(image.url + i)">
+              @if (image.fileType === "video") {
+                <video
+                  class="bgvideo"
+                  playsinline=""
+                  autoplay=""
+                  muted=""
+                  loop=""
+                >
+                  <source [src]="image.url" type="video/mp4" />
+                </video>
+              } @else {
+                <div>
+                  <img
+                    [src]="image.url"
+                    class="img-fluid"
+                    alt="property-image"
+                  />
+                </div>
+              }
+            </a>
+          </ng-template>
+        }
+      </owl-carousel-o>
+    </div>
+  }
+} @else if (thumbnail() === true) {
+  <!-- Thumbnail Images -->
+  @if (latestForRentData()?.img) {
+    <div class="slider-for">
+      <owl-carousel-o [options]="Options" #owlCar>
+        @for (image of latestForRentData()?.img; track image) {
+          @if (image.fileType === "image") {
+            <ng-template carouselSlide [id]="image.url" [width]="430">
+              <a
+                href="javascript:void(0)"
+                class="bg-size"
+                [style.background-image]="'url(' + image.url + ')'"
+              >
+                <img
+                  [src]="image.url"
+                  class="bg-img"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </a>
+            </ng-template>
+          }
+        }
+      </owl-carousel-o>
+    </div>
+    <div class="slider-nav">
+      <owl-carousel-o [options]="thumbnailCarouselOptions">
+        @for (image of latestForRentData()?.img; track image; let i = $index) {
+          @if (image.fileType === "image") {
+            <ng-template carouselSlide [id]="image.url + i" [width]="80">
+              <a (click)="owlCar.to(image.url); changeImage(image.url + i)">
+                <div>
+                  <img
+                    [src]="image.url"
+                    class="img-fluid"
+                    alt="property-image"
+                  />
+                </div>
+              </a>
+            </ng-template>
+          }
+        }
+      </owl-carousel-o>
+    </div>
+  }
+} @else if (gridImages() === true) {
+  <!-- Grid images -->
+  <div class="property-slider" [class]="tagClass()">
+    <a
+      href="javascript:void(0)"
+      class="bg-size"
+      [style.background-image]="'url(' + latestForRentData()?.thumbnail + ')'"
+    >
+      <img
+        [src]="latestForRentData()?.thumbnail"
+        class="bg-img"
+        alt="property-image"
+        style="display: none"
+      />
+    </a>
+  </div>
+} @else if (listView() === true) {
+  <!-- For List View Images -->
+  <a
+    class="bg-size"
+    [style.background-image]="'url(' + latestForRentData()?.thumbnail + ')'"
+    gallerize
+  >
+    <img
+      [src]="latestForRentData()?.thumbnail"
+      class="bg-img"
+      alt="property-image"
+      style="display: none"
+    />
+  </a>
+} @else {
+  <!-- Property Box Carousel -->
+  @if (latestForRentData()?.img) {
+    <owl-carousel-o [options]="Options">
+      @for (images of latestForRentData()?.img; track images) {
+        @if (images.fileType === "image") {
+          <ng-template carouselSlide>
+            <div class="property-slider" [class]="tagClass()">
+              <a
+                href="javascript:void(0)"
+                class="bg-size"
+                [style.background-image]="'url(' + images.url + ')'"
+              >
+                <img
+                  [src]="images.url"
+                  class="bg-img"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </a>
+            </div>
+          </ng-template>
+        }
+      }
+    </owl-carousel-o>
+  }
+}

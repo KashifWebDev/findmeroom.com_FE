@@ -1,0 +1,18 @@
+<section class="blog-section bg-comman-2">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Latest Blog'"
+          [desc]="desc"
+          [textWhite]="true"
+          [type]="'basic'"
+        />
+        <div class="blog-1">
+          <app-latest-blog [latestBlogData]="latestBlogData" [type]="'basic'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

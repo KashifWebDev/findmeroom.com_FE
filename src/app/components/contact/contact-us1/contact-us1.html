@@ -1,0 +1,37 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="small-section get-in-touch">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 contact-img">
+        <img
+          src="assets/images/inner-pages/1.png"
+          class="img-fluid"
+          alt="image"
+        />
+      </div>
+      <div class="col-lg-6">
+        <div class="log-in">
+          <app-contact-us-form />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="small-section contact_section pt-0 contact_bottom">
+  <div class="container">
+    <div class="row">
+      @for (data of contactDetailsData; track data) {
+        <div class="col-lg-4 col-sm-6">
+          <app-contact-details [contactDetailsData]="data" />
+        </div>
+      }
+    </div>
+  </div>
+</section>

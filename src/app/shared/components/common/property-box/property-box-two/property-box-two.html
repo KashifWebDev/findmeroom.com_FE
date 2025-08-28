@@ -1,0 +1,104 @@
+<div class="property-box">
+  <div class="property-image">
+    <app-image-slider
+      [latestForRentData]="latestForRentData()"
+      [tagClass]="tagClass()"
+      [listView]="listView()"
+      [thumbnail]="thumbnail()"
+      [thumbnail_video]="thumbnail_video()"
+      [gridImages]="gridImages()"
+    />
+    <div class="labels-left">
+      @for (labels of latestForRentData()?.labels; track labels) {
+        <div>
+          @if (labels.includes("sale")) {
+            <span class="label label-shadow">Sale</span>
+          }
+          @if (labels.includes("fees")) {
+            <div>
+              <span class="label label-dark">no fees</span>
+            </div>
+          }
+          @if (labels.includes("openHouse")) {
+            <span class="label label-success">open house</span>
+          }
+          @if (labels.includes("sold")) {
+            <span class="label label-shadow">Sold</span>
+          }
+        </div>
+      }
+    </div>
+    <div class="seen-data">
+      <app-feather-icons [icon]="'camera'" />
+      <span>{{ latestForRentData()!.img.length - 1 }}</span>
+    </div>
+    <div class="overlay-property-box">
+      <a
+        href="javascript:void(0)"
+        class="effect-round"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Compare"
+        (click)="addCompare(latestForRentData()!)"
+      >
+        <app-feather-icons [icon]="'shuffle'" />
+      </a>
+      <a
+        href="javascript:void(0)"
+        class="effect-round like"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="wishlist"
+        (click)="addWishlist(latestForRentData()!)"
+      >
+        <app-feather-icons [icon]="'heart'" />
+      </a>
+    </div>
+  </div>
+  <div class="property-details">
+    <span class="font-roboto">{{ latestForRentData()?.country }}</span>
+    <a href="javascript:void(0)" (click)="getDetails(latestForRentData()!.id)">
+      <h3>{{ latestForRentData()?.title }}</h3>
+    </a>
+    <h6 [class]="tagClass()">
+      {{
+        latestForRentData()!.price | currencySymbol: propertyService.Currency
+      }}*
+    </h6>
+    <p class="font-roboto">{{ latestForRentData()?.details }}</p>
+    <ul>
+      <li>
+        <img
+          src="assets/images/svg/icon/double-bed.svg"
+          class="img-fluid"
+          alt="bed-icon"
+        />Bed : {{ latestForRentData()?.bed }}
+      </li>
+      <li>
+        <img
+          src="assets/images/svg/icon/bathroom.svg"
+          class="img-fluid"
+          alt="bathroom-icon"
+        />Baths : {{ latestForRentData()?.bath }}
+      </li>
+      <li>
+        <img
+          src="assets/images/svg/icon/square-ruler-tool.svg"
+          class="img-fluid ruler-tool"
+          alt="ruler-icon"
+        />Sq Ft : {{ latestForRentData()?.sqft }}
+      </li>
+    </ul>
+    <div class="property-btn d-flex">
+      <span>{{ latestForRentData()?.date }}</span>
+      <button
+        type="button"
+        class="btn btn-dashed btn-pill"
+        [class]="tagClass()"
+        (click)="getDetails(latestForRentData()!.id)"
+      >
+        Details
+      </button>
+    </div>
+  </div>
+</div>

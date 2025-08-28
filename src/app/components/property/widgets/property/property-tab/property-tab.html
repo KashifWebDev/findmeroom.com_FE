@@ -1,0 +1,94 @@
+<div class="desc-box">
+  <ul class="nav nav-tabs line-tab" id="top-tab" role="tablist">
+    @for (data of propertyDetailsData(); track data) {
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          role="tab"
+          [ngClass]="{ 'active show': openTab === data.value }"
+          (click)="tabbed(data.value)"
+          style="cursor: pointer"
+          >{{ data.title }}</a
+        >
+      </li>
+    }
+  </ul>
+  <div class="tab-content" id="top-tabContent">
+    @for (data of propertyDetailsData(); track data) {
+      @if (data.value === "about") {
+        <div
+          class="tab-pane fade about page-section"
+          id="about"
+          [ngClass]="{ 'active show': openTab === 'about' }"
+        >
+          @for (data of propertyData()?.data; track data) {
+            @if (data.value === "details") {
+              <app-propety-details [propertyDetailsData]="data.details" />
+            }
+          }
+          <app-property-brief [propertyBriefData]="data.details" />
+        </div>
+      } @else if (data.value === "feature") {
+        <div
+          class="tab-pane fade page-section"
+          id="feature"
+          [ngClass]="{ 'active show': openTab === 'feature' }"
+        >
+          <app-features [featuresData]="data.details" />
+        </div>
+      } @else if (openTab === "gallery") {
+        <div class="desc-box">
+          @if (data.value === "gallery") {
+            <div
+              class="tab-pane fade page-section ratio3_2"
+              id="gallery"
+              [ngClass]="{ 'active show': openTab === 'gallery' }"
+            >
+              <app-gallery [galleryImagesData]="data.details" />
+            </div>
+          }
+        </div>
+      } @else if (data.value === "video") {
+        <div
+          class="tab-pane fade page-section ratio_40"
+          id="video"
+          [ngClass]="{ 'active show': openTab === 'video' }"
+        >
+          <app-video [videoData]="data.details" />
+        </div>
+      } @else if (data.value === "details") {
+        <div
+          class="tab-pane fade"
+          id="details"
+          [ngClass]="{ 'active show': openTab === 'details' }"
+        >
+          <app-propety-details [propertyDetailsData]="data.details" />
+        </div>
+      } @else if (data.value === "floor_plan") {
+        <div
+          class="tab-pane fade"
+          id="floor_plan"
+          [ngClass]="{ 'active show': openTab === 'floor_plan' }"
+        >
+          <app-propety-floor-plan [floorPlanData]="data.details" />
+        </div>
+      } @else if (data.value === "location") {
+        <div
+          class="tab-pane fade"
+          id="location"
+          [ngClass]="{ 'active show': openTab === 'location' }"
+        >
+          <app-propety-location [location]="data.details" />
+        </div>
+      }
+    }
+  </div>
+</div>
+
+@for (data of propertyData()?.data; track data) {
+  @if (data.value === "review") {
+    <div class="desc-box">
+      <app-review [reviewData]="data.details" />
+    </div>
+  }
+}

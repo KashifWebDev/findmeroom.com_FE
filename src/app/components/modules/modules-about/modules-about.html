@@ -1,0 +1,73 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="about-section slick-between ratio_square">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'Agent'"
+          [heading]="'Meet our Agent'"
+          [textWhite]="false"
+          [type]="'simple'"
+          [tagClass]="'color-1'"
+        />
+        <div class="about-1 about-wrap arrow-white color-6">
+          <app-agents
+            [agentsData]="agentsData1"
+            [type]="'simple'"
+            [tagClass]="'color-1'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section slick-between bg-light ratio_square">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Our'"
+          [heading]="'Agent'"
+          [desc]="desc1"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="false"
+        />
+        <div class="about-2 about-wrap">
+          <app-agents
+            [agentsData]="agentsData2"
+            [type]="'basic'"
+            [tagClass]="'color-3'"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section slick-between modules-about-layout">
+  <div class="container">
+    <div class="row ratio_asos">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3 text-start'"
+          [heading]="'Our Agent'"
+          [desc]="desc2"
+          [type]="'basic'"
+        />
+        <div class="about-3 arrow-gradient arrow-right">
+          <app-agents [agentsData]="agentsData3" [type]="'classic'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

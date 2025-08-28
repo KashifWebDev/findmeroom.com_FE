@@ -1,0 +1,116 @@
+<div class="dashboard-content">
+  <div class="my-profile" id="profile">
+    <div class="profile-info">
+      <div class="common-card">
+        <div class="user-name media">
+          <div class="media-body">
+            <h5>
+              Zack Lee
+              <span class="label label-success">Real estate agent</span>
+            </h5>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <span
+            class="label label-light label-flat color-4"
+            (click)="editDetails()"
+            >Edit</span
+          >
+        </div>
+        <ul class="user-detail">
+          <li>
+            <app-feather-icons [icon]="'map-pin'" />
+            <span>Downers Grove, IL</span>
+          </li>
+          <li>
+            <app-feather-icons [icon]="'mail'" />
+            <span>zackle&#64;gmail.com</span>
+          </li>
+          <li>
+            <app-feather-icons [icon]="'check-square'" />
+            <span>Licensed for 2 years</span>
+          </li>
+        </ul>
+        <p class="font-roboto">
+          Residences can be classified by and how they are connected to
+          neighbouring residences and land. Different types of housing tenure
+          can be used for the same physical type.
+        </p>
+      </div>
+      <div class="common-card">
+        <div class="row">
+          <div class="col-xxl-6 col-xl-7">
+            <div class="information-detail">
+              <div class="common-header">
+                <h5>About</h5>
+              </div>
+              <div class="information">
+                <ul>
+                  <li>
+                    <span>Gender :</span>
+                    <p>Female</p>
+                  </li>
+                  <li>
+                    <span>Birthday :</span>
+                    <p>20/11/1995</p>
+                  </li>
+                  <li>
+                    <span>Phone number :</span>
+                    <a href="javascript:void(0)"> +91 846 - 547 - 210 </a>
+                  </li>
+                  <li>
+                    <span>Address :</span>
+                    <p>549 Sulphur Springs Road, Downers, IL</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="information-detail">
+              <div class="common-header">
+                <h5>Login Details</h5>
+              </div>
+              <div class="information">
+                <ul>
+                  <li>
+                    <span>Email :</span>
+                    <a href="javascript:void(0)">zackle&#64;gmail.com</a>
+                    <span
+                      class="label label-light label-flat color-4"
+                      (click)="editEmail()"
+                      >Edit</span
+                    >
+                  </li>
+                  <li>
+                    <span>Password :</span>
+                    <a href="javascript:void(0)"
+                      >&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</a
+                    >
+                    <span
+                      class="label label-light label-flat color-4"
+                      (click)="editPassword()"
+                      >Edit</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-5 offset-xxl-1 col-xl-5 offset-xl-0">
+            <div class="about-img d-xl-block d-none">
+              <img
+                src="assets/images/inner-pages/2.png"
+                class="img-fluid"
+                alt="ok-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

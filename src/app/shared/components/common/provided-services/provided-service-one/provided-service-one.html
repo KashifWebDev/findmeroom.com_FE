@@ -1,0 +1,23 @@
+<div class="service-box" [ngClass]="tagClass()">
+  <div class="hover-line">
+    @if (providedServices()?.img) {
+      <svg-icon [src]="providedServices()?.img" />
+    }
+    <div>
+      <svg class="icon-line-color">
+        <use xlink:href="assets/svg/icons.svg#line-straight"></use>
+      </svg>
+    </div>
+  </div>
+  <a href="javascript:void(0)" [routerLink]="['/page/other-pages/services']">
+    <h3>{{ providedServices()?.title }}</h3>
+  </a>
+  <p class="font-roboto">{{ providedServices()?.desc }}</p>
+  <a
+    href="javascript:void(0)"
+    class="btn btn-light-bg btn-flat"
+    [ngClass]="tagClass()"
+    [routerLink]="['/page/other-pages/services']"
+    ><span>view more</span></a
+  >
+</div>

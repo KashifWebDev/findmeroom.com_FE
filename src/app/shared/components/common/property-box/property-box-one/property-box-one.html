@@ -1,0 +1,81 @@
+<div class="property-box">
+  <div class="property-image">
+    <a
+      href="javascript:void(0)"
+      class="bg-size"
+      [style.background-image]="'url(' + propertyData()?.url + ')'"
+      style="
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
+      "
+    >
+      <img
+        src="{{ propertyData()?.url }}"
+        class="bg-img"
+        alt="property-image"
+        style="display: none"
+      />
+      <div class="labels-left">
+        @if (propertyData()?.sale) {
+          <span class="label label-shadow">Sale</span>
+        }
+        @if (propertyData()?.fees) {
+          <div>
+            <span class="label label-dark">no fees</span>
+          </div>
+        }
+        @if (propertyData()?.openHouse) {
+          <span class="label label-success">open house</span>
+        }
+        @if (propertyData()?.sold) {
+          <span class="label label-shadow">Sold</span>
+        }
+      </div>
+    </a>
+    <div class="bottom-property">
+      <div class="d-flex">
+        <div>
+          <h5>
+            <a href="javascript:void(0)">{{ propertyData()?.title }}</a>
+          </h5>
+          <h6>
+            {{
+              propertyData()!.price | currencySymbol: propertyService.Currency
+            }}
+            <small>/ start from</small>
+          </h6>
+        </div>
+        <button
+          type="button"
+          class="btn btn-gradient mt-3"
+          [ngClass]="tagClass()"
+          (click)="getDetails(propertyData()!.id)"
+        >
+          Details
+        </button>
+      </div>
+      <div class="overlay-option">
+        <ul>
+          <li>
+            <span>Beds</span>
+            <h6>{{ propertyData()?.bed }}</h6>
+          </li>
+          <li>
+            <span>Baths</span>
+            <h6>{{ propertyData()?.bath }}</h6>
+          </li>
+          <li>
+            <span>Balcony</span>
+            <h6>{{ propertyData()?.balcony }}</h6>
+          </li>
+          <li>
+            <span>Area</span>
+            <h6>{{ propertyData()?.area }}m<sup>2</sup></h6>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

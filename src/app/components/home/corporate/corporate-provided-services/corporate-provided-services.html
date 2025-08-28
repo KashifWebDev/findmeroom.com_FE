@@ -1,0 +1,28 @@
+<section class="service-section service-2 pb-0" [ngClass]="tagClass()">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'Provided'"
+          [heading]="'Services'"
+          [desc]="desc"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="svgClass()!"
+        />
+        <div class="row property-service column-space">
+          @for (data of providedServices; track data) {
+            <div class="col-xl-4 col-md-6 wow fadeInUp">
+              <app-provided-services
+                [providedServices]="data"
+                [type]="'simple'"
+                [tagClass]="tagClass()"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

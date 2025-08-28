@@ -1,0 +1,72 @@
+@if (homeSectionSliderData()) {
+  <owl-carousel-o class="carousel" [options]="Options">
+    @for (sliderData of homeSectionSliderData(); track sliderData) {
+      <ng-template carouselSlide>
+        <div class="slide">
+          <div>
+            <div
+              class="slider-image bg-size"
+              [style.background-image]="'url(' + sliderData.img + ')'"
+            >
+              <img
+                [src]="sliderData.img"
+                alt="property-image"
+                class="img-fluid bg-img"
+                style="display: none"
+              />
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10">
+                    <div class="home-content">
+                      <h6 class="line-right">#Realestate</h6>
+                      <h1>{{ sliderData.title }}</h1>
+                      <p class="font-roboto">{{ sliderData.subTitle }}</p>
+                      <h6 class="font-color4 font-roboto mb-0">
+                        <img
+                          src="assets/images/icon/bed.png"
+                          class="img-icon me-2"
+                          alt="bed-icon"
+                        />
+                        {{ sliderData.bad }} Bedroom <span class="mx-2">|</span
+                        ><img
+                          src="assets/images/icon/bathroom.png"
+                          class="img-icon me-2"
+                          alt="bathroom-icon"
+                        />
+
+                        {{ sliderData.bath }} Bathroom
+                        <span class="mx-2">|</span>
+                        <img
+                          src="assets/images/icon/sq.png"
+                          class="img-icon"
+                          alt="ruler-icon"
+                        />
+
+                        {{ sliderData.sqft }} Sq Ft
+                      </h6>
+                      @if (sliderData.price) {
+                        <h2>
+                          {{
+                            sliderData.price
+                              | currencySymbol: propertyService.Currency
+                          }}
+                        </h2>
+                      }
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-gradient color-4 btn-lg"
+                        [routerLink]="['/property/image-box']"
+                        >View Details</a
+                      >
+                      <div class="square-bg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

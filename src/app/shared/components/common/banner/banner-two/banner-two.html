@@ -1,0 +1,14 @@
+<div class="banner-3">
+  <span class="label label-light label-flat" [ngClass]="tagClass()"
+    >#Realestate</span
+  >
+  <h2 [innerHTML]="bannerData()?.title"></h2>
+  <p>{{ bannerData()?.desc }}</p>
+  <a
+    href="javascript:void(0)"
+    class="btn btn-solid btn-flat"
+    [ngClass]="tagClass()"
+    [routerLink]="['/agent/submit-property']"
+    >{{ bannerData()?.button1Text }}</a
+  >
+</div>

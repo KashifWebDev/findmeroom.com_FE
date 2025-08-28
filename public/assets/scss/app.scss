@@ -1,0 +1,29 @@
+// Bootstrap Layout scss
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Owl Carousel
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+//  Light Box
+@import "@angular/cdk/overlay-prebuilt.css";
+
+/* Leaflet Map */
+@import "leaflet/dist/leaflet.css";
+
+// Bar Rating
+@import "../../../node_modules/ngx-bar-rating/themes/br-stars-theme";
+
+// Chartist Chart
+@import "./vendors/chartist/chartist-settings";
+@import "./vendors/chartist/chartist";
+
+// Toast
+@import "ngx-toastr/toastr";
+@import "ngx-toastr/toastr-bs5-alert";
+
+@import "./layout/general";
+
+@import "./vendors/font-awesome";
+@import "./vendors/feather-icon";
+@import "./color1.scss";

@@ -1,0 +1,67 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">edit your card</h5>
+    <button type="button" class="btn-close" (click)="modal.dismissAll()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="name">name on card</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Zack Lee"
+        />
+      </div>
+      <div class="form-group">
+        <label for="number">card number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="number"
+          placeholder="5870 3174 8714 3401"
+        />
+      </div>
+      <div class="row gx-3">
+        <div class="form-group col-md-8">
+          <label for="expiry">expiry date</label>
+          <input
+            type="text"
+            class="form-control"
+            id="expiry"
+            placeholder="12/24"
+          />
+        </div>
+        <div class="form-group col-md-4">
+          <label for="cvv">cvv</label>
+          <input
+            type="password"
+            maxlength="3"
+            class="form-control"
+            id="cvv"
+            placeholder="&#9679;&#9679;&#9679;"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-dashed color-2 btn-pill"
+      (click)="modal.dismissAll()"
+    >
+      Cancel
+    </button>
+    <button
+      type="button"
+      class="btn btn-gradient color-2 btn-pill"
+      (click)="modal.dismissAll()"
+    >
+      update card
+    </button>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="common-card available-property">
+  <div class="common-header">
+    <h5>Available property</h5>
+  </div>
+  <div class="radial-property">
+    <div id="radial">
+      <apx-chart
+        [chart]="availablePropertyData.chart"
+        [plotOptions]="availablePropertyData.plotOptions"
+        [series]="availablePropertyData.series"
+        [labels]="availablePropertyData.labels"
+        [colors]="availablePropertyData.colors"
+        [stroke]="availablePropertyData.stroke"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,515 @@
+{
+  "data": [
+    {
+      "title": "about",
+      "value": "about",
+      "slugTitle": "about",
+      "details": [
+        {
+          "desc": "Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type."
+        },
+        {
+          "desc": "connected residences might be owned by a single entity and leased out, or owned separately with an agreement covering the relationship between units and common."
+        },
+        {
+          "desc": "they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type."
+        }
+      ]
+    },
+    {
+      "title": "feature",
+      "value": "feature",
+      "slugTitle": "feature",
+      "details": [
+        {
+          "features": [
+            {
+              "title": "Free Wi-Fi",
+              "icon": "wifi"
+            },
+            {
+              "title": "Elevator Lift",
+              "icon": "hands"
+            },
+            {
+              "title": "Power Backup",
+              "icon": "power-off"
+            },
+            {
+              "title": "Laundry Service",
+              "icon": "monument"
+            }
+          ]
+        },
+        {
+          "features": [
+            {
+              "title": "Security Guard",
+              "icon": "user-shield"
+            },
+            {
+              "title": "CCTV",
+              "icon": "video"
+            },
+            {
+              "title": "Emergency Exit",
+              "icon": "door-open"
+            },
+            {
+              "title": "Doctor On Call",
+              "icon": "first-aid"
+            }
+          ]
+        },
+        {
+          "features": [
+            {
+              "title": "Shower",
+              "icon": "shower"
+            },
+            {
+              "title": "free Parking in the area",
+              "icon": "car"
+            },
+            {
+              "title": "Air Conditioning",
+              "icon": "fan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "gallery",
+      "value": "gallery",
+      "slugTitle": "gallery",
+      "details": [
+        {
+          "url": "assets/images/property/4.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/14.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/11.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/12.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/10.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/9.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/8.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/7.jpg",
+          "fileType": "image"
+        }
+      ]
+    },
+    {
+      "title": "video",
+      "value": "video",
+      "slugTitle": "video",
+      "details": [
+        {
+          "url": "assets/images/property/11.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "https://www.youtube.com/embed/Sz_1tkcU0Co",
+          "fileType": "video"
+        }
+      ]
+    },
+    {
+      "title": "details",
+      "value": "details",
+      "slugTitle": "details",
+      "details": [
+        {
+          "title": "Property Type",
+          "data": "House"
+        },
+        {
+          "title": "Property ID",
+          "data": "ZOEA245"
+        },
+        {
+          "title": "Property status",
+          "data": "For sale"
+        },
+        {
+          "title": "Operating Since",
+          "data": "2008"
+        },
+        {
+          "title": "Price",
+          "data": "$ 1,50,000"
+        },
+        {
+          "title": "Property Size",
+          "data": "1730 sq / ft"
+        },
+        {
+          "title": "Balcony",
+          "data": "2"
+        },
+        {
+          "title": "City",
+          "data": "Newyork"
+        },
+        {
+          "title": "Bedrooms",
+          "data": "8"
+        },
+        {
+          "title": "Bathrooms",
+          "data": "4"
+        }
+      ]
+    },
+    {
+      "title": "Floor Plan",
+      "value": "floor_plan",
+      "slugTitle": "floor-plan",
+      "details": {
+        "url": "assets/images/single-property/floor-plan.png",
+        "fileType": "image"
+      }
+    },
+    {
+      "title": "location",
+      "value": "location",
+      "slugTitle": "location",
+      "details": {
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946229!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1563449626439!5m2!1sen!2sin"
+      }
+    },
+    {
+      "title": "review",
+      "value": "review",
+      "slugTitle": "review",
+      "details": [
+        {
+          "name": "Olive Yew",
+          "img": "assets/images/avatar/3.jpg",
+          "date": "Sep 13, 2023",
+          "description": "The location, view from the rooms are just awesome. Very cool landscaping has been done Around the hotel. There are small activities that you can indulge with your family.",
+          "rating": 5,
+          "right": false
+        },
+        {
+          "name": "Allie Grater",
+          "img": "assets/images/avatar/4.jpg",
+          "date": "Sep 25, 2023",
+          "description": "We were there for 3 nights and hotel was too good. Greenery was flaunting everywhere. There were games kept for our entertainment.",
+          "rating": 4,
+          "right": true
+        },
+        {
+          "name": "Walter Melon",
+          "img": "assets/images/avatar/2.jpg",
+          "date": "Oct 20, 2023",
+          "description": "There are small activities that you can indulge with your family. Very cool landscaping has been done Around the hotel. The location, view from the rooms are just awesome.",
+          "rating": 3,
+          "right": false
+        }
+      ]
+    }
+  ],
+  "propertyFilterSlider": [
+    {
+      "url": "assets/images/property/4.jpg",
+      "fileType": "image"
+    },
+    {
+      "url": "assets/images/property/16.jpg",
+      "fileType": "image"
+    },
+    {
+      "url": "assets/images/property/14.jpg",
+      "fileType": "image"
+    }
+  ],
+  "propertyImages": [
+    {
+      "url": "assets/images/parallax/2.jpg",
+      "fileType": "image"
+    },
+    {
+      "url": "assets/images/parallax/3.jpg",
+      "fileType": "image"
+    }
+  ],
+  "propertyImageSliderHome": [
+    {
+      "url": "assets/images/parallax/4.jpg",
+      "fileType": "image"
+    },
+    {
+      "url": "assets/images/parallax/2.jpg",
+      "fileType": "image"
+    },
+    {
+      "url": "assets/images/parallax/7.jpg",
+      "fileType": "image"
+    },
+    {
+      "url": "assets/images/parallax/6.jpg",
+      "fileType": "image"
+    }
+  ],
+  "propertyImageSliderImage": [
+    {
+      "images": [
+        {
+          "url": "assets/images/property/2.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/1.jpg",
+          "fileType": "image"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "url": "assets/images/property/5.jpg",
+          "fileType": "image"
+        },
+        {
+          "url": "assets/images/property/3.jpg",
+          "fileType": "image"
+        }
+      ]
+    }
+  ],
+  "gridImages": [
+    {
+      "url": "assets/images/1.jpg",
+      "fileType": "image",
+      "title": "Home in Merrick Way",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "rent"
+    },
+    {
+      "url": "assets/images/3.jpg",
+      "fileType": "image",
+      "title": "Hidden Spring Hideway",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "sale"
+    },
+    {
+      "url": "assets/images/property/8.jpg",
+      "fileType": "image",
+      "title": "Little Acorn Farm",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "rent"
+    },
+    {
+      "url": "assets/images/banner-image.jpg",
+      "fileType": "image",
+      "title": "Merrick in Spring Way",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "trend"
+    },
+    {
+      "url": "assets/images/property/1.jpg",
+      "fileType": "image",
+      "title": "Merrick in Spring Way",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "sale"
+    },
+    {
+      "url": "assets/images/others/1.jpg",
+      "fileType": "image",
+      "title": "Merrick in Spring Way",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "trend"
+    },
+    {
+      "url": "assets/images/1.jpg",
+      "fileType": "image",
+      "title": "Home in Merrick Way",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "sale"
+    },
+    {
+      "url": "assets/images/property/8.jpg",
+      "fileType": "image",
+      "title": "Little Acorn Farm",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "trend"
+    },
+    {
+      "url": "assets/images/property/1.jpg",
+      "fileType": "image",
+      "title": "Merrick in Spring Way",
+      "description": "Elegant retreat in a quiet Coral Gables setting",
+      "type": "trend"
+    }
+  ],
+  "parallaxImagesData": [
+    {
+      "url": "assets/images/parallax/3.jpg",
+      "fileType": "image",
+      "title": "Orchard House",
+      "description": "unmissable experience in vienna"
+    },
+    {
+      "url": "assets/images/parallax/2.jpg",
+      "fileType": "image",
+      "title": "Orchard House",
+      "description": "unmissable experience in vienna"
+    },
+    {
+      "url": "assets/images/parallax/1.jpg",
+      "fileType": "image",
+      "title": "Orchard House",
+      "description": "unmissable experience in vienna"
+    },
+    {
+      "url": "assets/images/parallax/4.jpg",
+      "fileType": "image",
+      "title": "Orchard House",
+      "description": "unmissable experience in vienna"
+    }
+  ],
+  "creativePageData": [
+    {
+      "url": "assets/images/parallax/4.jpg",
+      "fileType": "image",
+      "title": "Merrick in Spring Way",
+      "description": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening Residences can be classified by and connected to neighbouring residences and land.",
+      "right": false
+    },
+    {
+      "url": "assets/images/parallax/5.jpg",
+      "fileType": "image",
+      "title": "Home in Merrick Way",
+      "description": "Entertaining spaces with a chef kitchen opening Residences can be classified by and connected to neighbouring residences and land. Elegant retreat in a quiet Coral Gables setting. This home provides wonderful space.",
+      "right": true
+    },
+    {
+      "url": "assets/images/parallax/1.jpg",
+      "fileType": "image",
+      "title": "Merrick in Spring Way",
+      "description": "Elegant retreat in a quiet Coral Gables setting. This home provides wonderful entertaining spaces with a chef kitchen opening Residences can be classified by and connected to neighbouring residences and land.",
+      "right": false
+    }
+  ],
+  "creativePage2Data": [
+    {
+      "url": "assets/images/parallax/4.jpg",
+      "type": "image"
+    },
+    {
+      "title": "Home in Merrick Way",
+      "description": "This home Elegant retreat in a quiet Coral Gables setting..",
+      "type": "text"
+    },
+    {
+      "url": "assets/images/parallax/5.jpg",
+      "type": "image"
+    },
+    {
+      "title": "Hidden Spring Hideway",
+      "description": "Elegant retreat in a quiet Coral Gables setting. This home.",
+      "type": "text"
+    },
+    {
+      "url": "assets/images/parallax/1.jpg",
+      "type": "image"
+    },
+    {
+      "title": "Little Acorn Farm",
+      "description": "This home Elegant retreat in a quiet Coral Gables setting..",
+      "type": "text"
+    }
+  ],
+  "creativePage3Data": [
+    {
+      "url": "assets/images/property/19.jpg",
+      "fileType": "image",
+      "type": "rent",
+      "colClass": "col-lg-2"
+    },
+    {
+      "url": "assets/images/property/17.jpg",
+      "fileType": "image",
+      "type": "sale",
+      "colClass": "col-lg-2"
+    },
+    {
+      "url": "assets/images/property/2.jpg",
+      "fileType": "image",
+      "type": "trend",
+      "colClass": "col-lg-2"
+    },
+    {
+      "url": "assets/images/property/3.jpg",
+      "fileType": "image",
+      "type": "rent",
+      "colClass": "col-lg-2"
+    },
+    {
+      "url": "assets/images/property/5.jpg",
+      "fileType": "image",
+      "type": "sale",
+      "colClass": "col-lg-4"
+    },
+    {
+      "url": "assets/images/property/4.jpg",
+      "fileType": "image",
+      "type": "trend",
+      "colClass": "col-lg-4"
+    },
+    {
+      "url": "assets/images/property/1.jpg",
+      "fileType": "image",
+      "type": "trend",
+      "colClass": "col-lg-2"
+    },
+    {
+      "url": "assets/images/property/2.jpg",
+      "fileType": "image",
+      "type": "sale",
+      "colClass": "col-lg-2"
+    },
+    {
+      "url": "assets/images/property/5.jpg",
+      "fileType": "image",
+      "type": "rent",
+      "colClass": "col-lg-2"
+    },
+    {
+      "url": "assets/images/property/19.jpg",
+      "fileType": "image",
+      "type": "sale",
+      "colClass": "col-lg-2"
+    },
+    {
+      "url": "assets/images/property/1.jpg",
+      "fileType": "image",
+      "type": "trend",
+      "colClass": "col-lg-2"
+    }
+  ]
+}

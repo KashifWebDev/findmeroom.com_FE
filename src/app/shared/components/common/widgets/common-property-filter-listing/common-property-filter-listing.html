@@ -1,0 +1,82 @@
+@if (sidebarType() === "left") {
+  <div class="row ratio_63">
+    <div class="col-xl-3 col-lg-4">
+      <app-common-filter-listing [style]="filterStyle()" />
+    </div>
+    <div class="col-xl-9 col-lg-8" [ngClass]="gridClass()">
+      <app-grid-panel
+        [filter]="filter()"
+        [mapButton]="mapButton()!"
+        [mapType]="mapType()"
+        [viewMap]="viewMap()!"
+        [paginationData]="paginationData"
+        (filterValue)="sortFilter($event)"
+        [isList]="listView()!"
+      />
+      <div class="property-wrapper-grid" [class.list-view]="listView()">
+        <app-common-filter-property-box
+          [type]="gridType()"
+          [filter]="filter()"
+          [gridImages]="gridImages()!"
+          [filterValue]="filterValue"
+          (paginationData)="getPaginationData($event)"
+        />
+      </div>
+    </div>
+  </div>
+}
+
+@if (sidebarType() === "right") {
+  <div class="row ratio_63">
+    <div class="col-xl-9 col-lg-8" [ngClass]="gridClass()">
+      <app-grid-panel
+        [filter]="filter()"
+        [paginationData]="paginationData"
+        (filterValue)="sortFilter($event)"
+        [isList]="listView()!"
+      />
+      <div class="property-wrapper-grid" [class.list-view]="listView()">
+        <app-common-filter-property-box
+          [type]="gridType()"
+          [filter]="filter()"
+          [gridImages]="gridImages()!"
+          [filterValue]="filterValue"
+          (paginationData)="getPaginationData($event)"
+        />
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4">
+      <app-common-filter-listing [style]="filterStyle()" />
+    </div>
+  </div>
+}
+
+@if (sidebarType() === "no_sidebar") {
+  <div class="row ratio_55">
+    <div class="col-12" [ngClass]="gridClass()">
+      <app-grid-panel
+        [grid]="grid()"
+        [filter]="filter()"
+        [paginationData]="paginationData"
+        (filterValue)="sortFilter($event)"
+        [sidebarType]="sidebarType()"
+        [isList]="isList()!"
+      />
+      @if (filterStyle() === "horizontal") {
+        <app-common-filter-listing [style]="filterStyle()" />
+      }
+      <div class="property-wrapper-grid" [class.list-view]="listView()">
+        <app-common-filter-property-box
+          [type]="gridType()"
+          [filter]="filter()"
+          [gridImages]="gridImages()!"
+          [filterValue]="filterValue"
+          (paginationData)="getPaginationData($event)"
+          [sidebarType]="sidebarType()"
+          [thumbnail]="thumbnail()!"
+          [thumbnail_video]="thumbnail_video()!"
+        />
+      </div>
+    </div>
+  </div>
+}

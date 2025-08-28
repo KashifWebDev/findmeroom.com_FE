@@ -1,0 +1,27 @@
+<section
+  class="pricing-section slick-between slick-shadow"
+  [ngClass]="tagClass()"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3'"
+          [tag]="'pricing'"
+          [heading]="'Plan'"
+          [desc]="desc"
+          [svgIcon]="true"
+          [type]="'simple'"
+          [svgClass]="svgClass()!"
+        />
+        <div class="pricing-slider">
+          <app-pricing-plan
+            [pricingPlan]="pricingPlan"
+            [type]="'simple'"
+            [tagClass]="tagClass()"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

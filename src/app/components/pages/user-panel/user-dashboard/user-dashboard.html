@@ -1,0 +1,54 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="user-dashboard small-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar-user sticky-cls">
+          <div class="user-profile">
+            <app-user-info />
+          </div>
+          <div class="dashboard-list">
+            <app-user-panel-side-menu [activeTab]="'dashboard'" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-content">
+          <div id="dashboard">
+            <div class="user-wrapper">
+              <div class="row">
+                <div class="col-md-4">
+                  <app-top-common-charts [chartData]="totalAgents" />
+                </div>
+                <div class="col-md-4">
+                  <app-top-common-charts [chartData]="totalSales" />
+                </div>
+                <div class="col-md-4">
+                  <app-top-common-charts [chartData]="totalProperty" />
+                </div>
+                <div class="col-xl-7 col-md-12">
+                  <app-sales-overview />
+                </div>
+                <div class="col-xl-5 col-md-6">
+                  <app-sales-by-agents />
+                </div>
+                <div class="col-xl-4 xl-40 col-md-6">
+                  <app-available-property />
+                </div>
+                <div class="col-xl-8 xl-60 col-md-12">
+                  <app-property-overview />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,76 @@
+<div class="top-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="top-content top-nav">
+          <div class="brand-logo">
+            <a href="javascript:void(0)" [routerLink]="['']">
+              @if (layout.config.settings.layout_version === "dark-layout") {
+                <img
+                  [src]="darkHeaderLogo()"
+                  alt="logo"
+                  class="img-fluid for-dark"
+                />
+              } @else {
+                <img
+                  [src]="headerLogo()"
+                  alt="logo"
+                  class="img-fluid for-light"
+                />
+              }
+            </a>
+          </div>
+          <ul class="top-bar-right">
+            <li>
+              <app-search-two />
+            </li>
+            <li class="d-lg-none d-inline-block">
+              <span class="search-sm flat-box" (click)="openSearch()">
+                <i class="fas fa-search m-0"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control sm-input"
+                [class.open]="isOpenSearch"
+                placeholder="search here.."
+              />
+            </li>
+          </ul>
+          <ul class="header-right">
+            <li class="right-menu color-3">
+              <ul class="nav-menu">
+                <li class="dropdown language">
+                  <app-language />
+                </li>
+                <li class="dropdown">
+                  <app-wishlist />
+                </li>
+                <li class="dropdown currency">
+                  <app-currency />
+                </li>
+                <li class="dropdown">
+                  <app-profile />
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<header
+  class="header-3 fixed-header"
+  [ngClass]="{ fixed: headerFixed && headerFix() }"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="header-layout-3">
+          <app-menu [icon]="true" />
+          <app-contact />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

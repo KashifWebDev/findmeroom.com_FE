@@ -1,0 +1,13 @@
+<section class="banner-section banner-4 parallax-image">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        @for (data of bannerData; track data) {
+          <div class="banner-2 ratio2_3">
+            <app-banner [bannerData]="data" [type]="'classic'" />
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+.slider-nav-item--active {
+  border: solid 1px #459ad4 !important;
+}
+
+owl-carousel-o::ng-deep {
+  img {
+    border-radius: 8px;
+  }
+}

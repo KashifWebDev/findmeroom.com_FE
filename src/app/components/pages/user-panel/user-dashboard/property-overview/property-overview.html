@@ -1,0 +1,38 @@
+<div class="common-card property-overview">
+  <div class="common-header">
+    <h5>Property overview</h5>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-bordernone">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Type</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (data of propertyOverviewData; track data) {
+          <tr>
+            <td>
+              <div class="d-flex">
+                <img [src]="data.img" class="img-fluid" alt="property-image" />
+                <h6>{{ data.title }}</h6>
+              </div>
+            </td>
+            <td>{{ data.type }}</td>
+            <td>{{ data.date }}</td>
+            <td>
+              <span class="label label-light color-3">{{ data.status }}</span>
+            </td>
+            <td>
+              <app-feather-icons [icon]="'more-horizontal'" />
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

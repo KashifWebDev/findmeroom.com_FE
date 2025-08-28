@@ -1,0 +1,111 @@
+<div class="table-wrapper table-responsive">
+  <table class="table">
+    @if (compareData && compareData.length) {
+      <thead>
+        <tr class="th-compare">
+          <td>Action</td>
+          @for (data of compareData; track data) {
+            <th class="item-row">
+              <button
+                type="button"
+                class="remove"
+                (click)="removeItem(data.id)"
+              >
+                Remove
+              </button>
+            </th>
+          }
+        </tr>
+      </thead>
+      <tbody id="table-compare">
+        <tr>
+          <th class="property-name">Property Image</th>
+          @for (image of compareData; track image) {
+            <td class="item-row">
+              <img
+                [src]="image.thumbnail"
+                alt="property-image"
+                class="featured-image"
+              />
+              <div class="property_price">
+                <h6 class="color-2">
+                  <a href="javascript:void(0)">{{ image.title }}</a>
+                </h6>
+                <span class="color-2">${{ image.price }}</span>
+              </div>
+            </td>
+          }
+        </tr>
+        <tr>
+          <th class="property-name">Property Description</th>
+          @for (details of compareData; track details) {
+            <td class="item-row">
+              <p class="description-compare">{{ details.details }}</p>
+            </td>
+          }
+        </tr>
+        <tr>
+          <th class="property-name">Bedroom</th>
+          @for (room of compareData; track room) {
+            <td>
+              <span>{{ room.rooms }}</span>
+            </td>
+          }
+        </tr>
+        <tr>
+          <th class="property-name">Bathroom</th>
+          @for (bath of compareData; track bath) {
+            <td>
+              <span>{{ bath.bath }}</span>
+            </td>
+          }
+        </tr>
+        <tr>
+          <th class="property-name">Sq Ft.</th>
+          @for (sqft of compareData; track sqft) {
+            <td>
+              <span>{{ sqft.sqft }}</span>
+            </td>
+          }
+        </tr>
+        <tr>
+          <th class="property-name">Location</th>
+          @for (country of compareData; track country) {
+            <td>
+              <span>{{ country.country }}</span>
+            </td>
+          }
+        </tr>
+        <tr>
+          <th class="property-name">Available</th>
+          @for (status of compareData; track status) {
+            <td>
+              <span class="f-w-600">{{ status.propertyStatus }}</span>
+            </td>
+          }
+        </tr>
+        <tr>
+          <th class="property-name">Wishlist</th>
+          @for (data of compareData; track data) {
+            <td class="available-stock">
+              <button
+                class="add-to-wish btn btn-gradient color-2 btn-block btn-pill"
+                (click)="addWishlist(data)"
+              >
+                Add to wishlist
+              </button>
+            </td>
+          }
+        </tr>
+      </tbody>
+    } @else {
+      <tbody id="table-compare">
+        <tr>
+          <th class="property-name" style="text-align: center">
+            No Data Found
+          </th>
+        </tr>
+      </tbody>
+    }
+  </table>
+</div>

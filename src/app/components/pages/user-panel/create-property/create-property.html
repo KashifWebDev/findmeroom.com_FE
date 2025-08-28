@@ -1,0 +1,56 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="user-dashboard small-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="sidebar-user sticky-cls">
+          <div class="user-profile">
+            <app-user-info />
+          </div>
+          <div class="dashboard-list">
+            <app-user-panel-side-menu [activeTab]="'create-property'" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-content">
+          <div class="create-tab" id="create-property">
+            <div class="property-wizard common-card">
+              <div class="common-header">
+                <h5>Create property</h5>
+              </div>
+              <div class="create-property-form">
+                <div class="form-inputs">
+                  <h6>Basic information</h6>
+                  <app-basic-information />
+                </div>
+                <div class="form-inputs">
+                  <h6>Address</h6>
+                  <app-address />
+                </div>
+                <div class="form-inputs">
+                  <h6>Gallery</h6>
+                  <app-property-gallery />
+                </div>
+                <div class="text-end">
+                  <button
+                    type="submit"
+                    class="btn btn-gradient color-2 btn-pill"
+                  >
+                    Add property
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

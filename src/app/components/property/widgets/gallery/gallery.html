@@ -1,0 +1,53 @@
+<h4 class="content-title">gallery</h4>
+<div class="single-gallery">
+  @if (requestForm() === true) {
+    <app-request-exploration-form />
+  }
+  @if (galleryImagesData()) {
+    <div class="gallery-for">
+      <owl-carousel-o [options]="Options" #owlCar>
+        @for (image of galleryImagesData(); track image) {
+          @if (image.fileType === "image" && image.url) {
+            <ng-template carouselSlide [id]="image.url" [width]="430">
+              <div>
+                <div
+                  class="bg-size"
+                  [style.background-image]="'url(' + image.url + ')'"
+                >
+                  <img
+                    [src]="image.url"
+                    class="bg-img"
+                    alt="property-image"
+                    style="display: none"
+                  />
+                </div>
+              </div>
+            </ng-template>
+          }
+        }
+      </owl-carousel-o>
+    </div>
+    <div class="gallery-nav">
+      <owl-carousel-o [options]="thumbnailCarouselOptions">
+        @for (image of galleryImagesData(); track image; let i = $index) {
+          @if (image.fileType === "image" && image.url) {
+            <ng-template carouselSlide [id]="image.url + i">
+              <div
+                (click)="owlCar.to(image.url); changeImage(image.url + i)"
+                class="bg-size"
+                [style.background-image]="'url(' + image.url + ')'"
+              >
+                <img
+                  [src]="image.url"
+                  class="img-fluid"
+                  alt="property-image"
+                  style="display: none"
+                />
+              </div>
+            </ng-template>
+          }
+        }
+      </owl-carousel-o>
+    </div>
+  }
+</div>

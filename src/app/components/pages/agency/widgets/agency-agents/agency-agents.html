@@ -1,0 +1,62 @@
+<div class="property-box">
+  <div class="agent-image">
+    <div
+      class="bg-size"
+      [style.background-image]="'url(' + agentsData()?.img + ')'"
+    >
+      <img [src]="agentsData()?.img" class="bg-img" alt="agency-image" />
+      <span class="label label-shadow"
+        >{{ agentsData()?.property }} properties</span
+      >
+      <div class="agent-overlay"></div>
+      <div class="overlay-content">
+        <ul>
+          <li>
+            <a href="https://accounts.google.com/" target="_blank"
+              ><img src="assets/images/about/icon-1.png" alt="google-logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank"
+              ><img src="assets/images/about/icon-2.png" alt="twitter-logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="assets/images/about/icon-3.png" alt="facebook-logo"
+            /></a>
+          </li>
+        </ul>
+        <span>Connect</span>
+      </div>
+    </div>
+  </div>
+  <div class="agent-content">
+    <h3>
+      <a href="javascript:void(0)" [routerLink]="['/agent/agent-profile']">{{
+        agentsData()?.title
+      }}</a>
+    </h3>
+    <p class="font-roboto">{{ agentsData()?.subTitle }}</p>
+    <ul class="agent-contact">
+      <li [ngClass]="{ show: isMobile }">
+        <i class="fas fa-phone-alt"></i>
+        <span [ngClass]="isMobile === true ? 'phone-number' : 'character'"
+          >+91 {{ mobileNumber }}</span
+        >
+        <span
+          class="label label-light label-flat color-2"
+          (click)="showMobile(agentsData()!)"
+          style="font-size: 14px"
+        >
+          {{ isMobile ? "hide" : "show" }}
+        </span>
+      </li>
+      <li><i class="fas fa-envelope"></i> {{ agentsData()?.email }}</li>
+      <li><i class="fas fa-fax"></i> {{ agentsData()?.fax }}</li>
+    </ul>
+    <a href="javascript:void(0)" [routerLink]="['/agent/agent-profile']"
+      >View profile <i class="fas fa-arrow-right"></i
+    ></a>
+  </div>
+</div>

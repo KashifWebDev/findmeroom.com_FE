@@ -1,0 +1,55 @@
+<div class="description-section">
+  <div class="description-details">
+    <div class="desc-box">
+      <div class="menu-top" id="searchBar" [ngClass]="{ sticky: navFixed }">
+        <div class="container">
+          <ul class="nav">
+            @for (data of propertyData()?.data; track data) {
+              <li [ngClass]="{ active: activeClass === data.value }">
+                <a (click)="setPage(data.value)">{{ data.title }}</a>
+              </li>
+            }
+          </ul>
+        </div>
+      </div>
+      @for (data of propertyData()?.data; track data) {
+        @if (data.value === "about") {
+          <app-property-brief [propertyBriefData]="data.details" />
+        }
+      }
+    </div>
+    @for (data of propertyData()?.data; track data) {
+      @if (data.value === "feature") {
+        <div class="desc-box">
+          <app-features [featuresData]="data.details" />
+        </div>
+      } @else if (data.value === "gallery") {
+        <div class="desc-box">
+          <div class="page-section ratio3_2" id="gallery">
+            <app-gallery [galleryImagesData]="data.details" />
+          </div>
+        </div>
+      } @else if (data.value === "video") {
+        <div class="desc-box">
+          <app-video [videoData]="data.details" />
+        </div>
+      } @else if (data.value === "details") {
+        <div class="desc-box">
+          <app-propety-details [propertyDetailsData]="data.details" />
+        </div>
+      } @else if (data.value === "floor_plan") {
+        <div class="desc-box">
+          <app-propety-floor-plan [floorPlanData]="data.details" />
+        </div>
+      } @else if (data.value === "location") {
+        <div class="desc-box">
+          <app-propety-location [location]="data.details" />
+        </div>
+      } @else if (data.value === "review") {
+        <div class="desc-box">
+          <app-review [reviewData]="data.details" />
+        </div>
+      }
+    }
+  </div>
+</div>

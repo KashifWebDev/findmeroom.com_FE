@@ -1,0 +1,29 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="ratio_40">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="blog-single-detail theme-card">
+          @for (data of blogDetails; track data) {
+            <app-blog-detail [blogDetails]="data" />
+          }
+          <div class="comment-section">
+            <h4>comments:</h4>
+            <div class="comment-box">
+              @for (data of commentsData; track data) {
+                <app-blog-detail-comments [commentsData]="data" />
+              }
+            </div>
+          </div>
+          <app-blog-detail-leave-comments />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

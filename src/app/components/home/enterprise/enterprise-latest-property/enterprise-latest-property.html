@@ -1,0 +1,26 @@
+<section class="property-section">
+  <div class="container">
+    <div class="row ratio_55">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'Latest Property Listing'"
+          [desc]="desc"
+          [type]="'basic'"
+        />
+        <div class="property-2 row column-space">
+          @for (data of latestForRentData() | slice: 0 : 6; track data) {
+            <div class="col-xl-4 col-md-6 wow fadeInUp">
+              <app-property-box
+                [latestForRentData]="data"
+                [type]="'basic'"
+                [tagClass]="tagClass()!"
+                [listView]="false"
+              />
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

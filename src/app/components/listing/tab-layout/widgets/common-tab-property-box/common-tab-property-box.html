@@ -1,0 +1,25 @@
+<app-grid-panel
+  [filter]="advanceFilter()"
+  [grid]="false"
+  [tab]="true"
+  (tabValue)="receiveChildData($event)"
+/>
+@if (advanceFilter() === true) {
+  <app-advance-filter-box-horizontial />
+}
+<div
+  class="property-2 column-sm zoom-gallery property-label property-grid row grid"
+>
+  @for (data of propertyData; track data) {
+    <div
+      class="col-md-6 sale grid-item wow fadeInUp"
+      [ngClass]="{ 'col-xl-4': colClass() === true }"
+    >
+      <app-property-box
+        [latestForRentData]="data"
+        [type]="'basic'"
+        [tagClass]="'color-2'"
+      />
+    </div>
+  }
+</div>

@@ -1,0 +1,39 @@
+<div class="page-section" id="review">
+  <h4 class="content-title">Reviews</h4>
+  <div class="review">
+    @for (reviewData of reviewData(); track reviewData) {
+      <div
+        class="review-box"
+        [ngClass]="{ 'review-child': reviewData.right === true }"
+      >
+        <div class="media">
+          <img [src]="reviewData.img" class="img-70" alt="user-image" />
+          <div class="media-body">
+            <h6>{{ reviewData.name }}</h6>
+            <p>{{ reviewData.date }}</p>
+            <p class="mb-0">{{ reviewData.description }}</p>
+          </div>
+          <div class="rating">
+            <ngb-rating [rate]="reviewData.rating" />
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+  <hr />
+  <h4 class="content-title">Write a Review</h4>
+  <form class="review-form">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Name" required />
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Email" required />
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" placeholder="Comment"></textarea>
+    </div>
+    <button type="submit" class="btn btn-gradient color-2 btn-pill">
+      Submit
+    </button>
+  </form>
+</div>

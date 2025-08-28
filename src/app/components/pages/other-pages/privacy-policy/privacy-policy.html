@@ -1,0 +1,111 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="user-dashboard terms-section">
+  <div class="container">
+    <div class="row log-in">
+      <div class="col-xl-3 col-lg-4">
+        <div class="sidebar-user sticky-cls">
+          <div class="dashboard-list">
+            <h5>Related Topics</h5>
+            <ul class="nav nav-tabs right-line-tab">
+              @for (data of privacyPolicyData; track data) {
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    [ngClass]="{ active: activeClass === data.value }"
+                    (click)="setPage(data.value)"
+                    >{{ data.title }}
+                  </a>
+                </li>
+              }
+            </ul>
+            <div class="terms-bottom-content">
+              <img
+                src="assets/images/others/1.svg"
+                alt="image"
+                class="img-fluid"
+              />
+              <a
+                href="assets/privacy-policy.txt"
+                class="btn btn-gradient color-2 btn-pill"
+                download
+                >Download Doc</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-9 col-lg-8 col-12">
+        <div class="theme-card">
+          <h2>Privacy policy for Sheltos</h2>
+          <div class="terms-wrap">
+            <div class="terms-wrapper">
+              <p>
+                At Sheltos, accessible at sheltos.com, one of our main
+                priorities is the privacy of our visitors. This Privacy Policy
+                document contains types of information that is collected and
+                recorded by sheltos and how we use it.
+              </p>
+              <p>
+                If you have additional questions or require more information
+                about our Privacy Policy, do not hesitate to contact us through
+                email at <a href="javascript:void(0)">test&#64;sheltos.com</a>
+              </p>
+            </div>
+            @for (data of privacyPolicyData; track data) {
+              @if (data.value === "information") {
+                <div class="terms-wrapper" id="information">
+                  <h4>Information we collect</h4>
+                  @for (detail of data.details; track detail) {
+                    <p>{{ detail.description }}</p>
+                  }
+                </div>
+              } @else if (data.value === "howuse") {
+                <div class="terms-wrapper" id="howuse">
+                  <h4>How we use your information</h4>
+                  <p>
+                    We use the information we collect in various ways, including
+                    to:
+                  </p>
+                  <ul>
+                    @for (detail of data.details; track detail) {
+                      <li>
+                        {{ detail.description }}
+                      </li>
+                    }
+                  </ul>
+                </div>
+              } @else if (data.value === "thitdparty") {
+                <div class="terms-wrapper" id="thitdparty">
+                  <h4>Third-Party Privacy Policies</h4>
+                  @for (detail of data.details; track detail) {
+                    <p>{{ detail.description }}</p>
+                  }
+                </div>
+              } @else if (data.value === "advertising") {
+                <div class="terms-wrapper" id="advertising">
+                  <h4>Advertising Partners Privacy Policies</h4>
+                  @for (detail of data.details; track detail) {
+                    <p>{{ detail.description }}</p>
+                  }
+                </div>
+              } @else if (data.value === "gdrp") {
+                <div class="terms-wrapper" id="gdrp">
+                  <h4>GDPR Privacy Policy (Data Protection Rights)</h4>
+                  @for (detail of data.details; track detail) {
+                    <p>{{ detail.description }}</p>
+                  }
+                </div>
+              }
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

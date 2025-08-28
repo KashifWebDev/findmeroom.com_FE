@@ -1,0 +1,36 @@
+{
+  "peopleSay": [
+    {
+      "id": 1,
+      "type": "enterprise",
+      "img": "assets/images/avatar/1.jpg",
+      "name": "Aida Bugg",
+      "position": "CEO of Desees",
+      "desc": "Life before Company was very chaotic — we got a lot of mistyped orders. So with Company,the ability to see the order directly from the customer makes it so streamlined."
+    },
+    {
+      "id": 2,
+      "type": "enterprise",
+      "img": "assets/images/avatar/1.jpg",
+      "name": "Teri Dactyl",
+      "position": "CEO of Desees",
+      "desc": "It won’t be easy, but buying my own home has been a lifelong dream, and knowing that I will only get out of it what I put into it, I’m ready to get a little sweat on my brow and realize my dream to its fullest."
+    },
+    {
+      "id": 3,
+      "type": "enterprise",
+      "img": "assets/images/avatar/4.jpg",
+      "name": "Elmer Harvy",
+      "position": "CEO of Desees",
+      "desc": "To buy a nice home is to buy a better way of life. To choose a better way of life is to work toward well-being, life is to work toward well-beingand isn’t well-being what’s paramount."
+    },
+    {
+      "id": 4,
+      "type": "enterprise",
+      "img": "assets/images/avatar/1.jpg",
+      "name": "Elmer Harvy",
+      "position": "CEO of Desees",
+      "desc": "The ability to see the order directly from the customer makes it so streamlined. Life before Company was very chaotic — we got a lot of mistyped orders. So with Company."
+    }
+  ]
+}

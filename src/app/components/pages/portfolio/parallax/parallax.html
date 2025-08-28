@@ -1,0 +1,21 @@
+<section class="p-0 parallax-section">
+  @for (imagesData of parallaxImagesData; track imagesData) {
+    <div
+      class="full_banner bg-size"
+      [style.background-image]="'url(' + imagesData.url + ')'"
+    >
+      <img
+        [src]="imagesData.url"
+        class="img-fluid bg-img"
+        alt="property-image"
+        style="display: none"
+      />
+      <div class="center-content">
+        <div>
+          <h2>{{ imagesData.title }}</h2>
+          <h6>{{ imagesData.description }}</h6>
+        </div>
+      </div>
+    </div>
+  }
+</section>

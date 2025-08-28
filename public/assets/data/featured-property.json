@@ -1,0 +1,121 @@
+{
+  "featuredProperty": [
+    {
+      "id": 1,
+      "city": "New York",
+      "title": "Merrick in Spring Way",
+      "label": "Open house",
+      "price": 9554,
+      "description": "Different types of housing can be use same physical type.connected residences might be owned by a single entity or owned separately with an agreement covering the relationship between units and common areas and concerns.",
+      "bed": 5,
+      "bath": 3,
+      "sqft": 5000,
+      "homeType": "FAMILY HOME",
+      "img": "assets/images/property/3.jpg",
+      "imgLabel": "Featured",
+      "sign": "assets/images/signature/1.png",
+      "type": ["slider_filter_search", "image_content", "typed_image"]
+    },
+    {
+      "id": 2,
+      "city": "New York",
+      "title": "Allen's Across Way",
+      "label": "Open house",
+      "price": 6844,
+      "description": "Connected residences might be owned by a single entity or owned separately with an agreement covering the relationship between units and common areas and concerns. Different types of housing can be use same physical type.",
+      "bed": 3,
+      "bath": 2,
+      "sqft": 1000,
+      "homeType": "FAMILY HOME",
+      "img": "assets/images/property/2.jpg",
+      "imgLabel": "Featured",
+      "sign": "assets/images/signature/1.png",
+      "type": ["slider_filter_search", "image_content", "typed_image"]
+    },
+    {
+      "id": 3,
+      "type": "corporate",
+      "title": "High Valley Fields",
+      "city": "Merrick Way, Miami, FL United Kingdom",
+      "description": "No investment on earth is so safe, so sure, so certain to enrich its owner as undeveloped realty. we advise to place you your savings in realty near some growing city. There is no such savings bank anywhere. ",
+      "bed": "3",
+      "bath": "5",
+      "price": 48596,
+      "sqft": "9532",
+      "images": [
+        {
+          "url": "assets/images/feature/8.jpg",
+          "fileType": "image"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "corporate",
+      "title": "Honeycomb Farms",
+      "city": "Merrick Way, Miami, FL United Kingdom",
+      "description": "Real estate is an imperishable asset, ever increasing in value. It is the most solid security that human ingenuity has devised. It is the basis of all security and about the only indestructible security",
+      "bed": "4",
+      "bath": "2",
+      "price": 10596,
+      "sqft": "22000",
+      "images": [
+        {
+          "url": "assets/images/feature/9.jpg",
+          "fileType": "image"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "type": "corporate",
+      "title": "Home in California Avenue ",
+      "city": "Merrick Way, Miami, FL United Kingdom",
+      "description": "Real estate cannot be lost or stolen, nor can it be carried away. Purchased with common sense, paid for in full, and managed with reasonable care, it is about the safest investment in the world.",
+      "bed": "3",
+      "bath": "1",
+      "price": 8000,
+      "sqft": "1200",
+      "images": [
+        {
+          "url": "assets/images/feature/features-1.jpg",
+          "fileType": "image"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "type": "classic",
+      "title": "Monumental Real Estate Services ",
+      "city": "Merrick Way, Miami, FL United Kingdom",
+      "description": "Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type.",
+      "price": 4859,
+      "sqft": "9532",
+      "images": [
+        {
+          "url": "assets/images/feature/9.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumb": "assets/images/feature/9.jpg",
+      "tag": "Home For Sale"
+    },
+    {
+      "id": 7,
+      "type": "classic",
+      "title": "Home in California Avenue ",
+      "city": "Merrick Way, Miami, FL United Kingdom",
+      "description": "Different types of housing tenure can be used for the same physical type. Residences can be classified by and how they are connected to neighbouring residences and land.",
+      "price": 6543,
+      "sqft": "9532",
+      "images": [
+        {
+          "url": "assets/images/blog/blog-1.jpg",
+          "fileType": "image"
+        }
+      ],
+      "thumb": "assets/images/blog/blog-1.jpg",
+      "tag": "Land For Sale"
+    }
+  ]
+}

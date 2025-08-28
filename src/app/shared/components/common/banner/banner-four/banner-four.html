@@ -1,0 +1,18 @@
+<div class="video-details">
+  <span class="label label-light label-flat color-4">#Realestate</span>
+  <h2>{{ bannerData()?.title }}</h2>
+  <p class="font-roboto">{{ bannerData()?.desc }}</p>
+  <form>
+    <div class="form-group">
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Enter Your Email Address"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-gradient color-4 btn-lg">
+      {{ bannerData()?.button1Text }}
+    </button>
+  </form>
+</div>

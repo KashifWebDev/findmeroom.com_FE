@@ -1,0 +1,14 @@
+<div class="page-section feature-dec" id="feature">
+  <h4 class="content-title">features</h4>
+  <div class="single-feature row">
+    @for (allData of featuresData(); track allData) {
+      <div class="col-xxl-3 col-xl-4 col-6">
+        <ul>
+          @for (data of allData.features; track data) {
+            <li><i class="fas fa-{{ data.icon }}"></i> {{ data.title }}</li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+</div>

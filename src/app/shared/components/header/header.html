@@ -1,0 +1,26 @@
+@if (data()) {
+  @if (data()?.style === "simple") {
+    <app-header-one
+      [headerLogo]="data()?.headerLogo"
+      [darkHeaderLogo]="data()?.darkHeaderLogo"
+      [headerClass]="data()?.headerClass"
+      [headerFix]="data()?.headerFix"
+    />
+  } @else if (data()?.style === "basic") {
+    <app-header-two
+      [headerLogo]="data()?.headerLogo"
+      [darkHeaderLogo]="data()?.darkHeaderLogo"
+      [headerFix]="data()?.headerFix"
+      [darkFooterLogo]="data()?.darkFooterLogo"
+      [darkThemeHeaderLogo]="data()?.darkHeaderLogo"
+    />
+  } @else if (data()?.style === "classic") {
+    <app-header-three
+      [headerLogo]="data()?.headerLogo"
+      [darkHeaderLogo]="data()?.darkHeaderLogo"
+      [headerClass]="data()?.headerClass"
+    />
+  } @else if (data()?.style === "standard") {
+    <app-header-four />
+  }
+}

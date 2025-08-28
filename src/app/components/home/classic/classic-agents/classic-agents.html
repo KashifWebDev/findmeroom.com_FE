@@ -1,0 +1,17 @@
+<section class="about-section slick-between">
+  <div class="container">
+    <div class="row ratio_asos">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-3 text-start'"
+          [heading]="'Our Agent'"
+          [desc]="desc"
+          [type]="'basic'"
+        />
+        <div class="about-3 arrow-gradient arrow-right">
+          <app-agents [agentsData]="agentsData" [type]="'classic'" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

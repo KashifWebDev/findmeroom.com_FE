@@ -1,0 +1,35 @@
+<div class="footer-links footer-details">
+  <h5
+    class="footer-title d-md-none"
+    [ngClass]="{ active: isContactOpen === true }"
+    (click)="openContact()"
+  >
+    Contact us
+    <span class="according-menu">
+      <i class="fas fa-chevron-down"></i>
+    </span>
+  </h5>
+  <div
+    class="footer-content"
+    [ngClass]="{
+      'd-block': isContactOpen,
+      'd-none d-md-block': !isContactOpen,
+    }"
+  >
+    <a href="javascript:void(0)" [routerLink]="['']">
+      @if (layout.config.settings.layout_version === "dark-layout") {
+        <img [src]="darkFooterLogo()" alt="Sheltos" class="img-fluid" />
+      } @else {
+        <img [src]="footerLogo()" alt="Sheltos" class="img-fluid" />
+      }
+    </a>
+    <p>This home provides entertaining spaces with a kitchen opening...</p>
+    <div class="footer-contact">
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i>A-32, Albany, Newyork.</li>
+        <li><i class="fas fa-phone-alt"></i>(+066) 518 - 457 - 5181</li>
+        <li><i class="fas fa-envelope"></i>Contact&#64;gmail.com</li>
+      </ul>
+    </div>
+  </div>
+</div>

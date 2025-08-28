@@ -1,0 +1,67 @@
+<div class="left-sidebar sticky-cls single-sidebar">
+  <div class="filter-cards">
+    @if (contact()) {
+      <app-advance-filter-contact />
+    }
+    <div class="advance-card">
+      <app-advance-filter-request-exploration />
+    </div>
+    @if (filter()) {
+      <div class="advance-card">
+        <h6>filter</h6>
+        <app-filter-box
+          [buttonClass]="'color-2 btn-block btn-pill'"
+          [label]="false"
+          (propertyStatusData)="getStatus($event)"
+          (propertyTypeData)="getType($event)"
+          (roomsData)="getRooms($event)"
+          (bedsData)="getBeds($event)"
+          (bathData)="getBath($event)"
+          (agencyData)="getAgency($event)"
+          (priceFilter)="priceChange($event)"
+          (areaFilter)="areaChange($event)"
+        />
+      </div>
+    } @else if (featured()) {
+      <div class="advance-card feature-card">
+        <h6>Featured</h6>
+        <div class="feature-slider">
+          @if (propertyFilterSliderData()) {
+            <owl-carousel-o [options]="Options">
+              @for (image of propertyFilterSliderData(); track image) {
+                @if (image.fileType === "image") {
+                  <ng-template carouselSlide>
+                    <div
+                      class="bg-size"
+                      [style.background-image]="'url(' + image.url + ')'"
+                    >
+                      <img
+                        [src]="image.url"
+                        class="bg-img"
+                        alt="property-image"
+                        style="display: none"
+                      />
+                      <div class="bottom-feature">
+                        <h5>Neverland</h5>
+                        <h6>$13,000 <small>/ start from</small></h6>
+                      </div>
+                    </div>
+                  </ng-template>
+                }
+              }
+            </owl-carousel-o>
+          }
+        </div>
+        <div class="labels-left" style="z-index: 1">
+          <span class="label label-success">featured</span>
+        </div>
+      </div>
+    }
+    <app-recently-added />
+    @if (mortgage()) {
+      <div class="advance-card">
+        <app-advance-filter-mortgage />
+      </div>
+    }
+  </div>
+</div>

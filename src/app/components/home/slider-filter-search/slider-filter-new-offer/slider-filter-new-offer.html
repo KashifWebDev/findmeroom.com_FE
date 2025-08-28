@@ -1,0 +1,22 @@
+<section
+  class="offer-section banner-section slick-between"
+  [ngClass]="sectionClass()"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-1'"
+          [tag]="'New Offer'"
+          [heading]="'Our New Offer'"
+          [textWhite]="true"
+          [type]="'simple'"
+          [tagClass]="tagClass()"
+        />
+        <div class="offer-slider">
+          <app-new-offer [title]="title()!" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+@if (latestBlogData()) {
+  <owl-carousel-o [options]="Options">
+    @for (data of latestBlogData(); track data) {
+      <ng-template carouselSlide>
+        <div style="margin: 0 25px">
+          <div class="blog-box">
+            <div class="img-box">
+              <img [src]="data.img" alt="property-image" class="img-fluid" />
+            </div>
+            <div class="blog-content">
+              <span>{{ data.date }}</span>
+              <h3>
+                <a
+                  href="javascript:void(0)"
+                  [routerLink]="['/page/blog-page/left-sidebar']"
+                >
+                  {{ data.title }}
+                </a>
+              </h3>
+              <p class="font-roboto">{{ data.desc }}</p>
+              <a
+                href="javascript:void(0)"
+                class="btn btn-gradient btn-pill color-2 btn-lg"
+                [routerLink]="['/page/blog-page/left-sidebar']"
+                >read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    }
+  </owl-carousel-o>
+}

@@ -1,0 +1,46 @@
+<app-breadcrumb
+  [bgImage]="bgImage"
+  [title]="title"
+  [parent]="parent"
+  [child]="child"
+/>
+
+<section class="portfolio-section portfolio-grid creative-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-grid-tab
+          [gridImagesData]="gridImagesData"
+          (imagesData)="receiveChildData($event)"
+        />
+        <div class="row grid ratio_square zoom-gallery-multiple m-0" gallerize>
+          <ngx-masonry [options]="masonryOptions" [ordered]="true">
+            @for (images of imagesData; track images; let i = $index) {
+              <div
+                class="col-md-4 col-6 sale grid-item p-0"
+                [ngClass]="images.colClass"
+                ngxMasonryItem
+              >
+                <div class="overlay">
+                  <div class="portfolio-image">
+                    <a
+                      [style.background-image]="'url(' + images.url + ')'"
+                      class="bg-size"
+                      (click)="lightbox.open(i)"
+                    >
+                      <img
+                        [src]="images.url"
+                        class="bg-img"
+                        alt="property-image"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            }
+          </ngx-masonry>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

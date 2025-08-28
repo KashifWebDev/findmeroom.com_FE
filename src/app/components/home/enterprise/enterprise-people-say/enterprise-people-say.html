@@ -1,0 +1,19 @@
+<section class="testimonial-style-1">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <app-title
+          [titleClass]="'title-2'"
+          [heading]="'What People Say'"
+          [desc]="desc"
+          [type]="'basic'"
+        />
+        <div class="slick-between">
+          <div class="testimonial-1 dot-gradient">
+            <app-people-say [peopleSayData]="peopleSayData" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
