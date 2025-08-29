@@ -5,14 +5,16 @@ import { content } from "./shared/routes/routes";
 export const routes: Routes = [
   {
     path: "",
-    redirectTo: "theme/slider-filter-search",
-    pathMatch: "full",
-  },
-  {
-    path: "",
     loadComponent: () =>
       import("./shared/components/layouts/layout/layout").then((m) => m.Layout),
-    children: content,
+    children: [
+      {
+        path: "",
+        loadComponent: () =>
+          import("./components/home/slider-filter-search/slider-filter-search").then((m) => m.SliderFilterSearch),
+      },
+      ...content,
+    ],
   },
   {
     path: "**",
