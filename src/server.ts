@@ -10,6 +10,9 @@ import { join } from 'node:path';
 const app = express();
 const angularApp = new AngularNodeAppEngine();
 
+// Trust proxy headers - essential for HTTPS detection behind reverse proxy (Apache/Nginx)
+app.set('trust proxy', true);
+
 // Serve static files from the browser build (in prod builds)
 const browserDistFolder = join(import.meta.dirname, '../browser');
 app.use(express.static(browserDistFolder, {
@@ -30,7 +33,7 @@ if (isMainModule(import.meta.url)) {
   const port = process.env['PORT'] || 4000;
   app.listen(port, (err) => {
     if (err) throw err;
-    console.log(`Server listening on http://localhost:${port}`);
+    console.log(`SSR Server listening on http://localhost:${port} (trusting proxy for HTTPS)`);
   });
 }
 
