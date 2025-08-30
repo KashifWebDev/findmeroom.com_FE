@@ -1,0 +1,49 @@
+# Optimized systemd service for FindMeRoom SSR
+# Save this as: /etc/systemd/system/findmeroom.service
+
+[Unit]
+Description=FindMeRoom Angular SSR Server
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/findmeroom
+
+# Use absolute path to node
+ExecStart=/usr/bin/node dist/sheltos_front/server/server.mjs
+
+# Environment variables for performance
+Environment=NODE_ENV=production
+Environment=PORT=4000
+Environment=NODE_OPTIONS=--max-old-space-size=1024
+
+# Performance optimizations
+Restart=always
+RestartSec=3
+TimeoutStartSec=30
+TimeoutStopSec=10
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/www/findmeroom
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=findmeroom-ssr
+
+[Install]
+WantedBy=multi-user.target

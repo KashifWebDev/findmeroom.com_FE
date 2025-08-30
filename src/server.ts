@@ -19,7 +19,16 @@ app.use(express.static(browserDistFolder, {
   maxAge: '1y',
   index: false,
   redirect: false,
+  etag: true,
+  lastModified: true,
 }));
+
+// Add performance optimizations
+app.use((req, res, next) => {
+  // Set cache headers for SSR responses (short cache for dynamic content)
+  res.set('Cache-Control', 'public, max-age=300'); // 5 minutes cache
+  next();
+});
 
 // Let Angular handle everything else — no path string, catches all routes
 app.use((req, res, next) => {
